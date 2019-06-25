@@ -1,0 +1,62 @@
+header {
+  position: fixed;
+  width: 100%;
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav-left {
+  width: 150px;
+}
+
+.nav-right {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.towit-logo {
+  width: 100%;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding: 20px 0;
+  // Middle bar of the hamburger
+  .bars {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    border-radius: 2.5px;
+    background: white;
+    transition: transform 150ms ease, bottom 150ms ease;
+  }
+  // Top and bottom hamburger bars
+  .bars::before,
+  .bars::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    border-radius: 2.5px;
+    background: white;
+  }
+
+  // Positioning the top and bottom bar
+  .bars::before {
+    left: 0;
+    top: 8px;
+  }
+
+  .bars::after {
+    left: 0;
+    bottom: 8px;
+  }
+}

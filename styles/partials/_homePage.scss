@@ -1,0 +1,30 @@
+.home-page {
+  color: white;
+  background: rgb(233, 199, 199);
+  h2 {
+    font-size: 90px;
+  }
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wrapper {
+      width: 550px;
+      margin-left: 150px;
+    }
+  }
+
+  .section1 {
+    background-image: url("../assets/background1.png");
+  }
+
+  .section2 {
+    background-image: url("../assets/background2.png");
+  }
+
+  .section3 {
+    background-image: url("../assets/background3.png");
+  }
+}
