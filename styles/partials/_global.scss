@@ -1,4 +1,39 @@
-p {
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Oxygen Mono", monospace;
+  font-size: 1.6rem;
+}
+.button-primary,
+.button-secondary {
+  width: 168px;
+  height: 40px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-primary {
+}
+
+.button-secondary {
 }
