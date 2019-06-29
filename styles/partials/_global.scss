@@ -34,22 +34,18 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all $default-transition;
+  transition: transform 250ms ease-out, box-shadow $default-transition;
+  &:hover {
+    box-shadow: 0 10px 6px -6px #777;
+    transform: scale(1.05);
+  }
 }
 
 .button-primary {
   background: white;
   color: black;
-  &:hover {
-    background: black;
-    color: white;
-  }
 }
 
 .button-secondary {
   color: white;
-  &:hover {
-    background: white;
-    color: black;
-  }
 }
