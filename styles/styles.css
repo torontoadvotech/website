@@ -221,7 +221,6 @@ body {
   width: 168px;
   height: 40px;
   border: 1px solid white;
-  color: white;
   text-decoration: none;
   text-align: center;
   display: -webkit-inline-box;
@@ -233,11 +232,36 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.button-primary {
+  background: white;
+  color: black;
+}
+
+.button-primary:hover {
+  background: black;
+  color: white;
+}
+
+.button-secondary {
+  color: white;
+}
+
+.button-secondary:hover {
+  background: white;
+  color: black;
 }
 
 header {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background: transparent;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 header .wrapper {
@@ -254,12 +278,32 @@ header nav {
           justify-content: space-between;
 }
 
-.nav-left {
-  width: 150px;
+.to {
+  color: #e9002d;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.wit {
+  font-size: 1.7rem;
+  display: inline-block;
+  width: 100px;
+  font-family: "Oxygen Mono", monospace;
+  font-weight: 400;
+}
+
+.to,
+.wit {
+  -webkit-transition: font-size 150ms ease;
+  transition: font-size 150ms ease;
+}
+
+.scrolled-header {
+  background: #0f0f0f;
+  padding: 5px 0;
 }
 
 .nav-right {
-  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,18 +313,19 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .nav-right span {
   margin-right: 20px;
 }
 
-.towit-logo {
-  width: 100%;
+.nav-right:hover .bars {
+  width: 30px;
 }
 
 .hamburger {
-  cursor: pointer;
+  width: 30px;
   padding: 20px 0;
 }
 
@@ -290,10 +335,8 @@ header nav {
   height: 2px;
   border-radius: 2.5px;
   background: white;
-  -webkit-transition: bottom 150ms ease, -webkit-transform 150ms ease;
-  transition: bottom 150ms ease, -webkit-transform 150ms ease;
-  transition: transform 150ms ease, bottom 150ms ease;
-  transition: transform 150ms ease, bottom 150ms ease, -webkit-transform 150ms ease;
+  -webkit-transition: width 150ms ease;
+  transition: width 150ms ease;
 }
 
 .hamburger .bars::before,
@@ -358,6 +401,42 @@ header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.home-page .scroll-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.home-page .scroll-direction span {
+  padding-right: 20px;
+}
+
+.home-page .mouse {
+  display: inline-block;
+  width: 23px;
+  height: 38px;
+  border-radius: 100px;
+  border: solid 2px white;
+  position: relative;
+}
+
+.home-page .mouse::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 2px;
+  height: 8px;
+  top: 21px;
+  left: 9px;
 }
 
 .home-page .section1 {

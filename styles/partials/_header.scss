@@ -1,6 +1,9 @@
 header {
+  transition: all 300ms ease-in-out;
+  background: transparent;
   position: fixed;
   width: 100%;
+  z-index: 1000;
   .wrapper {
     width: 80%;
     margin: 0 auto;
@@ -11,26 +14,45 @@ header {
   }
 }
 
-.nav-left {
-  width: 150px;
+.to {
+  color: #e9002d;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.wit {
+  font-size: 1.7rem;
+  display: inline-block;
+  width: 100px;
+  font-family: $body-font;
+  font-weight: 400;
+}
+
+.to,
+.wit {
+  transition: font-size $default-transition;
+}
+
+.scrolled-header {
+  background: #0f0f0f;
+  padding: 5px 0;
 }
 
 .nav-right {
-  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   span {
     margin-right: 20px;
   }
-}
-
-.towit-logo {
-  width: 100%;
+  &:hover .bars {
+    width: 30px;
+  }
 }
 
 .hamburger {
-  cursor: pointer;
+  width: 30px;
   padding: 20px 0;
   // Middle bar of the hamburger
   .bars {
@@ -39,7 +61,7 @@ header {
     height: 2px;
     border-radius: 2.5px;
     background: white;
-    transition: transform 150ms ease, bottom 150ms ease;
+    transition: width $default-transition;
   }
   // Top and bottom hamburger bars
   .bars::before,

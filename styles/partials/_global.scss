@@ -1,3 +1,8 @@
+// Variables
+$default-transition: 150ms ease;
+$header-font: "Barlow Semi Condensed", sans-serif;
+$body-font: "Oxygen Mono", monospace;
+
 * {
   padding: 0;
   margin: 0;
@@ -9,14 +14,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: $header-font;
 }
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Oxygen Mono", monospace;
+  font-family: $body-font;
   font-size: 1.6rem;
 }
 .button-primary,
@@ -24,16 +29,27 @@ body {
   width: 168px;
   height: 40px;
   border: 1px solid white;
-  color: white;
   text-decoration: none;
   text-align: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: all $default-transition;
 }
 
 .button-primary {
+  background: white;
+  color: black;
+  &:hover {
+    background: black;
+    color: white;
+  }
 }
 
 .button-secondary {
+  color: white;
+  &:hover {
+    background: white;
+    color: black;
+  }
 }
