@@ -1,0 +1,7 @@
+*.pdf
+*.psd
+*.txt
+.DS_Store
+npm_modules
+prepros-6.config
+unused
