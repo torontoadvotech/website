@@ -350,35 +350,33 @@ header {
     font-size: 9rem;
     width: 100%;
     background: transparent;
-    border-bottom: white; }
+    border-style: none;
+    border-bottom: 2px solid white;
+    color: white; }
     .search-bar input::-webkit-input-placeholder {
       text-transform: uppercase;
       color: white;
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
-      font-size: 9rem;
-      line-height: 1; }
+      font-size: 9rem; }
     .search-bar input:-ms-input-placeholder {
       text-transform: uppercase;
       color: white;
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
-      font-size: 9rem;
-      line-height: 1; }
+      font-size: 9rem; }
     .search-bar input::-ms-input-placeholder {
       text-transform: uppercase;
       color: white;
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
-      font-size: 9rem;
-      line-height: 1; }
+      font-size: 9rem; }
     .search-bar input::placeholder {
       text-transform: uppercase;
       color: white;
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
-      font-size: 9rem;
-      line-height: 1; }
+      font-size: 9rem; }
 
 .home-page {
   color: white;

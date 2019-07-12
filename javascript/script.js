@@ -15,21 +15,12 @@ $(function() {
     }
   };
   
-  // const showNavMenu = () => {
-  //   console.log('showing!')
-  //   $('.nav-menu').css('visibility','visible')
-  // };
-  
-  // const hideNavMenu = () => {
-  //   console.log('hiding!')
-  //   $('.nav-menu').css('visibility','hidden')
-  // };
-  
   // Displays the nav-menu div on nav-right click
   const toggleNavMenu = () => {
     console.log('toggling!')
     $('.nav-menu').toggle()
-    $('section>*').toggleClass('hide')
+    $('section > *').toggleClass('hide')
+    $('nav > .nav-right').toggleClass('hide')
   };
 
   $(document).on('scroll', shrinkNav);
