@@ -193,6 +193,30 @@ input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+@-webkit-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -216,16 +240,14 @@ body {
   font-size: 1.6rem;
 }
 
-.button-primary,
-.button-secondary {
+.button {
   width: 168px;
   height: 40px;
-  border: 1px solid white;
   text-decoration: none;
   text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -236,14 +258,24 @@ body {
   transition: -webkit-transform 250ms ease-out, -webkit-box-shadow 150ms ease;
   transition: transform 250ms ease-out, box-shadow 150ms ease;
   transition: transform 250ms ease-out, box-shadow 150ms ease, -webkit-transform 250ms ease-out, -webkit-box-shadow 150ms ease;
+  background: black;
+  position: relative;
+  border-radius: 3px;
 }
 
-.button-primary:hover,
-.button-secondary:hover {
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.button::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  height: calc(100% + 3px * 2);
+  width: calc(100% + 3px * 2);
+  background: linear-gradient(60deg, #002de9, #e9002d, #98106e, #4b1fad);
+  border-radius: calc(2 * 3px);
+  z-index: -1;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
 }
 
 .button-primary {
@@ -372,14 +404,6 @@ header nav {
   margin-bottom: 30px;
 }
 
-.home-page p {
-  font-size: 1.6rem;
-  color: #a7a7a7;
-  line-height: 1.5;
-  letter-spacing: -0.1px;
-  margin-bottom: 40px;
-}
-
 .home-page section {
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -401,6 +425,16 @@ header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.home-page section p {
+  font-size: 1.6rem;
+  color: #a7a7a7;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+  margin-bottom: 40px;
 }
 
 .home-page .scroll-direction {
