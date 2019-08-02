@@ -22,7 +22,7 @@ $(function() {
     const m = this;
 
     m.init = function() {
-      m.codeletters = '&#*+%?£@§$';
+      m.codeLetters = '&#*+%?£@§$';
       m.message = 0;
       m.current_length = 0;
       m.fadeBuffer = false;
@@ -37,14 +37,14 @@ $(function() {
     };
 
     m.generateRandomString = function(length) {
-      let random_text = '';
-      while (random_text.length < length) {
-        random_text += m.codeletters.charAt(
-          Math.floor(Math.random() * m.codeletters.length)
+      let randomText = '';
+      while (randomText.length < length) {
+        randomText += m.codeLetters.charAt(
+          Math.floor(Math.random() * m.codeLetters.length)
         );
       }
 
-      return random_text;
+      return randomText;
     };
 
     m.animateIn = function() {
@@ -66,7 +66,7 @@ $(function() {
     m.animateFadeBuffer = function() {
       if (m.fadeBuffer === false) {
         m.fadeBuffer = [];
-        for (var i = 0; i < m.messages[m.message].length; i++) {
+        for (let i = 0; i < m.messages[m.message].length; i++) {
           m.fadeBuffer.push({
             c: Math.floor(Math.random() * 12) + 1,
             l: m.messages[m.message].charAt(i),
@@ -77,13 +77,13 @@ $(function() {
       let do_cycles = false;
       let message = '';
 
-      for (var i = 0; i < m.fadeBuffer.length; i++) {
+      for (let i = 0; i < m.fadeBuffer.length; i++) {
         const fader = m.fadeBuffer[i];
         if (fader.c > 0) {
           do_cycles = true;
           fader.c--;
-          message += m.codeletters.charAt(
-            Math.floor(Math.random() * m.codeletters.length)
+          message += m.codeLetters.charAt(
+            Math.floor(Math.random() * m.codeLetters.length)
           );
         } else {
           message += fader.l;
