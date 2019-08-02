@@ -2,13 +2,11 @@
   color: white;
   background: rgb(233, 199, 199);
   h2 {
-    font-size: 7.5rem;
+    font-size: 7rem;
     text-transform: uppercase;
     line-height: 1;
     font-weight: bold;
     margin-bottom: 30px;
-    height: 225px;
-    overflow: hidden;
   }
 
   section {
@@ -16,9 +14,10 @@
     display: flex;
     background-size: cover;
     overflow: hidden;
+    min-height: 100vh;
     .wrapper {
       min-height: 100vh;
-      width: 700px;
+      width: 550px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -68,6 +67,23 @@
   .section1 {
     background-image: url("../assets/background1.png");
     // position: relative;
+    .main-header-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding-top: 60px;
+      margin-left: 150px;
+
+      .highlight-text {
+        display: block;
+        min-height: 70px;
+      }
+    }
+    .wrapper {
+      min-height: auto;
+      margin-left: 0;
+    }
   }
 
   .section2 {
@@ -84,7 +100,6 @@
     background-image: url("../assets/background3.png");
   }
 
-  .section1,
   .section3 {
     .wrapper {
       margin-left: 150px;
