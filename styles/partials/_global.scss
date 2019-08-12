@@ -3,6 +3,19 @@ $default-transition: 150ms ease;
 $header-font: "Barlow Semi Condensed", sans-serif;
 $body-font: "Oxygen Mono", monospace;
 
+// Animations
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,20 +37,31 @@ body {
   font-family: $body-font;
   font-size: 1.6rem;
 }
-.button-primary,
-.button-secondary {
+.button {
   width: 168px;
   height: 40px;
-  border: 1px solid white;
   text-decoration: none;
   text-align: center;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 250ms ease-out, box-shadow $default-transition;
-  &:hover {
-    box-shadow: 0 10px 6px -6px #777;
-    transform: scale(1.05);
+  $borderWidth: 3px;
+  background: black;
+  position: relative;
+  border-radius: $borderWidth;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * #{$borderWidth});
+    left: calc(-1 * #{$borderWidth});
+    height: calc(100% + #{$borderWidth} * 2);
+    width: calc(100% + #{$borderWidth} * 2);
+    background: linear-gradient(60deg, #002de9, #e9002d, #98106e, #4b1fad);
+    border-radius: calc(2 * #{$borderWidth});
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
   }
 }
 
