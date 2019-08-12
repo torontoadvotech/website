@@ -15,15 +15,58 @@ $(function() {
     }
   };
   
-  // Displays the nav-menu div on nav-right click
-  const toggleNavMenu = () => {
-    console.log('toggling!')
-    $('.nav-menu').toggle()
-    $('section > *').toggleClass('hide')
-    $('nav > .nav-right').toggleClass('hide')
-  };
+  // Shows the nav-menu items
+  const showNavItems = () => {
+    // 1) Show list
+    $('.menu-items ul').css( {'opacity': '1'} )
+    // 2) Show search-bar line
+    setTimeout(()=> {
+      $('.search-bar').addClass('show-underline')
+    }, 400)
+    // 3) Show search-bar text + magnifying glass
+    setTimeout(() => {
+      $('.search-bar input').css( {'opacity':'1'} )
+    }, 700)
+  }; // function ends
+  
+  // Hides the nav-menu items
+  const hideNavItems = () => {
+    // 1) Hide search-bar text + magnifying glass
+    $('.search-bar input').css({ 'opacity': '0' })
+    // 2) Hide search-bar line
+    setTimeout(()=> {
+      $('.search-bar').removeClass('show-underline')
+    }, 500)
+    // 3) Hide list
+    setTimeout(() => {
+      $('.menu-items ul').css({'opacity': '0'})
+    }, 800)
+  }; // function ends
+  
+  // Displays the nav-menu div on open-menu click
+  const openNavMenu = () => {
+    $('.nav-menu').show()
+    $('section > *').addClass('hide')
+    $('nav > .nav-right').addClass('hide')
+    
+    setTimeout(showNavItems, 300)
+  }; // function ends
+  
+
+  // Closes the nav-menu div on close-menu click
+  const closeNavMenu = () => {
+    hideNavItems()
+
+    setTimeout(function(){
+      $('.nav-menu').hide()
+      $('section > *').removeClass('hide')
+      $('nav > .nav-right').removeClass('hide')
+    }, 1400)
+
+  }; // function ends
 
   $(document).on('scroll', shrinkNav);
-  $('.nav-right').on('click', toggleNavMenu) 
-
+  $('.open-menu').on('click', openNavMenu) 
+  $('.close-menu').on('click', closeNavMenu) 
+  
 });
