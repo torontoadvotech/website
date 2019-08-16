@@ -63,6 +63,7 @@
       left: 9px;
     }
   }
+  // TODO: monospace
 
   .section1 {
     background-image: url("../assets/background1.png");
@@ -98,11 +99,15 @@
 
   .section3 {
     background-image: url("../assets/background3.png");
-  }
-
-  .section3 {
     .wrapper {
       margin-left: 150px;
     }
+    .button-secondary {
+      margin-right: 20px;
+    }
   }
+}
+
+.button-wrapper {
+  display: flex;
 }
