@@ -5,7 +5,7 @@ $header-font: "Barlow Semi Condensed", sans-serif;
 $body-font: "Oxygen Mono", monospace;
 
 // Animations
-@keyframes animatedgradient {
+@keyframes animatedGradient {
   0% {
     background-position: 0% 50%;
   }
@@ -61,14 +61,14 @@ body {
     background: linear-gradient(60deg, #002de9, #e9002d, #98106e, #4b1fad);
     border-radius: calc(2 * #{$borderWidth});
     z-index: -1;
-    animation: animatedgradient 3s ease alternate infinite;
+    animation: animatedGradient 3s ease alternate infinite;
     background-size: 300% 300%;
   }
 }
 
 .button-primary {
-  background: white;
-  color: black;
+  // color: black;
+  color: white;
 }
 
 .button-secondary {

@@ -83,9 +83,10 @@ $(function() {
       m.fadeBuffer = false;
       m.messages = [
         'Female',
-        'Intersectional Gender-Equality',
+        'Equality',
         'Diversity',
         'Inclusion',
+        'Intersectionality',
       ];
 
       setTimeout(m.animateIn, 100);

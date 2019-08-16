@@ -160,7 +160,7 @@ input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-@-webkit-keyframes animatedgradient {
+@-webkit-keyframes animatedGradient {
   0% {
     background-position: 0% 50%; }
   50% {
@@ -168,7 +168,7 @@ input::-moz-focus-inner {
   100% {
     background-position: 0% 50%; } }
 
-@keyframes animatedgradient {
+@keyframes animatedGradient {
   0% {
     background-position: 0% 50%; }
   50% {
@@ -216,26 +216,27 @@ body {
   transition: transform 250ms ease-out, box-shadow 150ms ease, -webkit-transform 250ms ease-out, -webkit-box-shadow 150ms ease;
   background: black;
   position: relative;
-  border-radius: 3px; }
-  .button::after {
-    content: "";
-    position: absolute;
-    top: calc(-1 * 3px);
-    left: calc(-1 * 3px);
-    height: calc(100% + 3px * 2);
-    width: calc(100% + 3px * 2);
-    background: -webkit-linear-gradient(30deg, #002de9, #e9002d, #98106e, #4b1fad);
-    background: -o-linear-gradient(30deg, #002de9, #e9002d, #98106e, #4b1fad);
-    background: linear-gradient(60deg, #002de9, #e9002d, #98106e, #4b1fad);
-    border-radius: calc(2 * 3px);
-    z-index: -1;
-    -webkit-animation: animatedgradient 3s ease alternate infinite;
-    animation: animatedgradient 3s ease alternate infinite;
-    background-size: 300% 300%; }
+  border-radius: 3px;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  height: calc(100% + 3px * 2);
+  width: calc(100% + 3px * 2);
+  background: linear-gradient(60deg, #002de9, #e9002d, #98106e, #4b1fad);
+  border-radius: calc(2 * 3px);
+  z-index: -1;
+  -webkit-animation: animatedGradient 3s ease alternate infinite;
+          animation: animatedGradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
 
 .button-primary {
-  background: white;
-  color: black; }
+  color: white;
+}
 
 .button-secondary {
   color: white; }
@@ -583,6 +584,16 @@ header {
     justify-content: left; }
     .blog-page .gallery .gallery-item {
       width: 30%; }
+
+.home-page .section3 .button-secondary {
+  margin-right: 20px;
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 footer {
   background-color: black;
