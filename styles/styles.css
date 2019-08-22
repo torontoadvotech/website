@@ -327,6 +327,7 @@ header {
     bottom: 8px; }
 
 .nav-menu {
+  z-index: 10;
   width: 100%;
   position: absolute;
   top: 0;
