@@ -1,5 +1,5 @@
 createLandscape({
-  palleteImage:'img/pallete_bw.png'
+  palleteImage:'img/pallete5.png'
 })
 
 function createLandscape(params){
@@ -34,7 +34,7 @@ function createLandscape(params){
 
   function sceneSetup(){
     scene = new THREE.Scene();
-    var fogColor = new THREE.Color( 0xffffff )
+    var fogColor = new THREE.Color( 0x000000 )
     scene.background = fogColor;
     scene.fog = new THREE.Fog(fogColor, 10, 400);
 
@@ -68,7 +68,7 @@ function createLandscape(params){
       distortCenter: { type: "f", value: 0.1 },
       roadWidth: { type: "f", value: 0.5 },
       pallete:{ type: "t", value: null},
-      speed: { type: "f", value: 0.5 },
+      speed: { type: "f", value: 1 },
       maxHeight: { type: "f", value: 10.0 },
       color:new THREE.Color(1, 1, 1)
     }
@@ -100,11 +100,11 @@ function createLandscape(params){
   function sky(){
     sky = new THREE.Sky();
     sky.scale.setScalar( 450000 );
-    sky.material.uniforms.turbidity.value = 20;
-    sky.material.uniforms.rayleigh.value = 0;
+    sky.material.uniforms.turbidity.value = 1;
+    sky.material.uniforms.rayleigh.value = 0.01;
     sky.material.uniforms.luminance.value = 1;
-    sky.material.uniforms.mieCoefficient.value = 0.01;
-    sky.material.uniforms.mieDirectionalG.value = 0.8;
+    sky.material.uniforms.mieCoefficient.value = 0.0003;
+    sky.material.uniforms.mieDirectionalG.value = 0.99995;
     
     scene.add( sky );
 
@@ -115,7 +115,7 @@ function createLandscape(params){
     sunSphere.visible = false;
     scene.add( sunSphere );
     
-    var theta = Math.PI * ( -0.02 );
+    var theta = Math.PI * ( -0.03 );
     var phi = 2 * Math.PI * ( -.25 );
 
     sunSphere.position.x = 400000 * Math.cos( phi );
@@ -162,7 +162,7 @@ function createLandscape(params){
     terrain.material.uniforms.time.value = time;
     terrain.material.uniforms.distortCenter.value = map(mouse.xDamped, 0, width, -0.1, 0.1);
     terrain.material.uniforms.roadWidth.value = map(mouse.yDamped, 0, height, -0.5, 2.5);
-
+    
 
     renderer.render(scene, camera)
 
@@ -193,7 +193,7 @@ function animateTitles() {
   });
 
   TweenMax.set(titleLetters, {opacity: 0});
-  TweenMax.staggerTo(titleLetters, 1.5, {
+  TweenMax.staggerTo(titleLetters, 1, {
     ease: Expo.easeOut,
     startAt: {rotationX: -100, z: -1000},
     opacity: 1,
@@ -215,7 +215,7 @@ function animateTitles() {
     TweenMax.set(el, {
       x: getRandomNumber(-20,20), 
       y: getRandomNumber(-20,20),
-      color: ['#95dc77','#f3eb8a','#f9b97f'][cycles-1]
+      color: ['#7aaac3','#55276d','#111'][cycles-1]
     });
     setTimeout(() => {
       TweenMax.set(el, {x: 0, y: 0, color: '#fff'});
