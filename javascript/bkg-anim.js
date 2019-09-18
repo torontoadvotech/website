@@ -1,5 +1,8 @@
+// modified from Andre Mattos' Interactive Landscape at https://github.com/ma77os/InteractiveLandscape
+  // © Codrops 2018
+
 createLandscape({
-  palleteImage:'img/pallete5.png'
+  palleteImage:'img/rectangle.png'
 })
 
 function createLandscape(params){
@@ -34,9 +37,9 @@ function createLandscape(params){
 
   function sceneSetup(){
     scene = new THREE.Scene();
-    var fogColor = new THREE.Color( 0x000000 )
+    var fogColor = new THREE.Color( 0x333333 )
     scene.background = fogColor;
-    scene.fog = new THREE.Fog(fogColor, 10, 400);
+    scene.fog = new THREE.Fog(fogColor, 0, 400);
 
     
     sky()
@@ -65,6 +68,7 @@ function createLandscape(params){
 
     var uniforms = {
       time: { type: "f", value: 0.0 },
+      scroll: { type: "f", value: 0.0 },
       distortCenter: { type: "f", value: 0.1 },
       roadWidth: { type: "f", value: 0.5 },
       pallete:{ type: "t", value: null},
@@ -100,11 +104,11 @@ function createLandscape(params){
   function sky(){
     sky = new THREE.Sky();
     sky.scale.setScalar( 450000 );
-    sky.material.uniforms.turbidity.value = 1;
-    sky.material.uniforms.rayleigh.value = 0.01;
+    sky.material.uniforms.turbidity.value = 13;
+    sky.material.uniforms.rayleigh.value = 1.2;
     sky.material.uniforms.luminance.value = 1;
-    sky.material.uniforms.mieCoefficient.value = 0.0003;
-    sky.material.uniforms.mieDirectionalG.value = 0.99995;
+    sky.material.uniforms.mieCoefficient.value = 0.1;
+    sky.material.uniforms.mieDirectionalG.value = 0.58;
     
     scene.add( sky );
 
@@ -115,7 +119,7 @@ function createLandscape(params){
     sunSphere.visible = false;
     scene.add( sunSphere );
     
-    var theta = Math.PI * ( -0.03 );
+    var theta = Math.PI * (-0.002);
     var phi = 2 * Math.PI * ( -.25 );
 
     sunSphere.position.x = 400000 * Math.cos( phi );
