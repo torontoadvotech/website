@@ -1,5 +1,6 @@
 // import { Messenger } from './script-partials/word-scrambler'
 
+// Shrink header nav on scroll
 $(function() {
   const shrinkNav = () => {
     const scrollDistance = $(document).scrollTop();
@@ -118,4 +119,19 @@ $(function() {
 
   console.clear();
   const messenger = new Messenger($('#word-scrambler'));
+});
+
+// CTA Border animation
+
+const $cta = $('.cta');
+const degreeObj = { prop: 0 };
+
+TweenMax.to(degreeObj, 3, {
+  prop: 360,
+  onUpdate() {
+    $cta.css(
+      'border-image-source',
+      `linear-gradient(${degreeObj.prop}deg, #e9002d, #002de9`
+    );
+  },
 });

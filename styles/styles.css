@@ -193,27 +193,135 @@ input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-@-webkit-keyframes animatedGradient {
+@-webkit-keyframes gradient-animation {
   0% {
-    background-position: 0% 50%;
+    border-image-source: linear-gradient(0deg, #e9002d, #002de9);
+  }
+  5% {
+    border-image-source: linear-gradient(18deg, #e9002d, #002de9);
+  }
+  10% {
+    border-image-source: linear-gradient(36deg, #e9002d, #002de9);
+  }
+  15% {
+    border-image-source: linear-gradient(54deg, #e9002d, #002de9);
+  }
+  20% {
+    border-image-source: linear-gradient(72deg, #e9002d, #002de9);
+  }
+  25% {
+    border-image-source: linear-gradient(90deg, #e9002d, #002de9);
+  }
+  30% {
+    border-image-source: linear-gradient(108deg, #e9002d, #002de9);
+  }
+  35% {
+    border-image-source: linear-gradient(126deg, #e9002d, #002de9);
+  }
+  40% {
+    border-image-source: linear-gradient(144deg, #e9002d, #002de9);
+  }
+  45% {
+    border-image-source: linear-gradient(162deg, #e9002d, #002de9);
   }
   50% {
-    background-position: 100% 50%;
+    border-image-source: linear-gradient(180deg, #e9002d, #002de9);
+  }
+  55% {
+    border-image-source: linear-gradient(198deg, #e9002d, #002de9);
+  }
+  60% {
+    border-image-source: linear-gradient(216deg, #e9002d, #002de9);
+  }
+  65% {
+    border-image-source: linear-gradient(234deg, #e9002d, #002de9);
+  }
+  70% {
+    border-image-source: linear-gradient(252deg, #e9002d, #002de9);
+  }
+  75% {
+    border-image-source: linear-gradient(270deg, #e9002d, #002de9);
+  }
+  80% {
+    border-image-source: linear-gradient(288deg, #e9002d, #002de9);
+  }
+  85% {
+    border-image-source: linear-gradient(306deg, #e9002d, #002de9);
+  }
+  90% {
+    border-image-source: linear-gradient(324deg, #e9002d, #002de9);
+  }
+  95% {
+    border-image-source: linear-gradient(342deg, #e9002d, #002de9);
   }
   100% {
-    background-position: 0% 50%;
+    border-image-source: linear-gradient(360deg, #e9002d, #002de9);
   }
 }
 
-@keyframes animatedGradient {
+@keyframes gradient-animation {
   0% {
-    background-position: 0% 50%;
+    border-image-source: linear-gradient(0deg, #e9002d, #002de9);
+  }
+  5% {
+    border-image-source: linear-gradient(18deg, #e9002d, #002de9);
+  }
+  10% {
+    border-image-source: linear-gradient(36deg, #e9002d, #002de9);
+  }
+  15% {
+    border-image-source: linear-gradient(54deg, #e9002d, #002de9);
+  }
+  20% {
+    border-image-source: linear-gradient(72deg, #e9002d, #002de9);
+  }
+  25% {
+    border-image-source: linear-gradient(90deg, #e9002d, #002de9);
+  }
+  30% {
+    border-image-source: linear-gradient(108deg, #e9002d, #002de9);
+  }
+  35% {
+    border-image-source: linear-gradient(126deg, #e9002d, #002de9);
+  }
+  40% {
+    border-image-source: linear-gradient(144deg, #e9002d, #002de9);
+  }
+  45% {
+    border-image-source: linear-gradient(162deg, #e9002d, #002de9);
   }
   50% {
-    background-position: 100% 50%;
+    border-image-source: linear-gradient(180deg, #e9002d, #002de9);
+  }
+  55% {
+    border-image-source: linear-gradient(198deg, #e9002d, #002de9);
+  }
+  60% {
+    border-image-source: linear-gradient(216deg, #e9002d, #002de9);
+  }
+  65% {
+    border-image-source: linear-gradient(234deg, #e9002d, #002de9);
+  }
+  70% {
+    border-image-source: linear-gradient(252deg, #e9002d, #002de9);
+  }
+  75% {
+    border-image-source: linear-gradient(270deg, #e9002d, #002de9);
+  }
+  80% {
+    border-image-source: linear-gradient(288deg, #e9002d, #002de9);
+  }
+  85% {
+    border-image-source: linear-gradient(306deg, #e9002d, #002de9);
+  }
+  90% {
+    border-image-source: linear-gradient(324deg, #e9002d, #002de9);
+  }
+  95% {
+    border-image-source: linear-gradient(342deg, #e9002d, #002de9);
   }
   100% {
-    background-position: 0% 50%;
+    border-image-source: linear-gradient(360deg, #e9002d, #002de9);
   }
 }
 
@@ -260,22 +368,12 @@ body {
   transition: transform 250ms ease-out, box-shadow 150ms ease, -webkit-transform 250ms ease-out, -webkit-box-shadow 150ms ease;
   background: black;
   position: relative;
-  border-radius: 3px;
-}
-
-.button::after {
-  content: "";
-  position: absolute;
-  top: calc(-1 * 3px);
-  left: calc(-1 * 3px);
-  height: calc(100% + 3px * 2);
-  width: calc(100% + 3px * 2);
-  background: linear-gradient(60deg, #002de9, #e9002d, #98106e, #4b1fad);
-  border-radius: calc(2 * 3px);
-  z-index: -1;
-  -webkit-animation: animatedGradient 3s ease alternate infinite;
-          animation: animatedGradient 3s ease alternate infinite;
-  background-size: 300% 300%;
+  border-radius: 0;
+  border-style: solid;
+  -o-border-image: linear-gradient(0deg, #e9002d, #002de9) 3 stretch;
+     border-image: -webkit-gradient(linear, left bottom, left top, from(#e9002d), to(#002de9)) 3 stretch;
+     border-image: linear-gradient(0deg, #e9002d, #002de9) 3 stretch;
+  border-image-width: 10px;
 }
 
 .button-primary {
@@ -494,7 +592,7 @@ header nav {
   margin-left: 150px;
 }
 
-.home-page .section1 .main-header-container .highlight-text {
+.home-page .section1 .main-header-container h2 > span {
   display: block;
   min-height: 70px;
 }
