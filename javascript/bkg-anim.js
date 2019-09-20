@@ -2,7 +2,7 @@
   // © Codrops 2018
 
 createLandscape({
-  palleteImage:'img/rectangle.png'
+  palleteImage:'img/blocks1.png'
 })
 
 function createLandscape(params){
@@ -35,54 +35,53 @@ function createLandscape(params){
     resize()
   }
 
-  function sceneSetup(){
+  function sceneSetup() {
     scene = new THREE.Scene();
-    var fogColor = new THREE.Color( 0x333333 )
+    var fogColor = new THREE.Color(0x000000)
     scene.background = fogColor;
-    scene.fog = new THREE.Fog(fogColor, 0, 400);
+    scene.fog = new THREE.Fog(fogColor, 10, 400);
 
-    
+
     sky()
 
     camera = new THREE.PerspectiveCamera(60, width / height, .1, 10000);
     camera.position.y = 8;
     camera.position.z = 4;
-    
+
     ambientLight = new THREE.AmbientLight(0xffffff, 1);
     scene.add(ambientLight)
-    
 
-    renderer = new THREE.WebGLRenderer( {
-      canvas:container,
-      antialias:true
-    } );
+
+    renderer = new THREE.WebGLRenderer({
+      canvas: container,
+      antialias: true
+    });
     renderer.setPixelRatio = devicePixelRatio;
     renderer.setSize(width, height);
-    
+
 
   }
 
-  function sceneElements(){
+  function sceneElements() {
 
     var geometry = new THREE.PlaneBufferGeometry(100, 400, 400, 400);
 
     var uniforms = {
       time: { type: "f", value: 0.0 },
-      scroll: { type: "f", value: 0.0 },
       distortCenter: { type: "f", value: 0.1 },
       roadWidth: { type: "f", value: 0.5 },
-      pallete:{ type: "t", value: null},
-      speed: { type: "f", value: 1 },
+      pallete: { type: "t", value: null },
+      speed: { type: "f", value: 0.5 },
       maxHeight: { type: "f", value: 10.0 },
-      color:new THREE.Color(1, 1, 1)
+      color: new THREE.Color(1, 1, 1)
     }
-    
+
     var material = new THREE.ShaderMaterial({
-      uniforms: THREE.UniformsUtils.merge([ THREE.ShaderLib.basic.uniforms, uniforms ]),
-      vertexShader: document.getElementById( 'custom-vertex' ).textContent,
-      fragmentShader: document.getElementById( 'custom-fragment' ).textContent,
-      wireframe:false,
-      fog:true
+      uniforms: THREE.UniformsUtils.merge([THREE.ShaderLib.basic.uniforms, uniforms]),
+      vertexShader: document.getElementById('custom-vertex').textContent,
+      fragmentShader: document.getElementById('custom-fragment').textContent,
+      wireframe: false,
+      fog: true
     });
 
     terrain = new THREE.Mesh(geometry, material);
@@ -93,40 +92,40 @@ function createLandscape(params){
 
   }
 
-  function sceneTextures(){
+  function sceneTextures() {
     // pallete
-    new THREE.TextureLoader().load( params.palleteImage, function(texture){
+    new THREE.TextureLoader().load(params.palleteImage, function (texture) {
       terrain.material.uniforms.pallete.value = texture;
       terrain.material.needsUpdate = true;
     });
   }
 
-  function sky(){
+  function sky() {
     sky = new THREE.Sky();
-    sky.scale.setScalar( 450000 );
-    sky.material.uniforms.turbidity.value = 13;
-    sky.material.uniforms.rayleigh.value = 1.2;
+    sky.scale.setScalar(450000);
+    sky.material.uniforms.turbidity.value = 1;
+    sky.material.uniforms.rayleigh.value = 0.01;
     sky.material.uniforms.luminance.value = 1;
-    sky.material.uniforms.mieCoefficient.value = 0.1;
-    sky.material.uniforms.mieDirectionalG.value = 0.58;
-    
-    scene.add( sky );
+    sky.material.uniforms.mieCoefficient.value = 0.0003;
+    sky.material.uniforms.mieDirectionalG.value = 0.99995;
+
+    scene.add(sky);
 
     sunSphere = new THREE.Mesh(
-      new THREE.SphereBufferGeometry( 20000, 16, 8 ),
-      new THREE.MeshBasicMaterial( { color: 0xffffff } )
+      new THREE.SphereBufferGeometry(20000, 16, 8),
+      new THREE.MeshBasicMaterial({ color: 0xffffff })
     );
     sunSphere.visible = false;
-    scene.add( sunSphere );
-    
-    var theta = Math.PI * (-0.002);
-    var phi = 2 * Math.PI * ( -.25 );
+    scene.add(sunSphere);
 
-    sunSphere.position.x = 400000 * Math.cos( phi );
-    sunSphere.position.y = 400000 * Math.sin( phi ) * Math.sin( theta );
-    sunSphere.position.z = 400000 * Math.sin( phi ) * Math.cos( theta );
-    
-    sky.material.uniforms.sunPosition.value.copy( sunSphere.position );
+    var theta = Math.PI * (-0.03);
+    var phi = 2 * Math.PI * (-.25);
+
+    sunSphere.position.x = 400000 * Math.cos(phi);
+    sunSphere.position.y = 400000 * Math.sin(phi) * Math.sin(theta);
+    sunSphere.position.z = 400000 * Math.sin(phi) * Math.cos(theta);
+
+    sky.material.uniforms.sunPosition.value.copy(sunSphere.position);
   }
 
   function resize(){
