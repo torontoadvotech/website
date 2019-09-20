@@ -66,7 +66,7 @@
   // TODO: monospace
 
   .section1 {
-    background-image: url("../assets/background1.png");
+    // background-image: url("../assets/background1.png");
     // position: relative;
     .main-header-container {
       display: flex;
@@ -88,7 +88,7 @@
   }
 
   .section2 {
-    background-image: url("../assets/background2.png");
+    // background-image: url("../assets/background2.png");
     text-align: right;
     justify-content: flex-end;
     .wrapper {
@@ -98,7 +98,7 @@
   }
 
   .section3 {
-    background-image: url("../assets/background3.png");
+    // background-image: url("../assets/background3.png");
     .wrapper {
       margin-left: 150px;
     }
@@ -110,4 +110,11 @@
 
 .button-wrapper {
   display: flex;
+}
+
+.landscape {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
