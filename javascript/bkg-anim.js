@@ -68,6 +68,7 @@ function createLandscape(params){
 
     var uniforms = {
       time: { type: "f", value: 0.0 },
+      scroll: { type: "f", value: 0.0 },
       distortCenter: { type: "f", value: 0.1 },
       roadWidth: { type: "f", value: 0.5 },
       pallete: { type: "t", value: null },
