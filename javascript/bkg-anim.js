@@ -2,7 +2,7 @@
   // © Codrops 2018
 
 createLandscape({
-  palleteImage:'img/gradient3.png'
+  palleteImage:'img/gradient4.png'
 })
 
 function createLandscape(params){
