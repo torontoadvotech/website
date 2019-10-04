@@ -50,7 +50,8 @@ $(function() {
     $('.nav-menu').show()
     $('section > *').addClass('hide')
     $('nav > .nav-right').addClass('hide')
-    
+    $('.hamburger').addClass('bars-active')
+
     setTimeout(showNavItems, 300)
   }; // function ends
   
@@ -63,6 +64,7 @@ $(function() {
       $('.nav-menu').hide()
       $('section > *').removeClass('hide')
       $('nav > .nav-right').removeClass('hide')
+      $('.hamburger').removeClass('bars-active')
     }, 1400)
 
   }; // function ends

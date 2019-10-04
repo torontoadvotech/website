@@ -61,7 +61,7 @@ header {
     height: 2px;
     border-radius: 2.5px;
     background: white;
-    transition: width $default-transition;
+    transition: all $default-transition;
   }
   // Top and bottom hamburger bars
   .bars::before,
@@ -72,6 +72,7 @@ header {
     height: 2px;
     border-radius: 2.5px;
     background: white;
+    transition: all $default-transition;
   }
 
   // Positioning the top and bottom bar
@@ -83,6 +84,20 @@ header {
   .bars::after {
     left: 0;
     bottom: 8px;
+  }
+}
+
+.bars-active {
+  .bars::before {
+    transform: translateY(12px) rotate(135deg);
+  }
+
+  .bars::after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+
+  .bars {
+    transform: scale(0);
   }
 }
 
@@ -130,11 +145,11 @@ header {
     font-size: 9rem;
     line-height: 1;
     padding: 5px;
-    transition: padding-right $default-transition;
+    transition: all $default-transition;
 
     &:hover {
       color: #002de9;
-      padding-right: 25px;
+      padding-right: 26px;
     } 
   }
 }
@@ -176,3 +191,4 @@ header {
 .show-underline::after {
   width: 100%
 }
+

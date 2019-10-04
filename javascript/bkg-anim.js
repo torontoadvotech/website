@@ -2,7 +2,7 @@
   // © Codrops 2018
 
 createLandscape({
-  palleteImage:'img/blocks2.png'
+  palleteImage:'img/blocks3.png'
 })
 
 function createLandscape(params){
@@ -165,7 +165,7 @@ function createLandscape(params){
     var time = performance.now() * 0.001
     terrain.material.uniforms.time.value = time;
     terrain.material.uniforms.distortCenter.value = map(mouse.xDamped, 0, width, -0.1, 0.1);
-    terrain.material.uniforms.roadWidth.value = map(mouse.yDamped, 0, height, -0.5, 2.5);
+    terrain.material.uniforms.roadWidth.value = map(mouse.yDamped, 0, height, -0.25, 1);
     
 
     renderer.render(scene, camera)

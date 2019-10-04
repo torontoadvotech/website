@@ -308,9 +308,9 @@ header {
     height: 2px;
     border-radius: 2.5px;
     background: white;
-    -webkit-transition: width 150ms ease;
-    -o-transition: width 150ms ease;
-    transition: width 150ms ease; }
+    -webkit-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease; }
   .hamburger .bars::before,
   .hamburger .bars::after {
     content: "";
@@ -318,13 +318,31 @@ header {
     width: 30px;
     height: 2px;
     border-radius: 2.5px;
-    background: white; }
+    background: white;
+    -webkit-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease; }
   .hamburger .bars::before {
     left: 0;
     top: 8px; }
   .hamburger .bars::after {
     left: 0;
     bottom: 8px; }
+
+.bars-active .bars::before {
+  -webkit-transform: translateY(12px) rotate(135deg);
+  -ms-transform: translateY(12px) rotate(135deg);
+  transform: translateY(12px) rotate(135deg); }
+
+.bars-active .bars::after {
+  -webkit-transform: translateY(-12px) rotate(-135deg);
+  -ms-transform: translateY(-12px) rotate(-135deg);
+  transform: translateY(-12px) rotate(-135deg); }
+
+.bars-active .bars {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
 
 .nav-menu {
   z-index: 10;
@@ -372,12 +390,12 @@ header {
   font-size: 9rem;
   line-height: 1;
   padding: 5px;
-  -webkit-transition: padding-right 150ms ease;
-  -o-transition: padding-right 150ms ease;
-  transition: padding-right 150ms ease; }
+  -webkit-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease; }
   .menu-items a:hover {
     color: #002de9;
-    padding-right: 25px; }
+    padding-right: 26px; }
 
 .search-bar {
   margin-right: 10%;
