@@ -5,73 +5,6 @@ $body-font: "Oxygen Mono", monospace;
 
 // Animations
 
-@keyframes gradient-animation {
-  0% {
-    border-image-source: linear-gradient(0deg, #e9002d, #002de9);
-  }
-  5% {
-    border-image-source: linear-gradient(18deg, #e9002d, #002de9);
-  }
-  10% {
-    border-image-source: linear-gradient(36deg, #e9002d, #002de9);
-  }
-  15% {
-    border-image-source: linear-gradient(54deg, #e9002d, #002de9);
-  }
-  20% {
-    border-image-source: linear-gradient(72deg, #e9002d, #002de9);
-  }
-  25% {
-    border-image-source: linear-gradient(90deg, #e9002d, #002de9);
-  }
-  30% {
-    border-image-source: linear-gradient(108deg, #e9002d, #002de9);
-  }
-  35% {
-    border-image-source: linear-gradient(126deg, #e9002d, #002de9);
-  }
-  40% {
-    border-image-source: linear-gradient(144deg, #e9002d, #002de9);
-  }
-  45% {
-    border-image-source: linear-gradient(162deg, #e9002d, #002de9);
-  }
-  50% {
-    border-image-source: linear-gradient(180deg, #e9002d, #002de9);
-  }
-  55% {
-    border-image-source: linear-gradient(198deg, #e9002d, #002de9);
-  }
-  60% {
-    border-image-source: linear-gradient(216deg, #e9002d, #002de9);
-  }
-  65% {
-    border-image-source: linear-gradient(234deg, #e9002d, #002de9);
-  }
-  70% {
-    border-image-source: linear-gradient(252deg, #e9002d, #002de9);
-  }
-  75% {
-    border-image-source: linear-gradient(270deg, #e9002d, #002de9);
-  }
-  80% {
-    border-image-source: linear-gradient(288deg, #e9002d, #002de9);
-  }
-  85% {
-    border-image-source: linear-gradient(306deg, #e9002d, #002de9);
-  }
-  90% {
-    border-image-source: linear-gradient(324deg, #e9002d, #002de9);
-  }
-  95% {
-    border-image-source: linear-gradient(342deg, #e9002d, #002de9);
-  }
-
-  100% {
-    border-image-source: linear-gradient(360deg, #e9002d, #002de9);
-  }
-}
-
 // Global Styles
 
 * {
@@ -95,6 +28,9 @@ body {
   font-family: $body-font;
   font-size: 1.6rem;
 }
+
+// TODO: Solid border bottom that animates around on hover
+
 .button {
   width: 168px;
   height: 40px;
@@ -103,21 +39,93 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 250ms ease-out, box-shadow $default-transition;
-  background: black;
+  background: transparent;
   position: relative;
   border-radius: 0;
-  border-style: solid;
-  border-image: linear-gradient(0deg, #e9002d, #002de9) 3 stretch;
-  border-image-width: 10px;
-  // border-image-slice: 1;
-  // animation: gradient-animation 1s linear infinite;
 }
 
+.button::before,
+.button::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+// Primary CTA styles
 .button-primary {
-  color: white;
+  color: #161616;
+  background: #fff;
+  overflow: hidden;
+  &:hover {
+    background: linear-gradient(to right, )
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    width: 30px;
+    height: 60px;
+    opacity: 0;
+    transform: rotate(30deg);
+
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  &:hover:after {
+    opacity: 1;
+    left: calc(100% + 30px);
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
 }
 
+// Secondary CTA styles
 .button-secondary {
   color: white;
+  border: 1px solid white;
+  transition: color 0.25s;
+  &:hover {
+    color: #e9002d;
+    border: none;
+    &::before,
+    &::after {
+      width: 100%;
+      height: 100%;
+    }
+    &::before {
+      border-top-color: #e9002d;
+      border-right-color: #e9002d;
+      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    }
+    &::after {
+      border-bottom-color: #e9002d;
+      border-left-color: #e9002d;
+      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+        height 0.25s ease-out 0.75s;
+    }
+  }
+  &::before,
+  &::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
 }
