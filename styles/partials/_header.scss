@@ -46,7 +46,7 @@ header {
   span {
     margin-right: 20px;
   }
-  &:hover .bars {
+  &:hover .bars-inactive {
     width: 30px;
   }
 }
@@ -72,9 +72,10 @@ header {
     height: 2px;
     border-radius: 2.5px;
     background: white;
-    transition: all $default-transition;
+    transition: all 250ms ease-in-out;
+    transform: translateY(0) rotate(0)
   }
-
+  
   // Positioning the top and bottom bar
   .bars::before {
     left: 0;
@@ -85,21 +86,20 @@ header {
     left: 0;
     bottom: 8px;
   }
-}
 
-.bars-active {
-  .bars::before {
-    transform: translateY(12px) rotate(135deg);
+  .bars-active {
+    width: 0px;  
   }
 
-  .bars::after {
-    transform: translateY(-12px) rotate(-135deg);
+  .bars-active::before {
+    transform: translateY(-8px) rotate(135deg);
   }
 
-  .bars {
-    transform: scale(0);
+  .bars-active::after {
+    transform: translateY(8px) rotate(-135deg);
   }
 }
+
 
 .nav-menu {
   z-index: 10;
