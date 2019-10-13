@@ -558,7 +558,9 @@ header {
   left: 0;
   z-index: -10; }
 
-.blog-page {
+@-webkit-keyframes mouserScroll {}
+
+@keyframes mouserScroll {}.blog-page {
   color: white;
   background: #0f0f0f; }
   .blog-page h1 {

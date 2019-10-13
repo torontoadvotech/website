@@ -48,7 +48,7 @@ $(function() {
   // Displays the nav-menu div on open-menu click
   const openNavMenu = () => {
     $('.nav-menu').show()
-    $('section > *').addClass('hide')
+    $('section > *').not('canvas').addClass('hide')
     $('nav > .nav-right').addClass('hide')
     $('.bars').removeClass('bars-inactive')
     $('.bars').addClass('bars-active')
