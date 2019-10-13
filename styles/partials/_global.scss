@@ -59,7 +59,7 @@ body {
   background: #fff;
   overflow: hidden;
   &:hover {
-    background: linear-gradient(to right, )
+    background: linear-gradient(to right);
   }
   &::after {
     content: "";
@@ -95,7 +95,7 @@ body {
   border: 1px solid white;
   transition: color 0.25s;
   &:hover {
-    color: #e9002d;
+    color: #fff;
     border: none;
     &::before,
     &::after {

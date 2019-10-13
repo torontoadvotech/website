@@ -135,9 +135,10 @@
       padding-left: 124px;
       text-align: left;
       list-style: none;
+      transform: translate3d(0, -100%, 0);
 
       animation-name: change;
-      animation-duration: 10s;
+      animation-duration: 12.5s;
       animation-iteration-count: infinite;
 
       &__item {
@@ -148,37 +149,69 @@
   }
 }
 
+.focus-item {
+  position: relative;
+  color: #e9002d;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: #e9002d;
+    animation: expand 12.5s linear infinite;
+  }
+}
+
+@keyframes expand {
+  0%,
+  40% {
+    width: 0;
+  }
+  42.5%,
+  65% {
+    width: 575px;
+  }
+  67%,
+  100% {
+    width: 0;
+  }
+}
+
 @keyframes change {
   0%,
-  10%,
+  7.5%,
   100% {
     transform: translate3d(0, -20%, 0);
   }
-  12.5%,
-  22.5% {
+  10%,
+  17.5% {
     transform: translate3d(0, -40%, 0);
   }
-  25%,
-  35% {
+  20%,
+  27.5% {
     transform: translate3d(0, -60%, 0);
   }
-  37.5%,
-  47.5% {
+  30%,
+  37.5% {
     transform: translate3d(0, -80%, 0);
   }
-  50%,
-  60% {
+  40%,
+  67.5% {
     transform: translate3d(0, -100%, 0);
   }
-  62.5%,
-  72.5% {
+  70%,
+  77.5% {
     transform: translate3d(0, -80%, 0);
   }
-  75%,
-  85% {
+  80%,
+  87.5% {
     transform: translate3d(0, -60%, 0);
   }
-  87.5%,
+  90%,
   97.5% {
     transform: translate3d(0, -40%, 0);
   }
