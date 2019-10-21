@@ -71,11 +71,20 @@ $(function() {
 
   }; // function ends
 
+  const highlightSearch = () => {
+    $('.search-bar').addClass('highlight-search')
+  }
+
+  const unhighlightSearch = () => {
+    $('.search-bar').removeClass('highlight-search')
+  }
+
   $(document).on('scroll', shrinkNav);
   $('.open-menu').on('click', openNavMenu) 
   $('.close-menu').on('click', closeNavMenu) 
+  $('.search-bar input').focus(highlightSearch)  
+  $('.search-bar input').focusout(unhighlightSearch)  
   
-
   // Word scrambler
   const Messenger = function(el) {
     const m = this;

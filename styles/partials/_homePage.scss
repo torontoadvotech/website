@@ -58,9 +58,12 @@
       position: absolute;
       background: white;
       width: 2px;
-      height: 8px;
-      top: 21px;
+      height: 5px;
+      top: 6px;
       left: 9px;
+      -webkit-animation: 1.2s ease-in-out infinite mouse-scroll-animation; 
+      -moz-animation: 1.2s ease-in-out infinite mouse-scroll-animation; 
+      animation: 1.2s ease-in-out infinite mouse-scroll-animation; 
     }
   }
   // TODO: monospace
@@ -119,6 +122,50 @@
   z-index: -10;
 }
 
-@keyframes mouserScroll {
+@-webkit-keyframes mouse-scroll-animation {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
   
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@-moz-keyframes mouse-scroll-animation {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes mouse-scroll-animation {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
