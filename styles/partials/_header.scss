@@ -14,21 +14,28 @@ header {
   }
 }
 
-.logo {
-  width: 150px;
-  transition: all 0.3;
-  img {
-    width: 100%;
-    max-width: 100%;
-  }
+.to {
+  color: #e9002d;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.wit {
+  font-size: 1.7rem;
+  display: inline-block;
+  width: 100px;
+  font-family: $body-font;
+  font-weight: 400;
+}
+
+.to,
+.wit {
+  transition: font-size $default-transition;
 }
 
 .scrolled-header {
   background: #0f0f0f;
   padding: 5px 0;
-  .logo {
-    width: 100px;
-  }
 }
 
 .nav-right {
