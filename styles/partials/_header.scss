@@ -39,7 +39,7 @@ header {
   span {
     margin-right: 20px;
   }
-  &:hover .bars {
+  &:hover .bars-inactive {
     width: 30px;
   }
 }
@@ -54,7 +54,7 @@ header {
     height: 2px;
     border-radius: 2.5px;
     background: white;
-    transition: width $default-transition;
+    transition: all $default-transition;
   }
   // Top and bottom hamburger bars
   .bars::before,
@@ -65,8 +65,10 @@ header {
     height: 2px;
     border-radius: 2.5px;
     background: white;
+    transition: all 250ms ease-in-out;
+    transform: translateY(0) rotate(0)
   }
-
+  
   // Positioning the top and bottom bar
   .bars::before {
     left: 0;
@@ -76,5 +78,124 @@ header {
   .bars::after {
     left: 0;
     bottom: 8px;
+  }
+
+  .bars-active {
+    width: 0px;  
+  }
+
+  .bars-active::before {
+    transform: translateY(-8px) rotate(135deg);
+  }
+
+  .bars-active::after {
+    transform: translateY(8px) rotate(-135deg);
+  }
+}
+
+
+.nav-menu {
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    );
+
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+  }
+  
+  .nav-right {
+    padding-top: 9px;
+  }
+}
+
+.menu-items {
+  ul {
+    opacity: 0;
+    transition: all $slow-transition;
+    max-width: 1125px;
+    list-style: none;
+    text-align: right;
+    margin-right: 10%;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: $header-font;
+    font-weight: 700;
+    font-size: 9rem;
+    line-height: 1;
+    padding: 5px;
+    transition: all $default-transition;
+
+    &:hover {
+      color: #002de9;
+      padding-right: 26px;
+    } 
+  }
+}
+
+.search-bar {
+  margin-right: 10%;
+  padding: 5px; 
+  
+  &::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+    opacity: 0.1;
+  }
+  
+  input {
+    padding: 0 5px;
+    font-size: 9rem;
+    width: 100%;
+    background: transparent;
+    border-style: none;
+    color: white;
+    opacity: 0;
+    transition: opacity $slow-transition;
+    font-family: $header-font;
+    
+
+    &::placeholder {
+      text-transform: uppercase;
+      color: white;
+      font-family: $header-font;
+      font-weight: 700;
+      font-size: 9rem;
+      opacity: 0.1;
+    }
+  }
+}
+
+.show-underline::after {
+  width: 100%
+}
+
+.search-bar.highlight-search {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+    opacity: 1;
   }
 }
