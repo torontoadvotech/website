@@ -16,10 +16,12 @@
       <div class="wrapper">
         <nav>
           <div class="nav-left">
-            <h1 class="logo">
-              <span class="to">TO</span>
-              <span class="wit">Women in Technology</span>
-            </h1>
+            <div class="logo">
+              <img
+                src="./assets/to-wi-t-logo.svg"
+                alt="Toronto Women in Technology Logo"
+              />
+            </div>
           </div>
           <div class="nav-right open-menu">
             <span class="menu">Menu</span>
@@ -60,15 +62,31 @@
     <section class="section1">
       <div class="main-header-container">
         <h2>
-          The Future Has
-          <span id="word-scrambler" class="highlight-text">Female</span>
+          The Future
+          <div class="content">
+            <div class="content__container">
+              <p class="content__container__text">
+                Has
+              </p>
+
+              <ul class="content__container__list">
+                <li class="content__container__list__item">female</li>
+                <li class="content__container__list__item">equality</li>
+                <li class="content__container__list__item">diversity</li>
+                <li class="content__container__list__item">inclusion</li>
+                <li class="content__container__list__item focus-item">
+                  intersectionality.
+                </li>
+              </ul>
+            </div>
+          </div>
         </h2>
         <div class="wrapper">
           <p>
             We are a grassroots movement that works to neutralize workplace
             cultures in technology to address intersectional gender inequality.
           </p>
-          <a href="#" class="button button-secondary">Join us</a>
+          <a href="#" class="button button-secondary cta">Join us</a>
         </div>
       </div>
       <div class="scroll-direction">
@@ -84,7 +102,7 @@
           by integrating social learning, affordability, and accessibility, to
           create connectivity in the field of technology for our youth.
         </p>
-        <a href="" class="button button-secondary">Join us</a>
+        <a href="" class="button button-secondary cta">Join us</a>
       </div>
     </section>
     <section class="section3">
@@ -95,8 +113,8 @@
           and overall discriminatory thinking within workplaces in technology.
         </p>
         <div class="button-wrapper">
-          <a href="#" class="button button-secondary">Join us</a>
-          <a href="#" class="button button-primary">Learn more</a>
+          <a href="#" class="button button-secondary cta">Join us</a>
+          <a href="#" class="button button-primary cta">Learn more</a>
         </div>
       </div>
       <canvas class="landscape"></canvas>
@@ -110,6 +128,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="javascript/script.js"></script>
 
 		<!-- LANDSCAPE SCRIPTS --> 
