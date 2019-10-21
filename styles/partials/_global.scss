@@ -5,8 +5,17 @@ $header-font: "Barlow Semi Condensed", sans-serif;
 $body-font: "Oxygen Mono", monospace;
 
 // Animations
-
-// Global Styles
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 * {
   padding: 0;
@@ -29,7 +38,6 @@ body {
   font-family: $body-font;
   font-size: 1.6rem;
 }
-
 .button {
   width: 168px;
   height: 40px;
@@ -38,114 +46,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  transition: transform 250ms ease-out, box-shadow $default-transition;
+  $borderWidth: 3px;
+  background: black;
   position: relative;
-  border-radius: 0;
+  border-radius: $borderWidth;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * #{$borderWidth});
+    left: calc(-1 * #{$borderWidth});
+    height: calc(100% + #{$borderWidth} * 2);
+    width: calc(100% + #{$borderWidth} * 2);
+    background: linear-gradient(60deg, #002de9, #e9002d, #98106e, #4b1fad);
+    border-radius: calc(2 * #{$borderWidth});
+    z-index: -1;
+    animation: animatedGradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
 }
 
-.button::before,
-.button::after {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-// Primary CTA styles
 .button-primary {
-  color: #161616;
-  background: #fff;
-  overflow: hidden;
-  &:hover {
-    color: #fff;
-    background-color: #161616;
-    border: none;
-    animation: primary-fill 1s linear;
-    &::before,
-    &::after {
-      width: 100%;
-      height: 100%;
-    }
-    &::before {
-      border-top-color: #e9002d;
-      border-right-color: #e9002d;
-      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-    }
-    &::after {
-      border-bottom-color: #e9002d;
-      border-left-color: #e9002d;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
-        height 0.25s ease-out 0.75s;
-    }
-  }
-  &::before,
-  &::after {
-    border: 2px solid transparent;
-    width: 0;
-    height: 0;
-  }
-  &::before {
-    top: 0;
-    left: 0;
-  }
-  &::after {
-    bottom: 0;
-    right: 0;
-  }
+  // color: black;
+  color: white;
 }
 
-// Secondary CTA styles
 .button-secondary {
   color: white;
-  border: 1px solid white;
-  transition: color 0.25s;
-  &:hover {
-    color: #fff;
-    border: none;
-    &::before,
-    &::after {
-      width: 100%;
-      height: 100%;
-    }
-    &::before {
-      border-top-color: #e9002d;
-      border-right-color: #e9002d;
-      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-    }
-    &::after {
-      border-bottom-color: #e9002d;
-      border-left-color: #e9002d;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
-        height 0.25s ease-out 0.75s;
-    }
-  }
-  &::before,
-  &::after {
-    border: 2px solid transparent;
-    width: 0;
-    height: 0;
-  }
-  &::before {
-    top: 0;
-    left: 0;
-  }
-  &::after {
-    bottom: 0;
-    right: 0;
-  }
-}
-
-@keyframes primary-fill {
-  0%,
-  75% {
-    background: transparent;
-    color: #fff;
-  }
-
-  100% {
-    background: #1c1c1c;
-  }
 }
 
 .hide {

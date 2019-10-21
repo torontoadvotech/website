@@ -66,6 +66,7 @@
       animation: 1.2s ease-in-out infinite mouse-scroll-animation; 
     }
   }
+  // TODO: monospace
 
   .section1 {
     // background-image: url("../assets/background1.png");
@@ -78,7 +79,7 @@
       padding-top: 60px;
       margin-left: 150px;
 
-      h2 > span {
+      .highlight-text {
         display: block;
         min-height: 70px;
       }
@@ -114,113 +115,6 @@
   display: flex;
 }
 
-.home-page .content {
-  overflow: hidden;
-
-  font-size: 7rem;
-  line-height: 7rem;
-  color: #ecf0f1;
-
-  &__container {
-    font-weight: 600;
-    overflow: hidden;
-    height: 7rem;
-
-    &__text {
-      display: inline;
-      font-size: 7rem;
-      color: #fff;
-      line-height: 7rem;
-    }
-
-    &__list {
-      margin-top: 0;
-      padding-left: 124px;
-      text-align: left;
-      list-style: none;
-      transform: translate3d(0, -100%, 0);
-
-      animation-name: change;
-      animation-duration: 12.5s;
-      animation-iteration-count: infinite;
-
-      &__item {
-        line-height: 7rem;
-        margin: 0;
-      }
-    }
-  }
-}
-
-.focus-item {
-  position: relative;
-  color: #e9002d;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    background-color: #e9002d;
-    animation: expand 12.5s linear infinite;
-  }
-}
-
-@keyframes expand {
-  0%,
-  40% {
-    width: 0;
-  }
-  42.5%,
-  65% {
-    width: 580px;
-  }
-  67%,
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes change {
-  0%,
-  7.5%,
-  100% {
-    transform: translate3d(0, -20%, 0);
-  }
-  10%,
-  17.5% {
-    transform: translate3d(0, -40%, 0);
-  }
-  20%,
-  27.5% {
-    transform: translate3d(0, -60%, 0);
-  }
-  30%,
-  37.5% {
-    transform: translate3d(0, -80%, 0);
-  }
-  40%,
-  67.5% {
-    transform: translate3d(0, -100%, 0);
-  }
-  70%,
-  77.5% {
-    transform: translate3d(0, -80%, 0);
-  }
-  80%,
-  87.5% {
-    transform: translate3d(0, -60%, 0);
-  }
-  90%,
-  97.5% {
-    transform: translate3d(0, -40%, 0);
-  }
-}
-// Word Scramble Effect
-=======
 .landscape {
   position: fixed;
   top: 0;
@@ -275,4 +169,3 @@
     transform: translateY(10px);
   }
 }
-
