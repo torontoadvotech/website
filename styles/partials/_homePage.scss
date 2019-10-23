@@ -66,6 +66,7 @@
       animation: 1.2s ease-in-out infinite mouse-scroll-animation;
     }
   }
+  // TODO: monospace
 
   .section1 {
     // background-image: url("../assets/background1.png");
@@ -78,7 +79,7 @@
       padding-top: 60px;
       margin-left: 150px;
 
-      h2 > span {
+      .highlight-text {
         display: block;
         min-height: 70px;
       }
@@ -274,3 +275,4 @@
     transform: translateY(10px);
   }
 }
+
