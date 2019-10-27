@@ -1,4 +1,3 @@
-
 // Shrink header nav on scroll
 $(function() {
   const shrinkNav = () => {
@@ -80,10 +79,8 @@ $(function() {
   };
 
   $(document).on('scroll', shrinkNav);
-
   $('.open-menu').on('click', openNavMenu);
   $('.close-menu').on('click', closeNavMenu);
   $('.search-bar input').focus(highlightSearch);
   $('.search-bar input').focusout(unhighlightSearch);
-
 });
