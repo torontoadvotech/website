@@ -346,7 +346,8 @@ header {
   .nav-right:hover .bars-inactive {
     width: 30px; }
   .nav-right .menu {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 0.2px; }
 
 .hamburger {
   width: 30px;
@@ -514,7 +515,7 @@ header {
 
 .home-page {
   color: white;
-  background: #e9c7c7; }
+  background: black; }
   .home-page h2 {
     font-size: 7rem;
     text-transform: uppercase;
