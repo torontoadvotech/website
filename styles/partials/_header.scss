@@ -42,6 +42,10 @@ header {
   &:hover .bars-inactive {
     width: 30px;
   }
+
+  .menu {
+    text-transform: uppercase;
+  }
 }
 
 .hamburger {

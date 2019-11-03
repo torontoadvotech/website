@@ -26,7 +26,7 @@
     }
     p {
       font-size: 1.6rem;
-      color: #a7a7a7;
+      color: #f6f6f6;
       line-height: 1.5;
       letter-spacing: -0.1px;
       margin-bottom: 40px;
@@ -42,6 +42,8 @@
     right: 50px;
     span {
       padding-right: 20px;
+      color: #a7a7a7;
+      text-transform: uppercase;
     }
   }
 
@@ -141,7 +143,7 @@
       transform: translate3d(0, -100%, 0);
 
       animation-name: change;
-      animation-duration: 12.5s;
+      animation-duration: 15s;
       animation-iteration-count: infinite;
 
       &__item {
@@ -165,7 +167,7 @@
     left: 0;
     bottom: 0;
     background-color: #e9002d;
-    animation: expand 12.5s linear infinite;
+    animation: expand 15s linear infinite;
   }
 }
 
