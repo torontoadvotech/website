@@ -8,11 +8,13 @@ $(function() {
       $('.to').css('font-size', '3.5rem');
       $('.wit').css('font-size', '1.3rem');
       $('.wrapper>.nav-right').css('padding-top', '5px');
+      $('.scroll-direction').fadeOut();
     } else {
       $('header').removeClass('scrolled-header');
       $('.to').css('font-size', '5rem');
       $('.wit').css('font-size', '1.7rem');
       $('.wrapper>.nav-right').css('padding-top', '9px');
+      $('.scroll-direction').fadeIn();
     }
   };
 
@@ -50,23 +52,29 @@ $(function() {
     $('section > *')
       .not('canvas')
       .addClass('hide');
-    $('nav > .nav-right').addClass('hide');
+    $('nav > .nav-right').removeClass('open-menu');
+    $('nav > .nav-right').addClass('close-menu');
     $('.bars').removeClass('bars-inactive');
     $('.bars').addClass('bars-active');
-
+    $('.menu').fadeOut(50, function () {
+      $(this).text('Close').fadeIn(50);
+    });
     setTimeout(showNavItems, 300);
   }; // function ends
-
+  
   // Closes the nav-menu div on close-menu click
   const closeNavMenu = () => {
     hideNavItems();
-
     setTimeout(function() {
       $('.nav-menu').hide();
       $('section > *').removeClass('hide');
-      $('nav > .nav-right').removeClass('hide');
+      $('nav > .nav-right').removeClass('close-menu');
+      $('nav > .nav-right').addClass('open-menu');
       $('.bars').addClass('bars-inactive');
       $('.bars').removeClass('bars-active');
+      $('.menu').fadeOut(50, function () {
+        $(this).text('Menu').fadeIn(50);
+      });
     }, 1400);
   }; // function ends
 
@@ -79,8 +87,8 @@ $(function() {
   };
 
   $(document).on('scroll', shrinkNav);
-  $('.open-menu').on('click', openNavMenu);
-  $('.close-menu').on('click', closeNavMenu);
+  $('nav').on('click', '.open-menu',openNavMenu);
+  $('nav').on('click', '.close-menu',closeNavMenu);
   $('.search-bar input').focus(highlightSearch);
   $('.search-bar input').focusout(unhighlightSearch);
 });

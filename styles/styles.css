@@ -195,7 +195,8 @@ body {
   justify-content: center;
   background: transparent;
   position: relative;
-  border-radius: 0; }
+  border-radius: 0;
+  font-size: 1.5rem; }
 
 .button::before,
 .button::after {
@@ -317,9 +318,9 @@ header {
 
 .logo {
   width: 150px;
-  -webkit-transition: all 0.3;
-  -o-transition: all 0.3;
-  transition: all 0.3; }
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
   .logo img {
     width: 100%;
     max-width: 100%; }
@@ -340,13 +341,15 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 20; }
   .nav-right span {
     margin-right: 20px; }
   .nav-right:hover .bars-inactive {
     width: 30px; }
   .nav-right .menu {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 0.2px; }
 
 .hamburger {
   width: 30px;
@@ -401,7 +404,8 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding-top: 75px; }
   .nav-menu .wrapper {
     min-height: 100vh;
     display: -webkit-box;
@@ -468,7 +472,9 @@ header {
     -webkit-transition: opacity 1000ms ease;
     -o-transition: opacity 1000ms ease;
     transition: opacity 1000ms ease;
-    font-family: "Barlow Semi Condensed", sans-serif; }
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400; }
     .search-bar input::-webkit-input-placeholder {
       text-transform: uppercase;
       color: white;
@@ -514,7 +520,7 @@ header {
 
 .home-page {
   color: white;
-  background: #e9c7c7; }
+  background: black; }
   .home-page h2 {
     font-size: 7rem;
     text-transform: uppercase;
@@ -563,7 +569,7 @@ header {
     right: 50px; }
     .home-page .scroll-direction span {
       padding-right: 20px;
-      color: #a7a7a7;
+      color: #f6f6f6;
       text-transform: uppercase; }
   .home-page .mouse {
     display: inline-block;
@@ -571,7 +577,8 @@ header {
     height: 38px;
     border-radius: 100px;
     border: solid 2px white;
-    position: relative; }
+    position: relative;
+    margin-right: 75px; }
     .home-page .mouse::before {
       content: "";
       position: absolute;
@@ -652,7 +659,8 @@ header {
       animation-iteration-count: infinite; }
       .home-page .content__container__list__item {
         line-height: 7rem;
-        margin: 0; }
+        margin: 0;
+        padding: 1px 0; }
 
 .focus-item {
   position: relative;
