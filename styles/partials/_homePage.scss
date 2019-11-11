@@ -2,7 +2,7 @@
   color: white;
   background: black;
   h2 {
-    font-size: 7rem;
+    font-size: 7.5rem;
     text-transform: uppercase;
     line-height: 1;
     font-weight: bold;
@@ -30,6 +30,7 @@
       line-height: 1.5;
       letter-spacing: -0.1px;
       margin-bottom: 40px;
+      width: 520px;
     }
   }
 
@@ -110,6 +111,9 @@
     .button-secondary {
       margin-right: 20px;
     }
+    p {
+      width: 500px;
+    }
   }
 }
 
@@ -120,25 +124,25 @@
 .home-page .content {
   overflow: hidden;
 
-  font-size: 7rem;
-  line-height: 7rem;
+  font-size: 7.5rem;
+  line-height: 7.5rem;
   color: #ecf0f1;
 
   &__container {
-    font-weight: 600;
+    font-weight: 700;
     overflow: hidden;
     height: 7rem;
 
     &__text {
       display: inline;
-      font-size: 7rem;
+      font-size: 7.5rem;
       color: #fff;
-      line-height: 7rem;
+      line-height: 7.5rem;
     }
 
     &__list {
       margin-top: 0;
-      padding-left: 124px;
+      padding-left: 134px;
       text-align: left;
       list-style: none;
       transform: translate3d(0, -100%, 0);
@@ -148,7 +152,7 @@
       animation-iteration-count: infinite;
 
       &__item {
-        line-height: 7rem;
+        line-height: 7.5rem;
         margin: 0;
         padding: 1px 0;
       }
@@ -165,7 +169,7 @@
     position: absolute;
     display: block;
     width: 0;
-    height: 4px;
+    height: 8px;
     left: 0;
     bottom: 0;
     background-color: #e9002d;
@@ -180,7 +184,7 @@
   }
   42.5%,
   65% {
-    width: 580px;
+    width: 630px;
   }
   67%,
   100% {
