@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700|Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Toronto Women in Technology</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      body {
+        background-color: black;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100vh;
+        max-height: 100vh;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .coming-soon {
+        width: 100%;
+        text-align: center;
+      }
+
+      .button-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 34px;
+        opacity: 0;
+        animation-name: fade-in;
+        animation-duration: 1000ms;
+        animation-delay: 9500ms;
+        animation-fill-mode: forwards;
+      }
+
+      .button-secondary {
+        margin-right: 20px;
+      }
+
+      h1 {
+        color: #e9002d;
+        margin: 0 0 35px;
+        text-transform: uppercase;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 85px;
+        width: auto;
+        display: inline-block;
+        animation: fade-in 2s;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+
+      .typed-text {
+        color: white;
+        font-family: "Oxygen Mono", monospace;
+        margin: 0;
+        display: inline;
+        line-height: 28px;
+        letter-spacing: -0.1px;
+      }
+      .typed-container {
+        min-height: 28px;
+      }
+
+      .typed-cursor {
+        color: white;
+        animation-name: blink;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+      }
+
+      .typedTwo + .typed-cursor {
+        opacity: 0;
+        animation-delay: 3500ms;
+      }
+
+      @media screen and (max-width: 1020px) {
+        h1 {
+          font-size: 55px;
+        }
+      }
+      @media screen and (max-width: 610px) {
+        .typed-container {
+          margin-top: 20px;
+          font-size: 14px;
+        }
+      }
+
+      .button {
+        width: 168px;
+        height: 40px;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        position: relative;
+        border-radius: 0;
+        font-family: "Oxygen Mono", monospace;
+      }
+
+      .button::before,
+      .button::after {
+        box-sizing: inherit;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .button-primary {
+        color: #161616;
+        background: #fff;
+        overflow: hidden;
+      }
+      .button-primary:hover {
+        color: #fff;
+        background-color: #161616;
+        border: none;
+        animation: primary-fill 1s linear;
+      }
+      .button-primary:hover::before,
+      .button-primary:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+      .button-primary:hover::before {
+        border-top-color: #e9002d;
+        border-right-color: #e9002d;
+        transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+      }
+      .button-primary:hover::after {
+        border-bottom-color: #e9002d;
+        border-left-color: #e9002d;
+        transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+          height 0.25s ease-out 0.75s;
+      }
+      .button-primary::before,
+      .button-primary::after {
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+      }
+      .button-primary::before {
+        top: 0;
+        left: 0;
+      }
+      .button-primary::after {
+        bottom: 0;
+        right: 0;
+      }
+
+      .button-secondary {
+        color: white;
+        border: 1px solid white;
+        transition: color 0.25s;
+      }
+      .button-secondary:hover {
+        color: #fff;
+        border: none;
+      }
+      .button-secondary:hover::before,
+      .button-secondary:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+      .button-secondary:hover::before {
+        border-top-color: #e9002d;
+        border-right-color: #e9002d;
+        transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+      }
+      .button-secondary:hover::after {
+        border-bottom-color: #e9002d;
+        border-left-color: #e9002d;
+        transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+          height 0.25s ease-out 0.75s;
+      }
+      .button-secondary::before,
+      .button-secondary::after {
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+      }
+      .button-secondary::before {
+        top: 0;
+        left: 0;
+      }
+      .button-secondary::after {
+        bottom: 0;
+        right: 0;
+      }
+
+      @keyframes primary-fill {
+        0%,
+        75% {
+          background: transparent;
+          color: #fff;
+        }
+        100% {
+          background: #1c1c1c;
+        }
+      }
+      .hide {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coming-soon">
+      <h1>Coming Soon</h1>
+      <div class="typed-container">
+        <span class="typedOne typed-text"></span>
+      </div>
+      <div class="typed-container">
+        <span class="typedTwo typed-text"></span>
+      </div>
+    </div>
+    <div class="button-wrapper">
+      <a
+        href="mailto:info@torontowomenintechnology.com"
+        class="button button-secondary cta"
+        >Join us</a
+      >
+      <a
+        href="https://www.linkedin.com/company/torontowomenintechnology/"
+        class="button button-primary cta"
+        >Learn more</a
+      >
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      // import Typed from "typed.js";
+      const showAndHideCursor = self => {
+        const caratOne = document.querySelector(".typedOne + .typed-cursor");
+        const caratTwo = document.querySelector(".typedTwo + .typed-cursor");
+
+        caratOne.style.opacity = 0;
+        caratTwo.style.opacity = 1;
+      };
+
+      var optionsOne = {
+        strings: ["Get ready, something really cool is coming."],
+        typeSpeed: 40,
+        startDelay: 1000,
+        showCursor: true,
+        cursorChar: "|",
+        autoInsertCss: true,
+        onComplete: showAndHideCursor
+      };
+      var optionsTwo = {
+        strings: [
+          "We're super excited to show you what we have in store for you."
+        ],
+        typeSpeed: 40,
+        startDelay: 5000,
+        showCursor: true,
+        cursorChar: "|",
+        autoInsertCss: true
+      };
+
+      var typed = new Typed(".typedOne", optionsOne);
+      var typed = new Typed(".typedTwo", optionsTwo);
+    </script>
+  </body>
+</html>
