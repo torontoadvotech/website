@@ -421,32 +421,52 @@ header {
   .nav-menu .nav-right {
     padding-top: 9px; }
 
-.menu-items ul {
-  opacity: 0;
-  -webkit-transition: all 1000ms ease;
-  -o-transition: all 1000ms ease;
-  transition: all 1000ms ease;
-  max-width: 1125px;
-  list-style: none;
-  text-align: right;
-  margin-right: 10%; }
+.menu-items {
+  width: 100%; }
+  .menu-items ul {
+    opacity: 0;
+    -webkit-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    list-style: none;
+    text-align: right;
+    margin-right: 10%; }
+  .menu-items a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 9rem;
+    line-height: 1;
+    padding: 5px;
+    -webkit-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease; }
+    .menu-items a:hover:not(.coming-soon) {
+      color: #002de9;
+      padding-right: 26px; }
 
-.menu-items a {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 9rem;
-  line-height: 1;
-  padding: 5px;
+.coming-soon .coming-soon-hide,
+.coming-soon .coming-soon-show {
   -webkit-transition: all 150ms ease;
   -o-transition: all 150ms ease;
   transition: all 150ms ease; }
-  .menu-items a:hover {
-    color: #002de9;
-    padding-right: 26px; }
+
+.coming-soon .coming-soon-show {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #e9002d;
+  display: inline-block;
+  position: absolute;
+  right: 18.25%;
+  opacity: 0; }
+
+.coming-soon:hover .coming-soon-hide {
+  opacity: 0.05; }
+
+.coming-soon:hover .coming-soon-show {
+  opacity: 1; }
 
 .search-bar {
   margin-right: 10%;
@@ -776,7 +796,11 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -10; }
+  z-index: -20;
+  opacity: 0;
+  -webkit-transition: opacity 1000ms ease;
+  -o-transition: opacity 1000ms ease;
+  transition: opacity 1000ms ease; }
 
 @-webkit-keyframes mouse-scroll-animation {
   0% {

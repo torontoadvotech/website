@@ -91,4 +91,5 @@ $(function() {
   $('nav').on('click', '.close-menu',closeNavMenu);
   $('.search-bar input').focus(highlightSearch);
   $('.search-bar input').focusout(unhighlightSearch);
+  $('.landscape').css('opacity','1')
 });

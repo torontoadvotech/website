@@ -125,10 +125,10 @@ header {
 }
 
 .menu-items {
+  width: 100%;
   ul {
     opacity: 0;
     transition: all $slow-transition;
-    max-width: 1125px;
     list-style: none;
     text-align: right;
     margin-right: 10%;
@@ -146,10 +146,37 @@ header {
     padding: 5px;
     transition: all $default-transition;
 
-    &:hover {
+    &:hover:not(.coming-soon) {
       color: #002de9;
       padding-right: 26px;
     } 
+  }
+}
+
+.coming-soon {
+  .coming-soon-hide,
+  .coming-soon-show {
+    transition: all $default-transition;
+
+  }
+
+  .coming-soon-show {
+    font-family: $header-font;
+    color: #e9002d;
+    display: inline-block;
+    position: absolute;
+    right: 18.25%;
+    opacity: 0;
+    // line-height: 1.2;
+    // letter-spacing: -4px; 
+  }
+
+  &:hover .coming-soon-hide {
+    opacity: 0.05;
+  }
+
+  &:hover .coming-soon-show {
+    opacity: 1
   }
 }
 

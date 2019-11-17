@@ -2,7 +2,7 @@
   // © Codrops 2018
 
 createLandscape({
-  palleteImage:'img/blocks4.png'
+  palleteImage:'img/blocks5.png'
 })
 
 function createLandscape(params){
