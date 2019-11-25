@@ -636,17 +636,17 @@ header {
 .home-page .content {
   overflow: hidden;
   font-size: 7.5rem;
-  line-height: 7.5rem;
+  line-height: 1;
   color: #ecf0f1; }
   .home-page .content__container {
     font-weight: 700;
     overflow: hidden;
-    height: 7rem; }
+    height: 8rem; }
     .home-page .content__container__text {
       display: inline;
       font-size: 7.5rem;
       color: #fff;
-      line-height: 7.5rem; }
+      line-height: 1; }
     .home-page .content__container__list {
       margin-top: 0;
       padding-left: 134px;
@@ -661,9 +661,9 @@ header {
       -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite; }
       .home-page .content__container__list__item {
-        line-height: 7.5rem;
-        margin: 0;
-        padding: 1px 0; }
+        line-height: 1;
+        margin: 1px 0 0 0;
+        padding: 0; }
 
 .focus-item {
   position: relative;
@@ -673,9 +673,9 @@ header {
     position: absolute;
     display: block;
     width: 0;
-    height: 8px;
-    left: 0;
-    bottom: 0;
+    height: 5px;
+    left: 2.5px;
+    bottom: -3px;
     background-color: #e9002d;
     -webkit-animation: expand 15s linear infinite;
     animation: expand 15s linear infinite; }
@@ -686,7 +686,7 @@ header {
     width: 0; }
   42.5%,
   65% {
-    width: 630px; }
+    width: 627.5px; }
   67%,
   100% {
     width: 0; } }
@@ -697,7 +697,7 @@ header {
     width: 0; }
   42.5%,
   65% {
-    width: 630px; }
+    width: 627.5px; }
   67%,
   100% {
     width: 0; } }
