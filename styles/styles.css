@@ -676,8 +676,8 @@ header {
       transform: translate3d(0, -100%, 0);
       -webkit-animation-name: change;
       animation-name: change;
-      -webkit-animation-duration: 15s;
-      animation-duration: 15s;
+      -webkit-animation-duration: 30s;
+      animation-duration: 30s;
       -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite; }
       .home-page .content__container__list__item {
@@ -697,8 +697,67 @@ header {
     left: 0;
     bottom: 0;
     background-color: #e9002d;
-    -webkit-animation: expand 15s linear infinite;
-    animation: expand 15s linear infinite; }
+    -webkit-animation: expand 35s linear infinite;
+    animation: expand 35s linear infinite; }
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left; }
+
+.tooltip .bottom {
+  min-width: 200px;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  padding: 10px 20px;
+  color: #f6f6f6;
+  background-color: #0f0f0f;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #4c4c4c;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s; }
+
+.tooltip:hover .bottom {
+  visibility: visible;
+  opacity: 1; }
+
+.tooltip .bottom i {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden; }
+
+.tooltip .bottom i::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%) rotate(45deg);
+  -ms-transform: translate(-50%, 50%) rotate(45deg);
+  transform: translate(-50%, 50%) rotate(45deg);
+  background-color: #0f0f0f;
+  border: 1px solid #acacac;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5); }
 
 @-webkit-keyframes expand {
   0%,
