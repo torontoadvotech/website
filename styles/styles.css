@@ -392,12 +392,6 @@ header nav {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 961px) {
-  header {
-    width: 95%;
-  }
-}
-
 .logo {
   width: 150px;
   -webkit-transition: all 300ms ease-in-out;
@@ -557,6 +551,12 @@ header nav {
   padding-right: 26px;
 }
 
+@media screen and (max-width: 530px) {
+  .menu-items a {
+    font-size: 5rem;
+  }
+}
+
 .search-bar {
   margin-right: 10%;
   padding: 5px;
@@ -622,6 +622,25 @@ header nav {
   font-weight: 700;
   font-size: 9rem;
   opacity: 0.1;
+}
+
+@media screen and (max-width: 530px) {
+  .search-bar input {
+    font-size: 5rem;
+    margin-top: 40px;
+  }
+  .search-bar input::-webkit-input-placeholder {
+    font-size: 5rem;
+  }
+  .search-bar input:-ms-input-placeholder {
+    font-size: 5rem;
+  }
+  .search-bar input::-ms-input-placeholder {
+    font-size: 5rem;
+  }
+  .search-bar input::placeholder {
+    font-size: 5rem;
+  }
 }
 
 .show-underline::after {

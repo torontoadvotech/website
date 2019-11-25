@@ -13,9 +13,6 @@ header {
     display: flex;
     justify-content: space-between;
   }
-  @media screen and (max-width: 961px) {
-    width: 95%;
-  }
 }
 
 .logo {
@@ -152,6 +149,11 @@ header {
       padding-right: 26px;
     }
   }
+  @media screen and (max-width: 530px) {
+    a {
+      font-size: 5rem;
+    }
+  }
 }
 
 .search-bar {
@@ -188,6 +190,15 @@ header {
       font-weight: 700;
       font-size: 9rem;
       opacity: 0.1;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    input {
+      font-size: 5rem;
+      margin-top: 40px;
+      &::placeholder {
+        font-size: 5rem;
+      }
     }
   }
 }
