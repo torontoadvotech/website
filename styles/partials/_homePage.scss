@@ -1,6 +1,7 @@
 .home-page {
   color: white;
   background: black;
+  h1,
   h2 {
     font-size: 7rem;
     text-transform: uppercase;
@@ -8,9 +9,10 @@
     font-weight: bold;
     margin-bottom: 30px;
     @media (max-width: 815px) {
-      font-size: 4rem;
+      font-size: 5rem;
     }
     @media (max-width: 530px) {
+      font-size: 4rem;
       text-align: center;
     }
   }
@@ -34,6 +36,7 @@
       justify-content: center;
       position: relative;
       z-index: 1;
+
       @media screen and (max-width: 815px) {
         p {
           width: 60%;
@@ -41,6 +44,7 @@
         }
       }
       @media screen and (max-width: 530px) {
+        width: 100%;
         p {
           width: 100%;
           text-align: center;
@@ -106,10 +110,8 @@
       width: 100%;
       padding-top: 60px;
       margin-left: 150px;
-
-      h2 > span {
+      h1 > span {
         display: block;
-        min-height: 70px;
       }
     }
     .section-content {
@@ -184,33 +186,32 @@
 
 .home-page .content {
   overflow: hidden;
-
+  display: inline-block;
   font-size: 7rem;
-  line-height: 7rem;
+  line-height: 1;
   color: #ecf0f1;
-  @media screen and (max-width: 815px) {
-    font-size: 4rem;
+  display: flex;
+  > span {
+    padding-right: 12px;
   }
+
   &__container {
     font-weight: 600;
     overflow: hidden;
-    height: 7rem;
+    height: 70px;
 
     &__text {
-      display: inline;
+      display: inline-block;
       font-size: 7rem;
       color: #fff;
-      line-height: 7rem;
-      @media screen and (max-width: 815px) {
-        font-size: 4rem;
-      }
+      line-height: 1;
     }
 
     &__list {
       // display: flex;
       // flex-direction: column;
       margin-top: 0;
-      padding-left: 124px;
+
       text-align: left;
       list-style: none;
       transform: translate3d(0, -100%, 0);
@@ -218,15 +219,39 @@
       animation-name: change;
       animation-duration: 15s;
       animation-iteration-count: infinite;
-      @media screen and (max-width: 815px) {
-        padding-left: 72px;
-      }
+
       &__item {
-        line-height: 7rem;
+        line-height: 1;
         margin: 0;
         padding: 1px 0;
         // display: inline-block;
         width: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 815px) {
+    font-size: 5rem;
+    > span {
+      padding-right: 10px;
+    }
+    &__container {
+      height: 50px;
+      &__text {
+        font-size: 5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 530px) {
+    font-size: 4rem;
+    flex-direction: column;
+    &__container {
+      height: 40px;
+      &__text {
+        font-size: 4rem;
+      }
+      &__list {
+        padding-left: 0;
+        text-align: center;
       }
     }
   }
@@ -247,9 +272,6 @@
     bottom: 0;
     background-color: #e9002d;
     animation: expand 15s linear infinite;
-    @media screen and (max-width: 815px) {
-      bottom: 10px;
-    }
   }
 }
 
@@ -272,35 +294,35 @@
   0%,
   7.5%,
   100% {
-    transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, 0%, 0);
   }
   10%,
   17.5% {
-    transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -20%, 0);
   }
   20%,
   27.5% {
-    transform: translate3d(0, -60%, 0);
+    transform: translate3d(0, -40%, 0);
   }
   30%,
   37.5% {
-    transform: translate3d(0, -80%, 0);
+    transform: translate3d(0, -60%, 0);
   }
   40%,
   67.5% {
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -80%, 0);
   }
   70%,
   77.5% {
-    transform: translate3d(0, -80%, 0);
+    transform: translate3d(0, -60%, 0);
   }
   80%,
   87.5% {
-    transform: translate3d(0, -60%, 0);
+    transform: translate3d(0, -40%, 0);
   }
   90%,
   97.5% {
-    transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 }
 

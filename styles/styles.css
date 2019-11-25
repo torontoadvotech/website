@@ -644,6 +644,7 @@ header nav {
   background: black;
 }
 
+.home-page h1,
 .home-page h2 {
   font-size: 7rem;
   text-transform: uppercase;
@@ -653,13 +654,16 @@ header nav {
 }
 
 @media (max-width: 815px) {
+  .home-page h1,
   .home-page h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 530px) {
+  .home-page h1,
   .home-page h2 {
+    font-size: 4rem;
     text-align: center;
   }
 }
@@ -709,6 +713,9 @@ header nav {
 }
 
 @media screen and (max-width: 530px) {
+  .home-page section .section-content {
+    width: 100%;
+  }
   .home-page section .section-content p {
     width: 100%;
     text-align: center;
@@ -786,9 +793,8 @@ header nav {
   margin-left: 150px;
 }
 
-.home-page .section1 .main-header-container h2 > span {
+.home-page .section1 .main-header-container h1 > span {
   display: block;
-  min-height: 70px;
 }
 
 .home-page .section1 .section-content {
@@ -876,39 +882,34 @@ header nav {
 
 .home-page .content {
   overflow: hidden;
+  display: inline-block;
   font-size: 7rem;
-  line-height: 7rem;
+  line-height: 1;
   color: #ecf0f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media screen and (max-width: 815px) {
-  .home-page .content {
-    font-size: 4rem;
-  }
+.home-page .content > span {
+  padding-right: 12px;
 }
 
 .home-page .content__container {
   font-weight: 600;
   overflow: hidden;
-  height: 7rem;
+  height: 70px;
 }
 
 .home-page .content__container__text {
-  display: inline;
+  display: inline-block;
   font-size: 7rem;
   color: #fff;
-  line-height: 7rem;
-}
-
-@media screen and (max-width: 815px) {
-  .home-page .content__container__text {
-    font-size: 4rem;
-  }
+  line-height: 1;
 }
 
 .home-page .content__container__list {
   margin-top: 0;
-  padding-left: 124px;
   text-align: left;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
@@ -921,17 +922,46 @@ header nav {
           animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 815px) {
-  .home-page .content__container__list {
-    padding-left: 72px;
-  }
-}
-
 .home-page .content__container__list__item {
-  line-height: 7rem;
+  line-height: 1;
   margin: 0;
   padding: 1px 0;
   width: auto;
+}
+
+@media screen and (max-width: 815px) {
+  .home-page .content {
+    font-size: 5rem;
+  }
+  .home-page .content > span {
+    padding-right: 10px;
+  }
+  .home-page .content__container {
+    height: 50px;
+  }
+  .home-page .content__container__text {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .home-page .content {
+    font-size: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-page .content__container {
+    height: 40px;
+  }
+  .home-page .content__container__text {
+    font-size: 4rem;
+  }
+  .home-page .content__container__list {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .focus-item {
@@ -951,12 +981,6 @@ header nav {
   background-color: #e9002d;
   -webkit-animation: expand 15s linear infinite;
           animation: expand 15s linear infinite;
-}
-
-@media screen and (max-width: 815px) {
-  .focus-item::after {
-    bottom: 10px;
-  }
 }
 
 @-webkit-keyframes expand {
@@ -993,43 +1017,43 @@ header nav {
   0%,
   7.5%,
   100% {
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
+    -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
   }
   10%,
   17.5% {
-    -webkit-transform: translate3d(0, -40%, 0);
-            transform: translate3d(0, -40%, 0);
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
   }
   20%,
   27.5% {
-    -webkit-transform: translate3d(0, -60%, 0);
-            transform: translate3d(0, -60%, 0);
+    -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
   }
   30%,
   37.5% {
-    -webkit-transform: translate3d(0, -80%, 0);
-            transform: translate3d(0, -80%, 0);
-  }
-  40%,
-  67.5% {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-  }
-  70%,
-  77.5% {
-    -webkit-transform: translate3d(0, -80%, 0);
-            transform: translate3d(0, -80%, 0);
-  }
-  80%,
-  87.5% {
     -webkit-transform: translate3d(0, -60%, 0);
             transform: translate3d(0, -60%, 0);
   }
-  90%,
-  97.5% {
+  40%,
+  67.5% {
+    -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+  }
+  70%,
+  77.5% {
+    -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+  }
+  80%,
+  87.5% {
     -webkit-transform: translate3d(0, -40%, 0);
             transform: translate3d(0, -40%, 0);
+  }
+  90%,
+  97.5% {
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
   }
 }
 
@@ -1037,43 +1061,43 @@ header nav {
   0%,
   7.5%,
   100% {
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
+    -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
   }
   10%,
   17.5% {
-    -webkit-transform: translate3d(0, -40%, 0);
-            transform: translate3d(0, -40%, 0);
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
   }
   20%,
   27.5% {
-    -webkit-transform: translate3d(0, -60%, 0);
-            transform: translate3d(0, -60%, 0);
+    -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
   }
   30%,
   37.5% {
-    -webkit-transform: translate3d(0, -80%, 0);
-            transform: translate3d(0, -80%, 0);
-  }
-  40%,
-  67.5% {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-  }
-  70%,
-  77.5% {
-    -webkit-transform: translate3d(0, -80%, 0);
-            transform: translate3d(0, -80%, 0);
-  }
-  80%,
-  87.5% {
     -webkit-transform: translate3d(0, -60%, 0);
             transform: translate3d(0, -60%, 0);
   }
-  90%,
-  97.5% {
+  40%,
+  67.5% {
+    -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+  }
+  70%,
+  77.5% {
+    -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+  }
+  80%,
+  87.5% {
     -webkit-transform: translate3d(0, -40%, 0);
             transform: translate3d(0, -40%, 0);
+  }
+  90%,
+  97.5% {
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
   }
 }
 
