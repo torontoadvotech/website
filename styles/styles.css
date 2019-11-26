@@ -665,7 +665,7 @@ header nav {
 
 .home-page h1,
 .home-page h2 {
-  font-size: 7rem;
+  font-size: 7.5rem;
   text-transform: uppercase;
   line-height: 1;
   font-weight: bold;
@@ -747,6 +747,7 @@ header nav {
   line-height: 1.5;
   letter-spacing: -0.1px;
   margin-bottom: 40px;
+  width: 520px;
 }
 
 .home-page .scroll-direction {
@@ -878,6 +879,10 @@ header nav {
   margin-right: 20px;
 }
 
+.home-page .section3 p {
+  width: 500px;
+}
+
 @media screen and (max-width: 961px) {
   .home-page .section3 .section-content {
     margin-left: 75px;
@@ -893,7 +898,7 @@ header nav {
   }
 }
 
-.button-wrapper {
+.home-page .button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,7 +907,7 @@ header nav {
 .home-page .content {
   overflow: hidden;
   display: inline-block;
-  font-size: 7rem;
+  font-size: 7.5rem;
   line-height: 1;
   color: #ecf0f1;
   display: -webkit-box;
@@ -915,14 +920,14 @@ header nav {
 }
 
 .home-page .content__container {
-  font-weight: 600;
+  font-weight: 700;
   overflow: hidden;
-  height: 70px;
+  height: 75px;
 }
 
 .home-page .content__container__text {
   display: inline-block;
-  font-size: 7rem;
+  font-size: 7.5rem;
   color: #fff;
   line-height: 1;
 }
@@ -994,7 +999,7 @@ header nav {
   position: absolute;
   display: block;
   width: 0;
-  height: 4px;
+  height: 8px;
   left: 0;
   bottom: 0;
   background-color: #e9002d;
