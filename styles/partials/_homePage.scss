@@ -171,6 +171,7 @@
       width: 500px;
     }
 
+
     @media screen and (max-width: 961px) {
       .section-content {
         margin-left: 75px;
@@ -182,6 +183,7 @@
         align-items: center;
       }
     }
+
   }
 
   .button-wrapper {
@@ -195,6 +197,7 @@
   font-size: 7.5rem;
   line-height: 1;
 
+
   color: #ecf0f1;
   display: flex;
   > span {
@@ -207,10 +210,12 @@
     height: 75px;
 
     &__text {
+
       display: inline-block;
       font-size: 7.5rem;
       color: #fff;
       line-height: 1;
+
     }
 
     &__list {
@@ -227,7 +232,6 @@
 
       &__item {
         line-height: 1;
-
         margin: 0;
         padding: 1px 0;
         // display: inline-block;
