@@ -7,6 +7,7 @@ header {
   .wrapper {
     width: 80%;
     margin: 0 auto;
+    max-width: 1500px;
   }
   nav {
     display: flex;
@@ -72,9 +73,9 @@ header {
     border-radius: 2.5px;
     background: white;
     transition: all 250ms ease-in-out;
-    transform: translateY(0) rotate(0)
+    transform: translateY(0) rotate(0);
   }
-  
+
   // Positioning the top and bottom bar
   .bars::before {
     left: 0;
@@ -87,7 +88,7 @@ header {
   }
 
   .bars-active {
-    width: 0px;  
+    width: 0px;
   }
 
   .bars-active::before {
@@ -106,19 +107,16 @@ header {
   top: 0;
   left: 0;
   display: none;
-  background: linear-gradient(
-    rgba(0,0,0,.5),
-    rgba(0,0,0,.5)
-    );
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   padding-top: 75px;
 
   .wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; 
+    align-items: flex-end;
   }
-  
+
   .nav-right {
     padding-top: 9px;
   }
@@ -133,7 +131,7 @@ header {
     text-align: right;
     margin-right: 10%;
   }
-  
+
   a {
     display: inline-block;
     text-decoration: none;
@@ -149,7 +147,12 @@ header {
     &:hover:not(.coming-soon) {
       color: #002de9;
       padding-right: 26px;
-    } 
+    }
+  }
+  @media screen and (max-width: 530px) {
+    a {
+      font-size: 5rem;
+    }
   }
 }
 
@@ -182,18 +185,18 @@ header {
 
 .search-bar {
   margin-right: 10%;
-  padding: 5px; 
-  
+  padding: 5px;
+
   &::after {
     content: "";
     display: block;
     width: 0%;
     height: 2px;
     background: white;
-    transition: width .3s;
+    transition: width 0.3s;
     opacity: 0.1;
   }
-  
+
   input {
     padding: 0 5px;
     font-size: 9rem;
@@ -206,7 +209,7 @@ header {
     font-family: $header-font;
     text-transform: uppercase;
     font-weight: 400;
-    
+
     &::placeholder {
       text-transform: uppercase;
       color: white;
@@ -216,10 +219,19 @@ header {
       opacity: 0.1;
     }
   }
+  @media screen and (max-width: 530px) {
+    input {
+      font-size: 5rem;
+      margin-top: 40px;
+      &::placeholder {
+        font-size: 5rem;
+      }
+    }
+  }
 }
 
 .show-underline::after {
-  width: 100%
+  width: 100%;
 }
 
 .search-bar.highlight-search {
@@ -229,7 +241,7 @@ header {
     width: 100%;
     height: 2px;
     background: white;
-    transition: width .3s;
+    transition: width 0.3s;
     opacity: 1;
   }
 }
