@@ -109,6 +109,7 @@ function createLandscape(params){
     sky.material.uniforms.luminance.value = 1;
     sky.material.uniforms.mieCoefficient.value = 0.0003;
     sky.material.uniforms.mieDirectionalG.value = 0.99995;
+    // sky.material.uniforms.inclination.value = .49;
 
     scene.add(sky);
 
