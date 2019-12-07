@@ -86,10 +86,27 @@ $(function() {
     $('.search-bar').removeClass('highlight-search');
   };
 
+  const openTooltip = () => {
+    $('.tooltip-first').show().focus()
+
+  }
+
+  const expandTooltip = () => {
+    $('.tooltip-first').hide()
+    $('.tooltip-second').show()
+  }
+
+  const closeTooltip = () => {
+    $('.bottom').hide()
+  }
+
   $(document).on('scroll', shrinkNav);
   $('nav').on('click', '.open-menu',openNavMenu);
   $('nav').on('click', '.close-menu',closeNavMenu);
   $('.search-bar input').focus(highlightSearch);
   $('.search-bar input').focusout(unhighlightSearch);
   $('.landscape').css('opacity','1')
+  $('.tooltip-open').on('click',openTooltip)
+  $('.tooltip-expand').on('click',expandTooltip)
+  $('.bottom').on('blur',closeTooltip)
 });

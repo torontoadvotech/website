@@ -24,7 +24,7 @@
       position: relative;
       z-index: 1;
     }
-    p {
+    .caption {
       font-size: 1.6rem;
       color: #f6f6f6;
       line-height: 1.5;
@@ -72,8 +72,6 @@
   }
 
   .section1 {
-    // background-image: url("../assets/background1.png");
-    // position: relative;
     .main-header-container {
       display: flex;
       flex-direction: column;
@@ -94,7 +92,6 @@
   }
 
   .section2 {
-    // background-image: url("../assets/background2.png");
     text-align: right;
     justify-content: flex-end;
     .wrapper {
@@ -104,7 +101,6 @@
   }
 
   .section3 {
-    // background-image: url("../assets/background3.png");
     .wrapper {
       margin-left: 150px;
     }
@@ -125,19 +121,19 @@
   overflow: hidden;
 
   font-size: 7.5rem;
-  line-height: 7.5rem;
+  line-height: 1;
   color: #ecf0f1;
 
   &__container {
     font-weight: 700;
     overflow: hidden;
-    height: 7rem;
+    height: 8rem;
 
     &__text {
       display: inline;
       font-size: 7.5rem;
       color: #fff;
-      line-height: 7.5rem;
+      line-height: 1;
     }
 
     &__list {
@@ -148,13 +144,13 @@
       transform: translate3d(0, -100%, 0);
 
       animation-name: change;
-      animation-duration: 30s;
+      animation-duration: 15s;
       animation-iteration-count: infinite;
 
       &__item {
-        line-height: 7.5rem;
-        margin: 0;
-        padding: 1px 0;
+        line-height: 1;
+        margin: 1px 0 0 0;
+        padding: 0;
       }
     }
   }
@@ -169,63 +165,96 @@
     position: absolute;
     display: block;
     width: 0;
-    height: 8px;
-    left: 0;
-    bottom: 0;
+    height: 5px;
+    left: 2.5px;
+    bottom: -3px;
     background-color: #e9002d;
-    animation: expand 32s linear infinite;
+    animation: expand 15s linear infinite;
+  }
+}
+
+.tooltip-open {
+  cursor: pointer;
+  border-bottom:1px dotted #e9002d;
+  &:hover {
+    border-bottom:1px solid #e9002d;
   }
 }
 
 .tooltip {
-    display:inline-block;
-    position:relative;
-    border-bottom:1px dotted #666;
-    text-align:left;
-}
-
-.tooltip .bottom {
+  display:inline-block;
+  position:relative;
+  text-align:left;
+  .bottom {
     min-width:200px; 
-    top:40px;
-    left:50%;
+    top:50px;
     transform:translate(-50%, 0);
     padding:10px 20px;
     color:#f6f6f6;
     background-color:#0f0f0f;
     font-weight:normal;
-    font-size:13px;
-    border-radius:8px;
+    font-size:14px;
     position:absolute;
     z-index:99999999;
-    box-sizing:border-box;
-    border:1px solid #4c4c4c;box-shadow:0 1px 8px rgba(0,0,0,0.5);
-    visibility:hidden; opacity:0; transition:opacity 0.8s;
+    // box-sizing:border-box;
+    border:2px solid #4c4c4c;box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    display: none;
+    
+    i {
+      position: absolute;
+      top: -2px;
+      left: 12px;
+      margin-left: -12px;
+      width: 25px;
+      height: 23px;
+      
+      &::after, &::before {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      &::after {
+        border-color: rgba(15, 15, 15, 0);
+        border-right-color: #0f0f0f;
+        border-width: 8px;
+        margin-top: -8px;
+      }
+      
+      &::before {
+        border-color: rgba(76, 76, 76, 0);
+        border-right-color: #4c4c4c;
+        border-width: 11px;
+        margin-top: -11px;
+      }
+    }
+  }
+
+  .tooltip-expand {
+    cursor: pointer;
+  }
+  
+  .tooltip-first {
+    width: max-content;
+    transition: all $default-transition;
+    left: 85%;
+    display:none;
+  }
+  
+  .tooltip-second {
+    width: 500px;
+    transition: all $default-transition;
+    line-height: 24px;
+    left: 104%;
+    display:none;
+  }
 }
 
-.tooltip:hover .bottom {
-    visibility:visible; opacity:1;
-}
-
-.tooltip .bottom i {
-    position:absolute;
-    bottom:100%;
-    left:50%;
-    margin-left:-12px;
-    width:24px;
-    height:12px;
-    overflow:hidden;
-}
-
-.tooltip .bottom i::after {
-    content:'';
-    position:absolute;
-    width:12px;
-    height:12px;
-    left:50%;
-    transform:translate(-50%,50%) rotate(45deg);
-    background-color:#0f0f0f;
-    border:1px solid #acacac;box-shadow:0 1px 8px rgba(0,0,0,0.5);
-}
 
 @keyframes expand {
   0%,
@@ -234,7 +263,7 @@
   }
   42.5%,
   65% {
-    width: 630px;
+    width: 627.5px;
   }
   67%,
   100% {
