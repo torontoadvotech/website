@@ -23,27 +23,27 @@ $(function() {
     // 1) Show list
     $('.menu-items ul').css({ opacity: '1' });
     // 2) Show search-bar line
-    setTimeout(() => {
-      $('.search-bar').addClass('show-underline');
-    }, 400);
+    // setTimeout(() => {
+    //   $('.search-bar').addClass('show-underline');
+    // }, 400);
     // 3) Show search-bar text + magnifying glass
-    setTimeout(() => {
-      $('.search-bar input').css({ opacity: '1' });
-    }, 700);
+    // setTimeout(() => {
+    //   $('.search-bar input').css({ opacity: '1' });
+    // }, 700);
   }; // function ends
 
   // Hides the nav-menu items
   const hideNavItems = () => {
     // 1) Hide search-bar text + magnifying glass
-    $('.search-bar input').css({ opacity: '0' });
+    // $('.search-bar input').css({ opacity: '0' });
     // 2) Hide search-bar line
-    setTimeout(() => {
-      $('.search-bar').removeClass('show-underline');
-    }, 500);
+    // setTimeout(() => {
+    //   $('.search-bar').removeClass('show-underline');
+    // }, 500);
     // 3) Hide list
     setTimeout(() => {
       $('.menu-items ul').css({ opacity: '0' });
-    }, 800);
+    }, 100);
   }; // function ends
 
   // Displays the nav-menu div on open-menu click
@@ -75,16 +75,16 @@ $(function() {
       $('.menu').fadeOut(50, function () {
         $(this).text('Menu').fadeIn(50);
       });
-    }, 1400);
+    }, 700);
   }; // function ends
 
-  const highlightSearch = () => {
-    $('.search-bar').addClass('highlight-search');
-  };
+  // const highlightSearch = () => {
+  //   $('.search-bar').addClass('highlight-search');
+  // };
 
-  const unhighlightSearch = () => {
-    $('.search-bar').removeClass('highlight-search');
-  };
+  // const unhighlightSearch = () => {
+  //   $('.search-bar').removeClass('highlight-search');
+  // };
 
   const openTooltip = () => {
     $('.tooltip-first').show().focus()
@@ -97,16 +97,16 @@ $(function() {
   }
 
   const closeTooltip = () => {
-    $('.bottom').hide()
+    $('.tooltip').hide()
   }
 
   $(document).on('scroll', shrinkNav);
   $('nav').on('click', '.open-menu',openNavMenu);
   $('nav').on('click', '.close-menu',closeNavMenu);
-  $('.search-bar input').focus(highlightSearch);
-  $('.search-bar input').focusout(unhighlightSearch);
+  // $('.search-bar input').focus(highlightSearch);
+  // $('.search-bar input').focusout(unhighlightSearch);
   $('.landscape').css('opacity','1')
   $('.tooltip-open').on('click',openTooltip)
   $('.tooltip-expand').on('click',expandTooltip)
-  $('.bottom').on('blur',closeTooltip)
+  $('.tooltip').on('blur',closeTooltip)
 });

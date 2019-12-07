@@ -610,13 +610,13 @@ header {
       position: relative;
       z-index: 1; }
       @media screen and (max-width: 815px) {
-        .home-page section .section-content p {
+        .home-page section .section-content .caption {
           width: 60%;
           font-size: 14px; } }
       @media screen and (max-width: 530px) {
         .home-page section .section-content {
           width: 100%; }
-          .home-page section .section-content p {
+          .home-page section .section-content .caption {
             width: 100%;
             text-align: center; } }
     .home-page section .caption {
@@ -816,9 +816,7 @@ header {
     border-bottom: 1px solid #e9002d; }
 
 .tooltip {
-  display: inline-block;
   position: relative;
-  text-align: left;
   min-width: 200px;
   top: 50px;
   -webkit-transform: translate(-50%, 0);
@@ -863,23 +861,25 @@ header {
       margin-top: -11px; }
   .tooltip .tooltip-expand {
     cursor: pointer; }
-  .tooltip .tooltip-first {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-transition: all 150ms ease;
-    -o-transition: all 150ms ease;
-    transition: all 150ms ease;
-    left: 85%;
-    display: none; }
-  .tooltip .tooltip-second {
-    width: 500px;
-    -webkit-transition: all 150ms ease;
-    -o-transition: all 150ms ease;
-    transition: all 150ms ease;
-    line-height: 24px;
-    left: 104%;
-    display: none; }
+
+.tooltip-first {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+  left: 85%;
+  display: none; }
+
+.tooltip-second {
+  width: 500px;
+  -webkit-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+  line-height: 24px;
+  left: 104%;
+  display: none; }
 
 @-webkit-keyframes expand {
   0%,

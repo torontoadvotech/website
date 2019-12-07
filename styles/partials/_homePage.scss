@@ -38,14 +38,14 @@
       z-index: 1;
 
       @media screen and (max-width: 815px) {
-        p {
+        .caption {
           width: 60%;
           font-size: 14px;
         }
       }
       @media screen and (max-width: 530px) {
         width: 100%;
-        p {
+        .caption {
           width: 100%;
           text-align: center;
         }
@@ -157,7 +157,6 @@
   }
 
   .section3 {
-    // background-image: url("../assets/background3.png");
     .section-content {
       margin-left: 150px;
     }
@@ -287,9 +286,9 @@
 }
 
 .tooltip {
-  display:inline-block;
+  // display:inline-block;
   position:relative;
-  text-align:left;
+  // text-align:left;
   min-width:200px; 
   top:50px;
   transform:translate(-50%, 0);
@@ -337,25 +336,24 @@
       margin-top: -11px;
     }
   }
-
   .tooltip-expand {
     cursor: pointer;
-  }
-  
-  .tooltip-first {
-    width: max-content;
-    transition: all $default-transition;
-    left: 85%;
-    display:none;
-  }
-  
-  .tooltip-second {
-    width: 500px;
-    transition: all $default-transition;
-    line-height: 24px;
-    left: 104%;
-    display:none;
-  }
+  }  
+}
+
+.tooltip-first {
+  width: max-content;
+  transition: all $default-transition;
+  left: 85%;
+  display:none;
+}
+
+.tooltip-second {
+  width: 500px;
+  transition: all $default-transition;
+  line-height: 24px;
+  left: 104%;
+  display:none;
 }
 
 
