@@ -41,7 +41,7 @@ header {
   span {
     margin-right: 20px;
   }
-  &:hover .bars-inactive {
+  &:hover .bars-inactive, &:focus .bars-inactive {
     width: 30px;
   }
 
@@ -144,7 +144,7 @@ header {
     padding: 5px;
     transition: all $default-transition;
 
-    &:hover:not(.coming-soon) {
+    &:hover:not(.coming-soon), &:focus:not(.coming-soon) {
       color: #002de9;
       padding-right: 26px;
     }
@@ -174,11 +174,11 @@ header {
     // letter-spacing: -4px; 
   }
 
-  &:hover .coming-soon-hide {
+  &:hover .coming-soon-hide, &:focus .coming-soon-hide {
     opacity: 0.05;
   }
 
-  &:hover .coming-soon-show {
+  &:hover .coming-soon-show, &:focus .coming-soon-show {
     opacity: 1
   }
 }

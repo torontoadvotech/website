@@ -211,22 +211,22 @@ body {
   color: #161616;
   background: #fff;
   overflow: hidden; }
-  .button-primary:hover {
+  .button-primary:hover, .button-primary:focus {
     color: #fff;
     background-color: #161616;
     border: none;
     -webkit-animation: primary-fill 1s linear;
     animation: primary-fill 1s linear; }
-    .button-primary:hover::before, .button-primary:hover::after {
+    .button-primary:hover::before, .button-primary:hover::after, .button-primary:focus::before, .button-primary:focus::after {
       width: 100%;
       height: 100%; }
-    .button-primary:hover::before {
+    .button-primary:hover::before, .button-primary:focus::before {
       border-top-color: #e9002d;
       border-right-color: #e9002d;
       -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
       -o-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
       transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-    .button-primary:hover::after {
+    .button-primary:hover::after, .button-primary:focus::after {
       border-bottom-color: #e9002d;
       border-left-color: #e9002d;
       -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
@@ -249,19 +249,19 @@ body {
   -webkit-transition: color 0.25s;
   -o-transition: color 0.25s;
   transition: color 0.25s; }
-  .button-secondary:hover {
+  .button-secondary:hover, .button-secondary:focus {
     color: #fff;
     border: none; }
-    .button-secondary:hover::before, .button-secondary:hover::after {
+    .button-secondary:hover::before, .button-secondary:hover::after, .button-secondary:focus::before, .button-secondary:focus::after {
       width: 100%;
       height: 100%; }
-    .button-secondary:hover::before {
+    .button-secondary:hover::before, .button-secondary:focus::before {
       border-top-color: #e9002d;
       border-right-color: #e9002d;
       -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
       -o-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
       transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-    .button-secondary:hover::after {
+    .button-secondary:hover::after, .button-secondary:focus::after {
       border-bottom-color: #e9002d;
       border-left-color: #e9002d;
       -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
@@ -301,6 +301,9 @@ em {
   color: #e9002d;
   text-transform: none;
   font-style: normal; }
+
+*:link:focus, *:visited:focus, *:focus-within {
+  outline: none; }
 
 header {
   -webkit-transition: all 300ms ease-in-out;
@@ -351,7 +354,7 @@ header {
   z-index: 20; }
   .nav-right span {
     margin-right: 20px; }
-  .nav-right:hover .bars-inactive {
+  .nav-right:hover .bars-inactive, .nav-right:focus .bars-inactive {
     width: 30px; }
   .nav-right .menu {
     text-transform: uppercase;
@@ -450,7 +453,7 @@ header {
     -webkit-transition: all 150ms ease;
     -o-transition: all 150ms ease;
     transition: all 150ms ease; }
-    .menu-items a:hover:not(.coming-soon) {
+    .menu-items a:hover:not(.coming-soon), .menu-items a:focus:not(.coming-soon) {
       color: #002de9;
       padding-right: 26px; }
   @media screen and (max-width: 530px) {
@@ -471,10 +474,10 @@ header {
   right: 18.25%;
   opacity: 0; }
 
-.coming-soon:hover .coming-soon-hide {
+.coming-soon:hover .coming-soon-hide, .coming-soon:focus .coming-soon-hide {
   opacity: 0.05; }
 
-.coming-soon:hover .coming-soon-show {
+.coming-soon:hover .coming-soon-show, .coming-soon:focus .coming-soon-show {
   opacity: 1; }
 
 .search-bar {
@@ -812,7 +815,7 @@ header {
 .tooltip-open {
   cursor: pointer;
   border-bottom: 1px dotted #e9002d; }
-  .tooltip-open:hover {
+  .tooltip-open:hover, .tooltip-open:focus {
     border-bottom: 1px solid #e9002d; }
 
 .tooltip {
@@ -869,7 +872,7 @@ header {
   -webkit-transition: all 150ms ease;
   -o-transition: all 150ms ease;
   transition: all 150ms ease;
-  left: 85%;
+  left: 87%;
   display: none; }
 
 .tooltip-second {

@@ -58,8 +58,6 @@ function createLandscape(params){
     });
     renderer.setPixelRatio = devicePixelRatio;
     renderer.setSize(width, height);
-
-
   }
 
   function sceneElements() {
@@ -141,13 +139,13 @@ function createLandscape(params){
   }
 
   function onInputMove(e){
-    e.preventDefault();
+    // e.preventDefault();
     
     var x, y
     if(e.type == "mousemove"){
       x = e.clientX;
       y = e.clientY;
-    }else{
+    } else{
       x = e.changedTouches[0].clientX
       y = e.changedTouches[0].clientY
     }
