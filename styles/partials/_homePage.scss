@@ -280,7 +280,7 @@
 .tooltip-open {
   cursor: pointer;
   border-bottom:1px dotted #e9002d;
-  &:hover {
+  &:hover, &:focus {
     border-bottom:1px solid #e9002d;
   }
 }
@@ -344,7 +344,7 @@
 .tooltip-first {
   width: max-content;
   transition: all $default-transition;
-  left: 85%;
+  left: 87%;
   display:none;
 }
 

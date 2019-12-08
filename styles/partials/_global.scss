@@ -58,7 +58,7 @@ body {
   color: #161616;
   background: #fff;
   overflow: hidden;
-  &:hover {
+  &:hover, &:focus {
     color: #fff;
     background-color: #161616;
     border: none;
@@ -101,7 +101,7 @@ body {
   color: white;
   border: 1px solid white;
   transition: color 0.25s;
-  &:hover {
+  &:hover, &:focus {
     color: #fff;
     border: none;
     &::before,
@@ -157,4 +157,8 @@ em {
   color: #e9002d;
   text-transform: none;
   font-style: normal;
+}
+
+*:link:focus, *:visited:focus, *:focus-within {
+    outline: none;
 }
