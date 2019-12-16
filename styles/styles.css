@@ -400,6 +400,7 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 1000;
 }
 
 .logo {
@@ -440,7 +441,8 @@ header nav {
   margin-right: 20px;
 }
 
-.nav-right:hover .bars-inactive, .nav-right:focus .bars-inactive {
+.nav-right:hover .bars-inactive,
+.nav-right:focus .bars-inactive {
   width: 30px;
 }
 
@@ -585,11 +587,13 @@ header nav {
   opacity: 0;
 }
 
-.coming-soon:hover .coming-soon-hide, .coming-soon:focus .coming-soon-hide {
+.coming-soon:hover .coming-soon-hide,
+.coming-soon:focus .coming-soon-hide {
   opacity: 0.05;
 }
 
-.coming-soon:hover .coming-soon-show, .coming-soon:focus .coming-soon-show {
+.coming-soon:hover .coming-soon-show,
+.coming-soon:focus .coming-soon-show {
   opacity: 1;
 }
 
@@ -1091,6 +1095,7 @@ header nav {
 @media screen and (max-width: 530px) {
   .focus-item::after {
     bottom: -2px;
+    left: 0;
   }
 }
 
