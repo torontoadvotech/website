@@ -12,6 +12,7 @@ header {
   nav {
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
   }
 }
 
@@ -41,7 +42,8 @@ header {
   span {
     margin-right: 20px;
   }
-  &:hover .bars-inactive, &:focus .bars-inactive {
+  &:hover .bars-inactive,
+  &:focus .bars-inactive {
     width: 30px;
   }
 
@@ -144,7 +146,8 @@ header {
     padding: 5px;
     transition: all $default-transition;
 
-    &:hover:not(.coming-soon), &:focus:not(.coming-soon) {
+    &:hover:not(.coming-soon),
+    &:focus:not(.coming-soon) {
       color: #002de9;
       padding-right: 26px;
     }
@@ -160,7 +163,6 @@ header {
   .coming-soon-hide,
   .coming-soon-show {
     transition: all $default-transition;
-
   }
 
   .coming-soon-show {
@@ -171,15 +173,17 @@ header {
     right: 18.25%;
     opacity: 0;
     // line-height: 1.2;
-    // letter-spacing: -4px; 
+    // letter-spacing: -4px;
   }
 
-  &:hover .coming-soon-hide, &:focus .coming-soon-hide {
+  &:hover .coming-soon-hide,
+  &:focus .coming-soon-hide {
     opacity: 0.05;
   }
 
-  &:hover .coming-soon-show, &:focus .coming-soon-show {
-    opacity: 1
+  &:hover .coming-soon-show,
+  &:focus .coming-soon-show {
+    opacity: 1;
   }
 }
 

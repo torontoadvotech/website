@@ -297,6 +297,7 @@
     animation: expand 15s linear infinite;
     @media screen and (max-width: 530px) {
       bottom: -2px;
+      left: 0;
     }
   }
 }
