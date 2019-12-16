@@ -15,7 +15,7 @@
       font-size: 4rem;
       text-align: center;
     }
-    @media (max-width: 530px) {
+    @media (max-width: 380px) {
       font-size: 3rem;
     }
   }
@@ -131,6 +131,7 @@
     }
 
     @media screen and (max-width: 530px) {
+      padding-top: 100px;
       .main-header-container {
         margin: 0;
         padding: 0 10px;
@@ -258,7 +259,7 @@
     font-size: 4rem;
     flex-direction: column;
     &__container {
-      height: 41px;
+      height: 42px;
       &__text {
         font-size: 4rem;
       }
@@ -271,7 +272,7 @@
   @media screen and (max-width: 380px) {
     font-size: 3rem;
     &__container {
-      height: 31px;
+      height: 32px;
       &__text {
         font-size: 3rem;
       }
@@ -295,7 +296,7 @@
     background-color: #e9002d;
     animation: expand 15s linear infinite;
     @media screen and (max-width: 530px) {
-      bottom: -1px;
+      bottom: -2px;
     }
   }
 }
