@@ -723,7 +723,7 @@ header nav {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 380px) {
   .home-page h1,
   .home-page h2 {
     font-size: 3rem;
@@ -879,6 +879,9 @@ header nav {
 }
 
 @media screen and (max-width: 530px) {
+  .home-page .section1 {
+    padding-top: 100px;
+  }
   .home-page .section1 .main-header-container {
     margin: 0;
     padding: 0 10px;
@@ -1043,7 +1046,7 @@ header nav {
             flex-direction: column;
   }
   .home-page .content__container {
-    height: 41px;
+    height: 42px;
   }
   .home-page .content__container__text {
     font-size: 4rem;
@@ -1059,7 +1062,7 @@ header nav {
     font-size: 3rem;
   }
   .home-page .content__container {
-    height: 31px;
+    height: 32px;
   }
   .home-page .content__container__text {
     font-size: 3rem;
@@ -1087,7 +1090,7 @@ header nav {
 
 @media screen and (max-width: 530px) {
   .focus-item::after {
-    bottom: -1px;
+    bottom: -2px;
   }
 }
 
