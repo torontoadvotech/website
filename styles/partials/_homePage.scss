@@ -272,7 +272,7 @@
   @media screen and (max-width: 380px) {
     font-size: 3rem;
     &__container {
-      height: 32px;
+      height: 33px;
       &__text {
         font-size: 3rem;
       }
@@ -296,7 +296,7 @@
     background-color: #e9002d;
     animation: expand 15s linear infinite;
     @media screen and (max-width: 530px) {
-      bottom: -2px;
+      bottom: -3px;
       left: 0;
     }
   }
