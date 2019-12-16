@@ -1066,7 +1066,7 @@ header nav {
     font-size: 3rem;
   }
   .home-page .content__container {
-    height: 32px;
+    height: 33px;
   }
   .home-page .content__container__text {
     font-size: 3rem;
@@ -1094,7 +1094,7 @@ header nav {
 
 @media screen and (max-width: 530px) {
   .focus-item::after {
-    bottom: -2px;
+    bottom: -3px;
     left: 0;
   }
 }
