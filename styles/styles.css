@@ -784,9 +784,11 @@ header {
   font-size: 14px;
   position: absolute;
   z-index: 99999999;
-  -webkit-box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.5);
-  display: none; }
+  -webkit-box-shadow: 0 -8px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -8px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0.5px;
+  display: none;
+  outline: none; }
   .tooltip i {
     position: absolute;
     top: -3.5px;
