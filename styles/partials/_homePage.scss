@@ -312,34 +312,30 @@
 }
 
 .tooltip {
-  // display:inline-block;
-  position: relative;
-  // text-align:left;
-  min-width: 200px;
-  top: 50px;
-  transform: translate(-50%, 0);
-  padding: 10px 20px;
-  color: #f6f6f6;
-  background-color: #0f0f0f;
-  font-weight: normal;
-  font-size: 14px;
-  position: absolute;
-  z-index: 99999999;
-  // box-sizing:border-box;
-  border: 2px solid #4c4c4c;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  position:relative;
+  min-width:200px; 
+  top:60px;
+  transform:translate(-50%, 0);
+  padding:10px 20px;
+  color:#f6f6f6;
+  background-color:#0f0f0f;
+  font-weight:normal;
+  font-size:14px;
+  position:absolute;
+  z-index:99999999;
+  // border: 1.75px solid #1d1d1d;
+  box-shadow:5px 2px 8px rgba(0,0,0,0.5);
   display: none;
 
   i {
     position: absolute;
-    top: -2px;
-    left: 12px;
+    top: -3.5px;
+    left: 20px;
     margin-left: -12px;
     width: 25px;
     height: 23px;
 
-    &::after,
-    &::before {
+    &::after {
       right: 100%;
       top: 50%;
       border: solid transparent;
@@ -352,17 +348,17 @@
 
     &::after {
       border-color: rgba(15, 15, 15, 0);
-      border-right-color: #0f0f0f;
+      border-top-color: #0f0f0f;
       border-width: 8px;
       margin-top: -8px;
     }
 
-    &::before {
-      border-color: rgba(76, 76, 76, 0);
-      border-right-color: #4c4c4c;
-      border-width: 11px;
-      margin-top: -11px;
-    }
+    // &::before {
+    //   border-color: rgba(76, 76, 76, 0);
+    //   border-right-color: #1d1d1d;
+    //   border-width: 10px;
+    //   margin-top: -10px;
+    // }
   }
   .tooltip-expand {
     cursor: pointer;
@@ -377,11 +373,11 @@
 }
 
 .tooltip-second {
-  width: 500px;
+  width: 550px;
   transition: all $default-transition;
   line-height: 24px;
-  left: 104%;
-  display: none;
+  left: 109%;
+  display:none;
 }
 
 @keyframes expand {
@@ -442,6 +438,16 @@
   z-index: -20;
   opacity: 0;
   transition: opacity $slow-transition;
+}
+
+.landscape-overlay {
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
 }
 
 @-webkit-keyframes mouse-scroll-animation {

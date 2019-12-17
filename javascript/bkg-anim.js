@@ -119,7 +119,7 @@ function createLandscape(params){
     scene.add(sunSphere);
 
     // moon position
-    var theta = Math.PI * (-0.02);
+    var theta = Math.PI * (5.02);
     var phi = 2 * Math.PI * (-.1);
 
     sunSphere.position.x = 400000 * Math.cos(phi);

@@ -42,6 +42,7 @@ body {
   position: relative;
   border-radius: 0;
   font-size: 1.5rem;
+  outline: none;
 }
 
 .button::before,
@@ -159,6 +160,6 @@ em {
   font-style: normal;
 }
 
-*:link:focus, *:visited:focus, *:focus-within {
-    outline: none;
-}
+// *:link:focus, *:visited:focus, *:focus-within {
+//     outline: none;
+// }
