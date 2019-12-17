@@ -41,7 +41,7 @@ header {
   span {
     margin-right: 20px;
   }
-  &:hover .bars-inactive, &:focus .bars-inactive {
+  &:hover .bars-inactive {
     width: 30px;
   }
 
@@ -143,8 +143,10 @@ header {
     line-height: 1;
     padding: 5px;
     transition: all $default-transition;
+    outline: none;
 
-    &:hover:not(.coming-soon), &:focus:not(.coming-soon) {
+    &:hover:not(.coming-soon),
+    &:focus:not(.coming-soon) {
       color: #002de9;
       padding-right: 26px;
     }
@@ -174,74 +176,76 @@ header {
     // letter-spacing: -4px; 
   }
 
-  &:hover .coming-soon-hide, &:focus .coming-soon-hide {
+  &:hover .coming-soon-hide, 
+  &:focus .coming-soon-hide {
     opacity: 0.05;
   }
 
-  &:hover .coming-soon-show, &:focus .coming-soon-show {
+  &:hover .coming-soon-show,
+  &:focus .coming-soon-show {
     opacity: 1
   }
 }
 
-.search-bar {
-  margin-right: 10%;
-  padding: 5px;
+// .search-bar {
+//   margin-right: 10%;
+//   padding: 5px;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: white;
-    transition: width 0.3s;
-    opacity: 0.1;
-  }
+//   &::after {
+//     content: "";
+//     display: block;
+//     width: 0%;
+//     height: 2px;
+//     background: white;
+//     transition: width 0.3s;
+//     opacity: 0.1;
+//   }
 
-  input {
-    padding: 0 5px;
-    font-size: 9rem;
-    width: 100%;
-    background: transparent;
-    border-style: none;
-    color: white;
-    opacity: 0;
-    transition: opacity $slow-transition;
-    font-family: $header-font;
-    text-transform: uppercase;
-    font-weight: 400;
+//   input {
+//     padding: 0 5px;
+//     font-size: 9rem;
+//     width: 100%;
+//     background: transparent;
+//     border-style: none;
+//     color: white;
+//     opacity: 0;
+//     transition: opacity $slow-transition;
+//     font-family: $header-font;
+//     text-transform: uppercase;
+//     font-weight: 400;
 
-    &::placeholder {
-      text-transform: uppercase;
-      color: white;
-      font-family: $header-font;
-      font-weight: 600;
-      font-size: 9rem;
-      opacity: 0.1;
-    }
-  }
-  @media screen and (max-width: 530px) {
-    input {
-      font-size: 5rem;
-      margin-top: 40px;
-      &::placeholder {
-        font-size: 5rem;
-      }
-    }
-  }
-}
+//     &::placeholder {
+//       text-transform: uppercase;
+//       color: white;
+//       font-family: $header-font;
+//       font-weight: 600;
+//       font-size: 9rem;
+//       opacity: 0.1;
+//     }
+//   }
+//   @media screen and (max-width: 530px) {
+//     input {
+//       font-size: 5rem;
+//       margin-top: 40px;
+//       &::placeholder {
+//         font-size: 5rem;
+//       }
+//     }
+//   }
+// }
 
-.show-underline::after {
-  width: 100%;
-}
+// .show-underline::after {
+//   width: 100%;
+// }
 
-.search-bar.highlight-search {
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: white;
-    transition: width 0.3s;
-    opacity: 1;
-  }
-}
+// .search-bar.highlight-search {
+//   &::after {
+//     content: "";
+//     display: block;
+//     width: 100%;
+//     height: 2px;
+//     background: white;
+//     transition: width 0.3s;
+//     opacity: 1;
+//   }
+// }

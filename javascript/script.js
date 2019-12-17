@@ -77,25 +77,45 @@ $(function() {
   // };
 
   const openTooltip = () => {
-    $('.tooltip-first').show().focus()
+    $('.tooltip-first').fadeIn().focus()
   }
 
   const expandTooltip = () => {
     $('.tooltip-first').hide()
-    $('.tooltip-second').show()
+    $('.tooltip-second').show().focus()
   }
 
-  const closeTooltip = () => {
-    $('.tooltip').hide()
+  const closeTooltipFast = () => {
+    $('.tooltip').fadeOut(250)
+  }
+
+  const closeTooltipSlow = () => {
+    closingTooltip = setTimeout(() => {
+      $('.tooltip').fadeOut(500)
+    },3000)
+  }
+
+  const stopCloseTooltipSlow = () => {
+    clearInterval(closingTooltip)
   }
 
   $(document).on('scroll', shrinkNav);
-  $('nav').on('keypress click', '.open-menu',openNavMenu);
-  $('nav').on('keypress click', '.close-menu',closeNavMenu);
+  $('nav').on('keypress click','.open-menu',openNavMenu);
+  $('nav').on('keypress click','.close-menu',closeNavMenu);
   // $('.search-bar input').focus(highlightSearch);
   // $('.search-bar input').focusout(unhighlightSearch);
   $('.landscape').css('opacity','1')
-  $('.tooltip-open').on('mouseover focus',openTooltip)
+
+
+  var closingTooltip
+  $('.tooltip-open').bind({
+    'mouseover':openTooltip,
+    'mouseleave':closeTooltipSlow
+  })
+  $('.section-content').on('keypress click','.tooltip-open',openTooltip)
+
   $('.tooltip-expand').on('keypress click',expandTooltip)
-  $('.tooltip').on('blur',closeTooltip)   
+  $('.tooltip').on('blur',closeTooltipFast)   
+  $('.tooltip').on('mouseover',stopCloseTooltipSlow)
+  $('.tooltip').on('mouseleave',closeTooltipSlow)   
 });

@@ -15,13 +15,13 @@
         <nav>
           <div class="nav-left">
             <div class="logo">
-              <img
+              <a href="index.html"><img
                 src="./assets/to-wi-t-logo.svg"
                 alt="Toronto Women in Technology Logo"
-              />
+              /></a>
             </div>
           </div>
-          <div class="nav-right open-menu" tabindex=1>
+          <div class="nav-right open-menu" tabindex=0>
             <span class="menu">Menu</span>
             <div class="hamburger">
               <div class="bars bars-inactive"></div>
@@ -33,16 +33,16 @@
 							<div class="menu-items">
 								<ul>
 									<li><a href="index.html">Home</a></li>
-									<li><a class="coming-soon" href="#">
-										<span class="coming-soon-hide">Events</span>
-										<span class="coming-soon-show">Coming Soon</span></a></li>
-									<li><a class="coming-soon" href="#">
-										<span class="coming-soon-hide">Mentoring</span>
-										<span class="coming-soon-show">Coming Soon</span></a></li>
+									<li><a class="coming-soon" href="#" aria-label="Events page is coming soon!">
+										<span class="coming-soon-hide" aria-hidden>Events</span>
+										<span class="coming-soon-show" aria-hidden>Coming Soon</span></a></li>
+									<li><a class="coming-soon" href="#" aria-label="Mentoring page is coming soon!">
+										<span class="coming-soon-hide" aria-hidden>Mentoring</span>
+										<span class="coming-soon-show" aria-hidden>Coming Soon</span></a></li>
 									<li><a href="https://medium.com/torontowomenintech">Blog</a></li>
-									<li><a class="coming-soon" href="#">
-										<span class="coming-soon-hide">About</span>
-										<span class="coming-soon-show">Coming Soon</span></a></li>
+									<li><a class="coming-soon" href="#" aria-label="About page is coming soon!">
+										<span class="coming-soon-hide" aria-hidden>About</span>
+										<span class="coming-soon-show" aria-hidden>Coming Soon</span></a></li>
 								</ul>
 								<!-- <div class="search-bar">
 									<input aria-label="search" name="search" type="text" placeholder="search" autocomplete="off">
@@ -86,7 +86,7 @@
 		            </p>
 		            <a href="mailto:info@torontowomenintechnology.com" class="button button-secondary cta">Join us</a>
 								<div class="tooltip tooltip-first" tabindex=0>
-									<p>What does this mean? <em class="tooltip-expand">Learn more.</em></p>
+									<p>What does this mean? <em class="tooltip-expand" tabindex=0>Learn more.</em></p>
 									<i></i>
 								</div>
 								<div class="tooltip tooltip-second" tabindex=0>
@@ -134,8 +134,8 @@
 				</div>
 			</div>
 	  </div>
-      <canvas class="landscape"></canvas>
-    </section>
+		</section>
+		<div class="landscape-overlay"></div>
 		<canvas class="landscape"></canvas>
     <footer>
       <p>&copy; TOWIT2018 ALL RIGHTS RESERVED</p>

@@ -196,7 +196,8 @@ body {
   background: transparent;
   position: relative;
   border-radius: 0;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  outline: none; }
 
 .button::before,
 .button::after {
@@ -302,9 +303,6 @@ em {
   text-transform: none;
   font-style: normal; }
 
-*:link:focus, *:visited:focus, *:focus-within {
-  outline: none; }
-
 header {
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -354,7 +352,7 @@ header {
   z-index: 20; }
   .nav-right span {
     margin-right: 20px; }
-  .nav-right:hover .bars-inactive, .nav-right:focus .bars-inactive {
+  .nav-right:hover .bars-inactive {
     width: 30px; }
   .nav-right .menu {
     text-transform: uppercase;
@@ -452,7 +450,8 @@ header {
     padding: 5px;
     -webkit-transition: all 150ms ease;
     -o-transition: all 150ms ease;
-    transition: all 150ms ease; }
+    transition: all 150ms ease;
+    outline: none; }
     .menu-items a:hover:not(.coming-soon), .menu-items a:focus:not(.coming-soon) {
       color: #002de9;
       padding-right: 26px; }
@@ -474,92 +473,12 @@ header {
   right: 18.25%;
   opacity: 0; }
 
-.coming-soon:hover .coming-soon-hide, .coming-soon:focus .coming-soon-hide {
+.coming-soon:hover .coming-soon-hide,
+.coming-soon:focus .coming-soon-hide {
   opacity: 0.05; }
 
-.coming-soon:hover .coming-soon-show, .coming-soon:focus .coming-soon-show {
-  opacity: 1; }
-
-.search-bar {
-  margin-right: 10%;
-  padding: 5px; }
-  .search-bar::after {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: white;
-    -webkit-transition: width 0.3s;
-    -o-transition: width 0.3s;
-    transition: width 0.3s;
-    opacity: 0.1; }
-  .search-bar input {
-    padding: 0 5px;
-    font-size: 9rem;
-    width: 100%;
-    background: transparent;
-    border-style: none;
-    color: white;
-    opacity: 0;
-    -webkit-transition: opacity 1000ms ease;
-    -o-transition: opacity 1000ms ease;
-    transition: opacity 1000ms ease;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    text-transform: uppercase;
-    font-weight: 400; }
-    .search-bar input::-webkit-input-placeholder {
-      text-transform: uppercase;
-      color: white;
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 600;
-      font-size: 9rem;
-      opacity: 0.1; }
-    .search-bar input:-ms-input-placeholder {
-      text-transform: uppercase;
-      color: white;
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 600;
-      font-size: 9rem;
-      opacity: 0.1; }
-    .search-bar input::-ms-input-placeholder {
-      text-transform: uppercase;
-      color: white;
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 600;
-      font-size: 9rem;
-      opacity: 0.1; }
-    .search-bar input::placeholder {
-      text-transform: uppercase;
-      color: white;
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 600;
-      font-size: 9rem;
-      opacity: 0.1; }
-  @media screen and (max-width: 530px) {
-    .search-bar input {
-      font-size: 5rem;
-      margin-top: 40px; }
-      .search-bar input::-webkit-input-placeholder {
-        font-size: 5rem; }
-      .search-bar input:-ms-input-placeholder {
-        font-size: 5rem; }
-      .search-bar input::-ms-input-placeholder {
-        font-size: 5rem; }
-      .search-bar input::placeholder {
-        font-size: 5rem; } }
-
-.show-underline::after {
-  width: 100%; }
-
-.search-bar.highlight-search::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: white;
-  -webkit-transition: width 0.3s;
-  -o-transition: width 0.3s;
-  transition: width 0.3s;
+.coming-soon:hover .coming-soon-show,
+.coming-soon:focus .coming-soon-show {
   opacity: 1; }
 
 .home-page {
@@ -815,13 +734,13 @@ header {
 .tooltip-open {
   cursor: pointer;
   border-bottom: 1px dotted #e9002d; }
-  .tooltip-open:hover, .tooltip-open:focus {
+  .tooltip-open:hover {
     border-bottom: 1px solid #e9002d; }
 
 .tooltip {
   position: relative;
   min-width: 200px;
-  top: 50px;
+  top: 60px;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
@@ -832,18 +751,17 @@ header {
   font-size: 14px;
   position: absolute;
   z-index: 99999999;
-  border: 2px solid #4c4c4c;
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.5);
   display: none; }
   .tooltip i {
     position: absolute;
-    top: -2px;
-    left: 12px;
+    top: -3.5px;
+    left: 20px;
     margin-left: -12px;
     width: 25px;
     height: 23px; }
-    .tooltip i::after, .tooltip i::before {
+    .tooltip i::after {
       right: 100%;
       top: 50%;
       border: solid transparent;
@@ -854,14 +772,9 @@ header {
       pointer-events: none; }
     .tooltip i::after {
       border-color: rgba(15, 15, 15, 0);
-      border-right-color: #0f0f0f;
+      border-top-color: #0f0f0f;
       border-width: 8px;
       margin-top: -8px; }
-    .tooltip i::before {
-      border-color: rgba(76, 76, 76, 0);
-      border-right-color: #4c4c4c;
-      border-width: 11px;
-      margin-top: -11px; }
   .tooltip .tooltip-expand {
     cursor: pointer; }
 
@@ -876,12 +789,12 @@ header {
   display: none; }
 
 .tooltip-second {
-  width: 500px;
+  width: 550px;
   -webkit-transition: all 150ms ease;
   -o-transition: all 150ms ease;
   transition: all 150ms ease;
   line-height: 24px;
-  left: 104%;
+  left: 109%;
   display: none; }
 
 @-webkit-keyframes expand {
@@ -985,6 +898,18 @@ header {
   -webkit-transition: opacity 1000ms ease;
   -o-transition: opacity 1000ms ease;
   transition: opacity 1000ms ease; }
+
+.landscape-overlay {
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)); }
 
 @-webkit-keyframes mouse-scroll-animation {
   0% {
