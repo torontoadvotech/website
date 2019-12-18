@@ -124,5 +124,6 @@ $(function() {
   $('.tooltip-expand').on('keypress tap click',expandTooltip)
   $('.tooltip').on('mouseover',stopCloseTooltipSlow)
   $('.tooltip').on('mouseleave',closeTooltipSlow)   
-  // $('.tooltip .tooltip-expand .tooltip-open').not().on('click tap',closeTooltipFast)   
+  // $('.tooltip .tooltip-expand .tooltip-open').not().on('click tap',closeTooltipFast)
+  $(document).on('scroll',closeTooltipFast)   
 });
