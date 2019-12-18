@@ -117,13 +117,13 @@ $(function() {
 
   var fadeOutTooltipHandler = null
   $('.tooltip-open').on('mouseover',openTooltip)
-  $('.tooltip-open').on('mouseleave',closeTooltipSlow)   
+  // $('.tooltip-open').on('mouseleave',closeTooltipSlow)   
   $('.section-content').on('tap','.tooltip-open',openTooltip)
   $('.section-content').on('keypress','.tooltip-open',openTooltip)
 
   $('.tooltip-expand').on('keypress tap click',expandTooltip)
-  $('.tooltip').on('mouseover',stopCloseTooltipSlow)
-  $('.tooltip').on('mouseleave',closeTooltipSlow)   
+  // $('.tooltip').on('mouseover',stopCloseTooltipSlow)
+  // $('.tooltip').on('mouseleave',closeTooltipSlow)   
   // $('.tooltip .tooltip-expand .tooltip-open').not().on('click tap',closeTooltipFast)
   $(document).on('scroll',closeTooltipFast)   
 });
