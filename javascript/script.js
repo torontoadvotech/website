@@ -77,7 +77,7 @@ $(function() {
   // };
 
   const openTooltip = () => {
-    $('.tooltip-first').fadeIn().focus()
+    $('.tooltip-first').show().focus()
     console.log('Opening')
   }
   
@@ -94,7 +94,7 @@ $(function() {
   }
   
   const closeTooltipSlow = (event) => {
-    closingTooltip = setTimeout(() => {
+    fadeOutTooltipHandler = setTimeout(() => {
       $('.tooltip').focusout().fadeOut()
     },3000)
     event.stopImmediatePropagation()
@@ -102,7 +102,8 @@ $(function() {
   }
   
   const stopCloseTooltipSlow = () => {
-    clearTimeout(closingTooltip)
+    clearTimeout(fadeOutTooltipHandler)
+    fadeOutTooltipHandler = null
     console.log('Clearing')
   }
   
@@ -114,7 +115,7 @@ $(function() {
   $('.landscape').css('opacity','1')
 
 
-  var closingTooltip
+  var fadeOutTooltipHandler = null
   $('.tooltip-open').on('mouseover',openTooltip)
   $('.tooltip-open').on('mouseleave',closeTooltipSlow)   
   $('.section-content').on('tap','.tooltip-open',openTooltip)
