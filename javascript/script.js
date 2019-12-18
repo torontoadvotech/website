@@ -78,27 +78,34 @@ $(function() {
 
   const openTooltip = () => {
     $('.tooltip-first').fadeIn().focus()
+    console.log('Opening')
   }
-
+  
   const expandTooltip = () => {
     $('.tooltip-first').hide()
     $('.tooltip-second').show().focus()
+    console.log('Expanding')
   }
-
-  const closeTooltipFast = () => {
-    $('.tooltip').fadeOut(250)
+  
+  const closeTooltipFast = (event) => {
+    $('.tooltip').focusout().fadeOut()
+    event.stopImmediatePropagation()
+    console.log('Closing fast')
   }
-
-  const closeTooltipSlow = () => {
+  
+  const closeTooltipSlow = (event) => {
     closingTooltip = setTimeout(() => {
-      $('.tooltip').fadeOut(500)
+      $('.tooltip').focusout().fadeOut()
     },3000)
+    event.stopImmediatePropagation()
+    console.log('Closing slow')
   }
-
+  
   const stopCloseTooltipSlow = () => {
-    clearInterval(closingTooltip)
+    clearTimeout(closingTooltip)
+    console.log('Clearing')
   }
-
+  
   $(document).on('scroll', shrinkNav);
   $('nav').on('keypress click','.open-menu',openNavMenu);
   $('nav').on('keypress click','.close-menu',closeNavMenu);
@@ -108,14 +115,13 @@ $(function() {
 
 
   var closingTooltip
-  $('.tooltip-open').bind({
-    'mouseover':openTooltip,
-    'mouseleave':closeTooltipSlow
-  })
-  $('.section-content').on('keypress click','.tooltip-open',openTooltip)
+  $('.tooltip-open').on('mouseover',openTooltip)
+  $('.tooltip-open').on('mouseleave',closeTooltipSlow)   
+  $('.section-content').on('tap','.tooltip-open',openTooltip)
+  $('.section-content').on('keypress','.tooltip-open',openTooltip)
 
-  $('.tooltip-expand').on('keypress click',expandTooltip)
-  $('.tooltip').on('blur',closeTooltipFast)   
+  $('.tooltip-expand').on('keypress tap click',expandTooltip)
   $('.tooltip').on('mouseover',stopCloseTooltipSlow)
   $('.tooltip').on('mouseleave',closeTooltipSlow)   
+  // $('.tooltip .tooltip-expand .tooltip-open').not().on('click tap',closeTooltipFast)   
 });
