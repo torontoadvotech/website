@@ -320,7 +320,7 @@
 .tooltip {
   position:relative;
   min-width:200px; 
-  top:420px;
+  top:40%;
   transform:translate(-50%, 0);
   padding:10px 20px;
   color:#f6f6f6;
@@ -335,10 +335,10 @@
   display: none;
   outline: none;
   @media screen and (max-width: 815px) {
-    top: 400px;
+    top: 45%;
   }
   @media screen and (max-width: 530px) {
-    top: 375px;
+    top: 55%;
   }
 
   i {
@@ -389,13 +389,13 @@
 .tooltip-first {
   width: max-content;
   transition: all $default-transition;
-  left: 630px;
+  left: 480px;
   display: none;
   @media screen and (max-width: 961px) {
-    left: 555px;
+    left: 480px;
   }
   @media screen and (max-width: 815px) {
-    left: 390px;
+    left: 310px;
   }
   @media screen and (max-width: 530px) {
     left: 50%;
@@ -406,15 +406,15 @@
   width: 550px;
   transition: all $default-transition;
   line-height: 24px;
-  left: 750px;
+  left: 600px;
   display:none;
   @media screen and (max-width: 961px) {
     width: 400px;
-    left: 600px;
+    left: 525px;
   }
   @media screen and (max-width: 815px) {
     width: 290px;
-    left: 380px;
+    left: 300px;
   }
   @media screen and (max-width: 530px) {
     width: 97%;
