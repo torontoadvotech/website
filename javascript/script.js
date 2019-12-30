@@ -116,10 +116,10 @@ $(function() {
 
 
   var fadeOutTooltipHandler = null
-  $('.tooltip-open').on('mouseover',openTooltip)
+  $('.tooltip-open').on('mouseover tap click',openTooltip)
   // $('.tooltip-open').on('mouseleave',closeTooltipSlow)   
-  $('.section-content').on('tap','.tooltip-open',openTooltip)
-  $('.section-content').on('keypress','.tooltip-open',openTooltip)
+  // $('.section-content').on('tap','.tooltip-open',openTooltip)
+  // $('.section-content').on('keypress','.tooltip-open',openTooltip)
 
   $('.tooltip-expand').on('keypress tap click',expandTooltip)
   // $('.tooltip').on('mouseover',stopCloseTooltipSlow)
