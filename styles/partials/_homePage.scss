@@ -318,7 +318,7 @@
 }
 
 .tooltip {
-  position:relative;
+  position:absolute;
   min-width:200px; 
   top:40%;
   transform:translate(-50%, 0);
@@ -327,7 +327,6 @@
   background-color:#0f0f0f;
   font-weight:normal;
   font-size:14px;
-  position:absolute;
   z-index:99999999;
   // border: 1.75px solid #1d1d1d;
   box-shadow:0 -8px 8px 0 rgba(0,0,0,0.4);
