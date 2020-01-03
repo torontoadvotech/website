@@ -613,7 +613,8 @@ header {
       display: block; }
   .home-page .section1 .section-content {
     min-height: auto;
-    margin-left: 0; }
+    margin-left: 0;
+    position: relative; }
   @media screen and (max-width: 961px) {
     .home-page .section1 .main-header-container {
       margin-left: 75px; } }
