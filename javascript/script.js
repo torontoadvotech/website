@@ -3,7 +3,7 @@ $(function() {
   const shrinkNav = () => {
     const scrollDistance = $(document).scrollTop();
 
-    if (scrollDistance > 100) {
+    if (scrollDistance > 25) {
       $('header').addClass('scrolled-header');
       $('.to').css('font-size', '3.5rem');
       $('.wit').css('font-size', '1.3rem');
