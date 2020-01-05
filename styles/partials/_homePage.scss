@@ -129,7 +129,7 @@
     .section-content {
       min-height: auto;
       margin-left: 0;
-      position: relative;
+      overflow: visible;
     }
     @media screen and (max-width: 961px) {
       .main-header-container {
@@ -316,6 +316,11 @@
   &:focus {
     border-bottom: 1px solid #e9002d;
   }
+}
+
+.tooltip-wrapper  {
+  position: absolute;
+  visibility: hidden;
 }
 
 .tooltip {

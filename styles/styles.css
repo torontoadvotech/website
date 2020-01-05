@@ -614,7 +614,7 @@ header {
   .home-page .section1 .section-content {
     min-height: auto;
     margin-left: 0;
-    position: relative; }
+    overflow: visible; }
   @media screen and (max-width: 961px) {
     .home-page .section1 .main-header-container {
       margin-left: 75px; } }
@@ -770,6 +770,10 @@ header {
   border-bottom: 1px dotted #e9002d; }
   .tooltip-open:hover, .tooltip-open:focus {
     border-bottom: 1px solid #e9002d; }
+
+.tooltip-wrapper {
+  position: absolute;
+  visibility: hidden; }
 
 .tooltip {
   position: absolute;

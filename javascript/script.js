@@ -78,34 +78,36 @@ $(function() {
 
   const openTooltip = () => {
     $('.tooltip-first').show().focus()
-    console.log('Opening')
   }
   
   const expandTooltip = () => {
+    if (window.innerWidth <= 380) {
+      $('header').addClass('scrolled-header');
+      $('.to').css('font-size', '3.5rem');
+      $('.wit').css('font-size', '1.3rem');
+      $('.wrapper>.nav-right').css('padding-top', '5px');
+    }
+
     $('.tooltip-first').hide()
     $('.tooltip-second').show().focus()
-    console.log('Expanding')
   }
   
   const closeTooltipFast = (event) => {
     $('.tooltip').focusout().fadeOut()
     event.stopImmediatePropagation()
-    console.log('Closing fast')
   }
   
-  const closeTooltipSlow = (event) => {
-    fadeOutTooltipHandler = setTimeout(() => {
-      $('.tooltip').focusout().fadeOut()
-    },3000)
-    event.stopImmediatePropagation()
-    console.log('Closing slow')
-  }
+  // const closeTooltipSlow = (event) => {
+  //   fadeOutTooltipHandler = setTimeout(() => {
+  //     $('.tooltip').focusout().fadeOut()
+  //   },3000)
+  //   event.stopImmediatePropagation()
+  // }
   
-  const stopCloseTooltipSlow = () => {
-    clearTimeout(fadeOutTooltipHandler)
-    fadeOutTooltipHandler = null
-    console.log('Clearing')
-  }
+  // const stopCloseTooltipSlow = () => {
+  //   clearTimeout(fadeOutTooltipHandler)
+  //   fadeOutTooltipHandler = null
+  // }
   
   $(document).on('scroll', shrinkNav);
   $('nav').on('keypress click','.open-menu',openNavMenu);
