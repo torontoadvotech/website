@@ -81,10 +81,12 @@ $(function() {
   }
   
   const expandTooltip = () => {
-    $('header').addClass('scrolled-header');
-    $('.to').css('font-size', '3.5rem');
-    $('.wit').css('font-size', '1.3rem');
-    $('.wrapper>.nav-right').css('padding-top', '5px');
+    if (window.innerWidth <= 380) {
+      $('header').addClass('scrolled-header');
+      $('.to').css('font-size', '3.5rem');
+      $('.wit').css('font-size', '1.3rem');
+      $('.wrapper>.nav-right').css('padding-top', '5px');
+    }
 
     $('.tooltip-first').hide()
     $('.tooltip-second').show().focus()
