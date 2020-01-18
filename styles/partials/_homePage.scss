@@ -20,6 +20,12 @@
     }
   }
 
+  // .wrapper {
+  //   margin: 0 auto;
+  //   width: 100%;
+  //   max-width: 1400px
+  // }
+
   section {
     overflow: hidden;
     min-height: 100vh;
@@ -123,6 +129,7 @@
     .section-content {
       min-height: auto;
       margin-left: 0;
+      overflow: visible;
     }
     @media screen and (max-width: 961px) {
       .main-header-container {
@@ -311,23 +318,33 @@
   }
 }
 
+.tooltip-wrapper  {
+  position: absolute;
+  visibility: hidden;
+}
+
 .tooltip {
-  position:relative;
+  position:absolute;
   min-width:200px; 
-  top:60px;
+  top:40%;
   transform:translate(-50%, 0);
   padding:10px 20px;
   color:#f6f6f6;
   background-color:#0f0f0f;
   font-weight:normal;
   font-size:14px;
-  position:absolute;
   z-index:99999999;
   // border: 1.75px solid #1d1d1d;
   box-shadow:0 -8px 8px 0 rgba(0,0,0,0.4);
   border-radius: 0.5px;
   display: none;
   outline: none;
+  @media screen and (max-width: 815px) {
+    top: 45%;
+  }
+  @media screen and (max-width: 530px) {
+    top: 55%;
+  }
 
   i {
     position: absolute;
@@ -336,6 +353,10 @@
     margin-left: -12px;
     width: 25px;
     height: 23px;
+    @media screen and (max-width: 530px) {
+      top: -8px;
+      left: 50%
+    }
 
     &::after {
       right: 100%;
@@ -346,13 +367,16 @@
       width: 0;
       position: absolute;
       pointer-events: none;
-    }
-
-    &::after {
       border-color: rgba(15, 15, 15, 0);
       border-top-color: #0f0f0f;
       border-width: 8px;
       margin-top: -8px;
+      @media screen and (max-width: 530px) {
+        border-top-color:  rgba(15, 15, 15, 0);
+        border-bottom-color: #0f0f0f;
+        top: 0;
+        right: 0;
+      }
     }
 
     // &::before {
@@ -370,16 +394,37 @@
 .tooltip-first {
   width: max-content;
   transition: all $default-transition;
-  left: 87%;
+  left: 480px;
   display: none;
+  @media screen and (max-width: 961px) {
+    left: 480px;
+  }
+  @media screen and (max-width: 815px) {
+    left: 310px;
+  }
+  @media screen and (max-width: 530px) {
+    left: 50%;
+  }
 }
 
 .tooltip-second {
   width: 550px;
   transition: all $default-transition;
   line-height: 24px;
-  left: 109%;
+  left: 600px;
   display:none;
+  @media screen and (max-width: 961px) {
+    width: 400px;
+    left: 525px;
+  }
+  @media screen and (max-width: 815px) {
+    width: 290px;
+    left: 300px;
+  }
+  @media screen and (max-width: 530px) {
+    width: 97%;
+    left: 50%;
+  }
 }
 
 @keyframes expand {
@@ -440,6 +485,8 @@
   z-index: -20;
   opacity: 0;
   transition: opacity $slow-transition;
+  width: 100%;
+  height: 100%;
 }
 
 .landscape-overlay {
