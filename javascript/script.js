@@ -5,13 +5,13 @@ $(function() {
 
     if (scrollDistance > 25) {
       $('header').addClass('scrolled-header');
-      $('.logo a').css('font-size', '3.5rem');
+      $('.logo a').css('font-size', '2.5rem');
       // $('.wit').css('font-size', '1.3rem');
       $('.wrapper>.nav-right').css('padding-top', '5px');
       $('.scroll-direction').fadeOut();
     } else {
       $('header').removeClass('scrolled-header');
-      $('.logo a').css('font-size', '4.5rem');
+      $('.logo a').css('font-size', '3.5rem');
       // $('.wit').css('font-size', '1.7rem');
       $('.wrapper>.nav-right').css('padding-top', '9px');
       $('.scroll-direction').fadeIn();
