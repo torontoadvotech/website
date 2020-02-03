@@ -19,6 +19,19 @@ header {
 .logo {
   width: 150px;
   transition: all 300ms ease-in-out;
+  padding-bottom: 5px;
+  a {
+    font-family:$header-font;
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: bold;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .red {
+    color:#e9002d
+  }
   img {
     width: 100%;
     max-width: 100%;
@@ -137,7 +150,6 @@ header {
 
   a {
     display: inline-block;
-    text-decoration: none;
     text-transform: uppercase;
     color: white;
     font-family: $header-font;
