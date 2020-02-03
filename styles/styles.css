@@ -303,6 +303,9 @@ em {
   text-transform: none;
   font-style: normal; }
 
+a {
+  text-decoration: none; }
+
 header {
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -328,7 +331,18 @@ header {
   width: 150px;
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out; }
+  transition: all 300ms ease-in-out;
+  padding-bottom: 5px; }
+  .logo a {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: bold;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center; }
+  .logo .red {
+    color: #e9002d; }
   .logo img {
     width: 100%;
     max-width: 100%; }
@@ -442,7 +456,6 @@ header {
     margin-right: 10%; }
   .menu-items a {
     display: inline-block;
-    text-decoration: none;
     text-transform: uppercase;
     color: white;
     font-family: "Barlow Semi Condensed", sans-serif;
