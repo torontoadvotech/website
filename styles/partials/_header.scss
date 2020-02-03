@@ -16,18 +16,21 @@ header {
   }
 }
 
+.nav-left {
+  padding: 8px 0;
+}
+
 .logo {
   width: 150px;
   transition: all 300ms ease-in-out;
-  padding-bottom: 5px;
   a {
     font-family:$header-font;
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     height: 100%;
-    vertical-align: middle;
     text-align: center;
+    line-height: 1;
   }
   .red {
     color:#e9002d
@@ -40,7 +43,7 @@ header {
 
 .scrolled-header {
   background: #000;
-  padding: 5px 0;
+  // padding: 5px 0;
   .logo {
     width: 100px;
   }

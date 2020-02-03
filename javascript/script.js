@@ -11,7 +11,7 @@ $(function() {
       $('.scroll-direction').fadeOut();
     } else {
       $('header').removeClass('scrolled-header');
-      $('.logo a').css('font-size', '3.5rem');
+      $('.logo a').css('font-size', '3rem');
       // $('.wit').css('font-size', '1.7rem');
       $('.wrapper>.nav-right').css('padding-top', '9px');
       $('.scroll-direction').fadeIn();
