@@ -582,7 +582,7 @@ header {
     height: 40px;
     position: absolute;
     bottom: 50px;
-    right: 50px; }
+    right: 10%; }
     .home-page .scroll-direction span {
       padding-right: 20px;
       color: #f6f6f6;
@@ -597,7 +597,7 @@ header {
     border-radius: 100px;
     border: solid 2px white;
     position: relative;
-    margin-right: 75px; }
+    margin: 0 3px; }
     .home-page .mouse::before {
       content: "";
       position: absolute;
