@@ -792,7 +792,7 @@ header {
 .tooltip {
   position: absolute;
   min-width: 200px;
-  top: 40%;
+  top: 50%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
@@ -853,11 +853,11 @@ header {
   -webkit-transition: all 150ms ease;
   -o-transition: all 150ms ease;
   transition: all 150ms ease;
-  left: 480px;
+  left: 330px;
   display: none; }
   @media screen and (max-width: 961px) {
     .tooltip-first {
-      left: 480px; } }
+      left: 330px; } }
   @media screen and (max-width: 815px) {
     .tooltip-first {
       left: 310px; } }
@@ -871,16 +871,16 @@ header {
   -o-transition: all 150ms ease;
   transition: all 150ms ease;
   line-height: 24px;
-  left: 600px;
+  left: 450px;
   display: none; }
   @media screen and (max-width: 961px) {
     .tooltip-second {
-      width: 400px;
-      left: 525px; } }
+      width: 520px;
+      left: 435px; } }
   @media screen and (max-width: 815px) {
     .tooltip-second {
-      width: 290px;
-      left: 300px; } }
+      width: 415px;
+      left: 363px; } }
   @media screen and (max-width: 530px) {
     .tooltip-second {
       width: 97%;
