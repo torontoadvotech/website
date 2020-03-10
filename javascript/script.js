@@ -3,16 +3,16 @@ $(function() {
   const shrinkNav = () => {
     const scrollDistance = $(document).scrollTop();
 
-    if (scrollDistance > 100) {
+    if (scrollDistance > 25) {
       $('header').addClass('scrolled-header');
-      $('.to').css('font-size', '3.5rem');
-      $('.wit').css('font-size', '1.3rem');
+      $('.logo a').css('font-size', '2.5rem');
+      // $('.wit').css('font-size', '1.3rem');
       $('.wrapper>.nav-right').css('padding-top', '5px');
       $('.scroll-direction').fadeOut();
     } else {
       $('header').removeClass('scrolled-header');
-      $('.to').css('font-size', '5rem');
-      $('.wit').css('font-size', '1.7rem');
+      $('.logo a').css('font-size', '3rem');
+      // $('.wit').css('font-size', '1.7rem');
       $('.wrapper>.nav-right').css('padding-top', '9px');
       $('.scroll-direction').fadeIn();
     }
@@ -78,34 +78,36 @@ $(function() {
 
   const openTooltip = () => {
     $('.tooltip-first').show().focus()
-    console.log('Opening')
   }
   
   const expandTooltip = () => {
+    if (window.innerWidth <= 380) {
+      $('header').addClass('scrolled-header');
+      $('.to').css('font-size', '3.5rem');
+      $('.wit').css('font-size', '1.3rem');
+      $('.wrapper>.nav-right').css('padding-top', '5px');
+    }
+
     $('.tooltip-first').hide()
     $('.tooltip-second').show().focus()
-    console.log('Expanding')
   }
   
   const closeTooltipFast = (event) => {
     $('.tooltip').focusout().fadeOut()
     event.stopImmediatePropagation()
-    console.log('Closing fast')
   }
   
-  const closeTooltipSlow = (event) => {
-    fadeOutTooltipHandler = setTimeout(() => {
-      $('.tooltip').focusout().fadeOut()
-    },3000)
-    event.stopImmediatePropagation()
-    console.log('Closing slow')
-  }
+  // const closeTooltipSlow = (event) => {
+  //   fadeOutTooltipHandler = setTimeout(() => {
+  //     $('.tooltip').focusout().fadeOut()
+  //   },3000)
+  //   event.stopImmediatePropagation()
+  // }
   
-  const stopCloseTooltipSlow = () => {
-    clearTimeout(fadeOutTooltipHandler)
-    fadeOutTooltipHandler = null
-    console.log('Clearing')
-  }
+  // const stopCloseTooltipSlow = () => {
+  //   clearTimeout(fadeOutTooltipHandler)
+  //   fadeOutTooltipHandler = null
+  // }
   
   $(document).on('scroll', shrinkNav);
   $('nav').on('keypress click','.open-menu',openNavMenu);
@@ -116,10 +118,10 @@ $(function() {
 
 
   var fadeOutTooltipHandler = null
-  $('.tooltip-open').on('mouseover',openTooltip)
+  $('.tooltip-open').on('mouseover tap click',openTooltip)
   // $('.tooltip-open').on('mouseleave',closeTooltipSlow)   
-  $('.section-content').on('tap','.tooltip-open',openTooltip)
-  $('.section-content').on('keypress','.tooltip-open',openTooltip)
+  // $('.section-content').on('tap','.tooltip-open',openTooltip)
+  // $('.section-content').on('keypress','.tooltip-open',openTooltip)
 
   $('.tooltip-expand').on('keypress tap click',expandTooltip)
   // $('.tooltip').on('mouseover',stopCloseTooltipSlow)
