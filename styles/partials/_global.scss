@@ -167,3 +167,10 @@ a {
 // *:link:focus, *:visited:focus, *:focus-within {
 //     outline: none;
 // }
+
+.scroll-top {
+  display: none;
+  position: fixed;
+  right: 47px;
+  bottom: 0px;
+}

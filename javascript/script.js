@@ -109,7 +109,22 @@ $(function() {
   //   fadeOutTooltipHandler = null
   // }
   
+  const showScrollButton = () => {
+    const scrollDistance = $(document).scrollTop();
+
+    if (scrollDistance > 25) {
+      $('.scroll-top').show();
+    } else {
+      $('.scroll-top').hide();
+    }
+  }
+
+  const scrollToTop = () => {
+    $(window).scrollTop(0)
+  }
+
   $(document).on('scroll', shrinkNav);
+  $(document).on('scroll', showScrollButton);
   $('nav').on('keypress click','.open-menu',openNavMenu);
   $('nav').on('keypress click','.close-menu',closeNavMenu);
   // $('.search-bar input').focus(highlightSearch);
@@ -127,5 +142,7 @@ $(function() {
   // $('.tooltip').on('mouseover',stopCloseTooltipSlow)
   // $('.tooltip').on('mouseleave',closeTooltipSlow)   
   // $('.tooltip .tooltip-expand .tooltip-open').not().on('click tap',closeTooltipFast)
-  $(document).on('scroll',closeTooltipFast)   
+  $(document).on('scroll',closeTooltipFast)
+  
+  $('.scroll-top').on('click',scrollToTop)
 });
