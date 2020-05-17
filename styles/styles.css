@@ -1086,7 +1086,53 @@ header {
     .blog-page .gallery .gallery-item {
       width: 30%; }
 
+.events-page {
+  color: white;
+  background: black; }
+  .events-page section {
+    overflow: hidden;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .events-page section .wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1400px; }
+    .events-page section .section-content {
+      min-height: 100vh;
+      width: 550px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1; }
+
+.webinar-item .video {
+  margin: 10px 0; }
+
 footer {
   color: #3c3c3c;
   background-color: #000;
   padding: 50px; }
+  footer .scroll-top {
+    display: none;
+    position: fixed;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    right: 47px;
+    bottom: 0px; }

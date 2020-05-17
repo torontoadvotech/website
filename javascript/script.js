@@ -109,23 +109,39 @@ $(function() {
   //   fadeOutTooltipHandler = null
   // }
   
+  const scrollToTop = () => {
+    $(window).scrollTop(0);
+  }
+
+  const showScrollTop = () => {
+    const scrollDistance = $(document).scrollTop();
+    if (scrollDistance > 25) {
+      $('.scroll-top').css({'display': 'block'})
+    } else {
+      $('.scroll-top').css({ 'display': 'none' })      
+    }
+  } 
+  
   $(document).on('scroll', shrinkNav);
+  $(document).on('scroll', showScrollTop);
   $('nav').on('keypress click','.open-menu',openNavMenu);
   $('nav').on('keypress click','.close-menu',closeNavMenu);
   // $('.search-bar input').focus(highlightSearch);
   // $('.search-bar input').focusout(unhighlightSearch);
   $('.landscape').css('opacity','1')
-
-
+  
+  
   var fadeOutTooltipHandler = null
   $('.tooltip-open').on('mouseover tap click',openTooltip)
   // $('.tooltip-open').on('mouseleave',closeTooltipSlow)   
   // $('.section-content').on('tap','.tooltip-open',openTooltip)
   // $('.section-content').on('keypress','.tooltip-open',openTooltip)
-
+  
   $('.tooltip-expand').on('keypress tap click',expandTooltip)
   // $('.tooltip').on('mouseover',stopCloseTooltipSlow)
   // $('.tooltip').on('mouseleave',closeTooltipSlow)   
   // $('.tooltip .tooltip-expand .tooltip-open').not().on('click tap',closeTooltipFast)
   $(document).on('scroll',closeTooltipFast)   
+  
+  $('.scroll-top').on('click', scrollToTop)
 });
