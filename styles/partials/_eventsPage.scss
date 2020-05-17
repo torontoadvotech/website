@@ -1,0 +1,32 @@
+.events-page {
+  color: white;
+  background: #060607;
+
+  section {
+    overflow: hidden;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    .wrapper {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1400px;
+    }
+    .section-content {
+      min-height: 100vh;
+      width: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.webinar-item {
+  .video {
+    margin: 10px 0;
+  }
+}
