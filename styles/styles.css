@@ -306,12 +306,6 @@ em {
 a {
   text-decoration: none; }
 
-.scroll-top {
-  display: none;
-  position: fixed;
-  right: 47px;
-  bottom: 0px; }
-
 header {
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -526,6 +520,20 @@ header {
       .home-page h1,
       .home-page h2 {
         font-size: 3rem; } }
+  .home-page h3 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: bold; }
+    @media (max-width: 815px) {
+      .home-page h3 {
+        font-size: 4.5rem; } }
+    @media (max-width: 530px) {
+      .home-page h3 {
+        font-size: 3.5rem;
+        text-align: center; } }
+    @media (max-width: 380px) {
+      .home-page h3 {
+        font-size: 2.5rem; } }
   .home-page section {
     overflow: hidden;
     min-height: 100vh;
@@ -1134,3 +1142,36 @@ footer {
   color: #3c3c3c;
   background-color: #000;
   padding: 50px; }
+  footer .scroll-top {
+    height: 56px;
+    width: 52px;
+    border: solid 1px white;
+    background: #000;
+    display: none;
+    position: fixed;
+    right: 47px;
+    bottom: 0px; }
+  footer .chevron {
+    display: inline-block;
+    width: .6em;
+    height: .8em;
+    position: relative;
+    bottom: 15px; }
+  footer .chevron:before,
+  footer .chevron:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0em;
+    border-style: solid;
+    position: absolute; }
+  footer .chevron:before {
+    right: -4.5px;
+    border-width: 0 .5em .5em .5em;
+    border-color: transparent transparent white transparent;
+    top: 6px; }
+  footer .chevron:after {
+    left: 0px;
+    border-width: 0 .4em .4em .4em;
+    border-color: transparent transparent black transparent;
+    top: 8px; }
