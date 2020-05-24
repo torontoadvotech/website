@@ -1103,6 +1103,9 @@ header {
 .events-page {
   color: white;
   background: #060607; }
+  .events-page h1 {
+    font-size: 5rem;
+    margin: 0 auto; }
   .events-page section {
     overflow: hidden;
     min-height: 100vh;
@@ -1111,7 +1114,11 @@ header {
     justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     .events-page section .wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1120,6 +1127,7 @@ header {
       margin: 0 auto;
       max-width: 1400px; }
     .events-page section .section-content {
+      margin: 0 auto;
       min-height: 100vh;
       width: 550px;
       display: -webkit-box;
@@ -1135,8 +1143,21 @@ header {
       position: relative;
       z-index: 1; }
 
-.webinar-item .video {
-  margin: 10px 0; }
+.webinars {
+  padding-top: 60px; }
+
+.webinar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
 
 footer {
   color: #3c3c3c;
