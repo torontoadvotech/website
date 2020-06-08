@@ -35,42 +35,42 @@
       }
     }
   }
-}
-
-
-.gallery  {
-  display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
-      margin: 40px 0;
-}
-
-.webinar-item {
-  height: 504px;
-  width: 32.5%;
-  background-color: #161616;
-
-  .title {
-    color: #e9002d;
-    text-transform: uppercase;
+  
+  .gallery  {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+        margin: 40px 0;
   }
-
-  .video {
-    height: 40%;
-    iframe {
-      height: 100%;
-      width: 100%;
+  
+  .webinar-item {
+    height: 504px;
+    width: 32.5%;
+    background-color: #161616;
+  
+    .title {
+      color: #e9002d;
+      text-transform: uppercase;
+    }
+  
+    .video {
+      height: 40%;
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 0 15px;
+      height: 60%;
     }
   }
-
-  .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 15px;
-    height: 60%;
-  }
 }
+
