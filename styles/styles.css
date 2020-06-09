@@ -1110,7 +1110,8 @@ header {
   color: white;
   background: #060607; }
   .events-page h1 {
-    font-size: 5rem;}
+    font-size: 5rem;
+    margin: 0 auto; }
   .events-page section {
     overflow: hidden;
     min-height: 100vh;
@@ -1132,7 +1133,9 @@ header {
       margin: 0 auto;
       max-width: 1400px; }
     .events-page section .section-content {
+      margin: 0 auto;
       min-height: 100vh;
+      width: 550px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1144,24 +1147,12 @@ header {
       -ms-flex-pack: center;
       justify-content: center;
       position: relative;
-      z-index: 1;
-      margin: 40px 0;
-      padding: 0 150px; }
-      .events-page section .section-content h1 {
-        font-weight: 600;
-        font-size: 5rem;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        margin-top: 60px; }
-      .events-page section .section-content .description {
-        color: #f6f6f6; }
-  .events-page .gallery {
       z-index: 1; }
 
-.aboutus {
+.webinars, .aboutus {
   padding-top: 60px; }
 
-.aboutus-item {
+.webinar-item, .aboutus-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1208,43 +1199,23 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: relative;
-    z-index: 1;
-    margin: 40px 0; }
-  .events-page .webinar-item {
-    height: 504px;
-    width: 32.5%;
-    background-color: #161616; }
-    .events-page .webinar-item .title {
-      color: #e9002d;
-      text-transform: uppercase; }
-    .events-page .webinar-item .video {
-      height: 40%; }
-      .events-page .webinar-item .video iframe {
-        height: 100%;
-        width: 100%; }
-    .events-page .webinar-item .text {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
-      padding: 0 15px;
-      height: 60%; }
+    z-index: 1; 
+  }
+  .about-title {
+    padding-top:50px;
+    }
+  .about-description {
+    padding-top:50px;
+    }
+
 
 footer {
   color: #3c3c3c;
