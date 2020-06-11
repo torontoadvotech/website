@@ -230,12 +230,9 @@ body {
     .button-primary:hover::after, .button-primary:focus::after {
       border-bottom-color: #e9002d;
       border-left-color: #e9002d;
-      -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
- height 0.25s ease-out 0.75s;
-      -o-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
- height 0.25s ease-out 0.75s;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
- height 0.25s ease-out 0.75s; }
+      -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+      -o-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
   .button-primary::before, .button-primary::after {
     border: 2px solid transparent;
     width: 0;
@@ -268,12 +265,9 @@ body {
     .button-secondary:hover::after, .button-secondary:focus::after {
       border-bottom-color: #e9002d;
       border-left-color: #e9002d;
-      -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
- height 0.25s ease-out 0.75s;
-      -o-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
- height 0.25s ease-out 0.75s;
-      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
- height 0.25s ease-out 0.75s; }
+      -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+      -o-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+      transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
   .button-secondary::before, .button-secondary::after {
     border: 2px solid transparent;
     width: 0;
@@ -1108,10 +1102,7 @@ header {
 
 .events-page {
   color: white;
-  background: #060607; }
-  .events-page h1 {
-    font-size: 5rem;
-    margin: 0 auto; }
+  background: #0f0f0f; }
   .events-page section {
     overflow: hidden;
     min-height: 100vh;
@@ -1120,11 +1111,7 @@ header {
     justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
+    display: flex; }
     .events-page section .wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1133,9 +1120,6 @@ header {
       margin: 0 auto;
       max-width: 1400px; }
     .events-page section .section-content {
-      margin: 0 auto;
-      min-height: 100vh;
-      width: 550px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1147,12 +1131,114 @@ header {
       -ms-flex-pack: center;
       justify-content: center;
       position: relative;
-      z-index: 1; }
+      z-index: 1;
+      margin: 40px 0;
+      padding: 0 150px; }
+      .events-page section .section-content h1 {
+        font-weight: 600;
+        font-size: 5rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 60px; }
+      .events-page section .section-content .description {
+        color: #f6f6f6; }
+  .events-page .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    margin: 40px 0; }
+  .events-page .webinar-item {
+    min-height: 504px;
+    width: 360px;
+    background-color: #161616;
+    margin-bottom: 40px; }
+    .events-page .webinar-item .title {
+      color: #e9002d;
+      text-transform: uppercase; }
+    .events-page .webinar-item .video {
+      height: 40%; }
+      .events-page .webinar-item .video iframe {
+        height: 100%;
+        width: 100%; }
+    .events-page .webinar-item .text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      padding: 0 15px;
+      height: 60%; }
 
-.webinars, .aboutus {
-  padding-top: 60px; }
+.about-page {
+  color: white;
+  background: #060607; }
 
-.webinar-item, .aboutus-item {
+.about-page h1 {
+  font-size: 5rem;
+  margin: 0 auto; }
+
+.about-page section {
+  overflow: hidden;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.about-page section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px; }
+
+.about-page section .section-content {
+  margin: 0 auto;
+  min-height: 50vh;
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1; }
+
+.about-title {
+  padding-top: 50px; }
+
+.about-description {
+  padding-top: 50px; }
+
+.aboutus-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,57 +1251,8 @@ header {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly; }
 
-
-  .about-page {
-    color: white;
-    background: #060607; }
-  .about-page h1 {
-    font-size: 5rem;
-    margin: 0 auto; }
-  .about-page section {
-    overflow: hidden;
-    min-height: 100vh;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .about-page section .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1400px; }
-  .about-page section .section-content {
-    margin: 0 auto;
-    min-height: 50vh;
-    width: 550px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1; 
-  }
-  .about-title {
-    padding-top:50px;
-    }
-  .about-description {
-    padding-top:50px;
-    }
-
+.aboutus {
+  padding-top: 60px; }
 
 footer {
   color: #3c3c3c;
