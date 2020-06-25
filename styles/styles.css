@@ -1200,6 +1200,7 @@ header nav {
   z-index: 1;
   border: 0px solid blue;
   display: table;
+  margin-top: 50px;
 }
 .about-page .wrapper .about-title {
   padding: 30px 0px 50px 0px;
@@ -1211,21 +1212,13 @@ header nav {
   display: -ms-flexbox;
   height: 100%;
   width: 50%;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 20px 10px;
   border: 0px solid blue;
   margin: 0px 30px 0px 30px;
-  border-right: 20px solid black;
   -webkit-box-orient: vertical;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   display: table-cell;
-}
-@media only screen and (max-width: 900px) {
-  .about-page .wrapper .aboutus-item {
-    display: block;
-    width: 100%;
-    margin-left: 0px;
-  }
 }
 .about-page .wrapper .aboutus-item-values {
   display: -ms-flexbox;
@@ -1233,8 +1226,20 @@ header nav {
   width: 100%;
   border: 0px solid blue;
   background-color: #161616;
-  margin: 20px 0px 10px 0px;
+  margin: 50px 0px 10px 0px;
   padding: 0px 0px 20px 10px;
+}
+@media only screen and (max-width: 900px) {
+  .about-page .wrapper .aboutus-item {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    border-bottom: 50px solid black;
+  }
+  .about-page .wrapper .aboutus-item-values {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 20px 10px;
+  }
 }
 .about-page .wrapper .aboutus {
   padding-top: 60px;

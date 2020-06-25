@@ -65,6 +65,7 @@
       z-index: 1; 
       border:0px solid blue;
       display: table; 
+      margin-top:50px;
       }
 
       //updated title heading color
@@ -85,10 +86,9 @@
       //display: flex;
       height: 100%;
       width:50%;
-      padding: 0px 10px 0px 10px;
+      padding: 0px 10px 20px 10px;
       border:0px solid blue;
       margin: 0px 30px 0px 30px;
-      border-right:20px solid black;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -99,13 +99,6 @@
       display: table-cell;
     }
 
-    @media only screen and (max-width: 900px) {
-      .aboutus-item {
-        display: block;
-        width: 100%;
-        margin-left:0px;
-      }
-    }
 
     .aboutus-item-values {
       display: -webkit-box;
@@ -114,11 +107,34 @@
       width:100%;
       border:0px solid blue;
       background-color:#161616;
-      margin: 20px 0px 10px 0px;
+      margin: 50px 0px 10px 0px;
       padding: 0px 0px 20px 10px 
 
 
     }
+
+
+    @media only screen and (max-width: 900px) {
+      .aboutus-item {
+        display: block;
+        width: 100%;
+        margin-left:0px;
+        border-bottom:50px solid black;
+      }
+
+
+      .aboutus-item-values {
+        margin: 0px 0px 10px 0px;
+        padding: 0px 0px 20px 10px 
+  
+  
+      }
+  
+
+
+
+    }
+
 
       .aboutus {
       padding-top: 60px; 
