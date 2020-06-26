@@ -1159,6 +1159,7 @@ header nav {
 .about-page {
   color: #F6F6F6;
   background: #060607;
+  line-height: 1.5;
 }
 .about-page .wrapper {
   width: 75%;
@@ -1211,35 +1212,15 @@ header nav {
 .about-page .wrapper .aboutus-item {
   display: -ms-flexbox;
   height: 100%;
-  width: 50%;
-  padding: 0px 10px 20px 10px;
+  width: 100%;
+  padding: 0px 30px 20px 30px;
   border: 0px solid blue;
-  margin: 0px 30px 0px 30px;
+  margin: 0px 0px 30px 0px;
   -webkit-box-orient: vertical;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  display: table-cell;
+  justify-content: space-evenly;
 }
 .about-page .wrapper .aboutus-item-values {
-  display: -ms-flexbox;
-  height: 100%;
-  width: 100%;
-  border: 0px solid blue;
-  background-color: #161616;
-  margin: 50px 0px 10px 0px;
-  padding: 0px 0px 20px 10px;
-}
-@media only screen and (max-width: 900px) {
-  .about-page .wrapper .aboutus-item {
-    display: block;
-    width: 100%;
-    margin-left: 0px;
-    border-bottom: 50px solid black;
-  }
-  .about-page .wrapper .aboutus-item-values {
-    margin: 0px 0px 10px 0px;
-    padding: 0px 0px 20px 10px;
-  }
+  list-style: none;
 }
 .about-page .wrapper .aboutus {
   padding-top: 60px;
