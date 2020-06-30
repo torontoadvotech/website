@@ -1235,13 +1235,24 @@ header {
     display: table;
     margin: 40px 0;
     padding: 0 150px; }
+    @media screen and (max-width: 961px) {
+      .about-page .section-content {
+        padding: 0 75px; } }
+    @media screen and (max-width: 530px) {
+      .about-page .section-content {
+        padding: 100px 40px 0 40px;
+        margin: 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
   .about-page .about-title {
     color: #E91A2C;
     border: 0px solid white;
     text-transform: uppercase;
     margin-bottom: 20px; }
   .about-page .about-content {
-    width: 720px;
+    max-width: 720px;
+    width: 100%;
     margin: 0 auto; }
   .about-page .aboutus-item {
     display: -webkit-box;
@@ -1255,6 +1266,7 @@ header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly; }
@@ -1276,6 +1288,9 @@ footer {
     right: 47px;
     bottom: 0px;
     z-index: 999; }
+    @media screen and (max-width: 960px) {
+      footer .scroll-top {
+        right: 15px; } }
   footer .chevron {
     display: inline-block;
     width: .6em;

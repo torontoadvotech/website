@@ -13,6 +13,10 @@ footer {
     right: 47px;
     bottom: 0px;
     z-index: 999;
+
+    @media screen and (max-width: 960px){
+      right: 15px
+    }
   }
 
   .chevron {
