@@ -520,6 +520,20 @@ header {
       .home-page h1,
       .home-page h2 {
         font-size: 3rem; } }
+  .home-page h3 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: bold; }
+    @media (max-width: 815px) {
+      .home-page h3 {
+        font-size: 4.5rem; } }
+    @media (max-width: 530px) {
+      .home-page h3 {
+        font-size: 3.5rem;
+        text-align: center; } }
+    @media (max-width: 380px) {
+      .home-page h3 {
+        font-size: 2.5rem; } }
   .home-page section {
     overflow: hidden;
     min-height: 100vh;
@@ -1086,7 +1100,218 @@ header {
     .blog-page .gallery .gallery-item {
       width: 30%; }
 
+.events-page {
+  color: white;
+  background: #0f0f0f; }
+  .events-page section {
+    overflow: hidden;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .events-page section .wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1400px; }
+    .events-page section .section-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      margin: 40px 0;
+      padding: 0 150px; }
+      .events-page section .section-content h1 {
+        font-weight: 600;
+        font-size: 5rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 60px; }
+      .events-page section .section-content .description {
+        color: #f6f6f6; }
+  .events-page .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    margin: 40px 0; }
+  .events-page .webinar-item {
+    min-height: 504px;
+    width: 360px;
+    background-color: #161616;
+    margin-bottom: 40px; }
+    .events-page .webinar-item .title {
+      color: #e9002d;
+      text-transform: uppercase; }
+    .events-page .webinar-item .video {
+      height: 40%; }
+      .events-page .webinar-item .video iframe {
+        height: 100%;
+        width: 100%; }
+    .events-page .webinar-item .text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      padding: 0 15px;
+      height: 60%; }
+
+.about-page {
+  color: #F6F6F6;
+  background: #060607;
+  line-height: 1.5; }
+  .about-page .wrapper {
+    margin: 0 auto; }
+  .about-page h1 {
+    font-size: 5rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  .about-page .aboutus-item {
+    background-color: #161616;
+    margin: 20px 0px;
+    padding: 0px 50px;
+    padding-bottom: 30px; }
+  .about-page .aboutus {
+    overflow: hidden;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .about-page .aboutus .wrapper {
+      width: 100%; }
+  .about-page .section-content {
+    min-height: 50vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    border: 0px solid blue;
+    display: table;
+    margin: 40px 0;
+    padding: 0 150px; }
+    @media screen and (max-width: 961px) {
+      .about-page .section-content {
+        padding: 0 75px; } }
+    @media screen and (max-width: 530px) {
+      .about-page .section-content {
+        padding: 100px 40px 0 40px;
+        margin: 0;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+  .about-page .about-title {
+    color: #E91A2C;
+    border: 0px solid white;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .about-page .about-content {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto; }
+  .about-page .aboutus-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 100%;
+    max-width: 1180px;
+    width: 100%;
+    padding: 50px 30px;
+    border: 0px solid blue;
+    margin: 0px 0px 30px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+  .about-page .aboutus-item-values {
+    list-style: none;
+    line-height: 2; }
+
 footer {
   color: #3c3c3c;
   background-color: #000;
   padding: 50px; }
+  footer .scroll-top {
+    height: 56px;
+    width: 52px;
+    border: solid 1px white;
+    background: #000;
+    display: none;
+    position: fixed;
+    right: 47px;
+    bottom: 0px;
+    z-index: 999; }
+    @media screen and (max-width: 960px) {
+      footer .scroll-top {
+        right: 15px; } }
+  footer .chevron {
+    display: inline-block;
+    width: .6em;
+    height: .8em;
+    position: relative;
+    bottom: 15px; }
+  footer .chevron:before,
+  footer .chevron:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0em;
+    border-style: solid;
+    position: absolute; }
+  footer .chevron:before {
+    right: -4.5px;
+    border-width: 0 .5em .5em .5em;
+    border-color: transparent transparent white transparent;
+    top: 6px; }
+  footer .chevron:after {
+    left: 0px;
+    border-width: 0 .4em .4em .4em;
+    border-color: transparent transparent black transparent;
+    top: 8px; }

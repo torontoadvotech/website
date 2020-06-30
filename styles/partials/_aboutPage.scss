@@ -1,0 +1,115 @@
+  .about-page {
+    color: #F6F6F6;
+    background: #060607; 
+    line-height:1.5;
+
+    .wrapper {
+      margin:0 auto;
+    }
+    
+      h1 {
+      font-size: 5rem;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .aboutus-item {
+      background-color:#161616;
+      margin:20px 0px;
+      padding: 0px 50px;
+      padding-bottom:30px
+    }
+
+
+    .aboutus {
+    overflow: hidden;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; 
+
+      .wrapper {
+        width: 100%;
+      }
+    }
+    
+    //.about-page section 
+    .section-content {
+      min-height: 50vh;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1; 
+      border:0px solid blue;
+      display: table; 
+      margin: 40px 0;
+      padding: 0 150px;
+
+      @media screen and (max-width: 961px) {
+        padding: 0 75px;
+      }
+      
+      @media screen and (max-width: 530px) {
+        padding: 100px 40px 0 40px;
+        margin: 0;
+        align-items: center;
+      }
+    }
+
+      //updated title heading color
+      .about-title {
+        color:#E91A2C;
+        border:0px solid white;
+        text-transform:uppercase;
+        margin-bottom: 20px;
+      }
+      
+      .about-content {
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .aboutus-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      //display: flex;
+      height: 100%;
+      max-width: 1180px;
+      width:100%;
+      padding: 50px 30px;
+      border:0px solid blue;
+      margin: 0px 0px 30px 0px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; 
+    }
+
+
+    .aboutus-item-values {
+      list-style: none;
+      line-height: 2;
+    }
+
+  } 
