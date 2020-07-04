@@ -1277,7 +1277,29 @@ header {
 footer {
   color: #3c3c3c;
   background-color: #000;
-  padding: 50px; }
+  padding: 50px 0; }
+  footer .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media screen and (max-width: 960px) {
+      footer .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
   footer .scroll-top {
     height: 56px;
     width: 52px;
@@ -1285,10 +1307,15 @@ footer {
     background: #000;
     display: none;
     position: fixed;
-    right: 47px;
+    right: 45px;
     bottom: 0px;
     z-index: 999; }
-    @media screen and (max-width: 960px) {
+    footer .scroll-top:hover, footer .scroll-top:focus {
+      -webkit-transition: 150ms ease;
+      -o-transition: 150ms ease;
+      transition: 150ms ease;
+      border-color: #e9002d; }
+    @media screen and (max-width: 1000px) {
       footer .scroll-top {
         right: 15px; } }
   footer .chevron {
@@ -1308,10 +1335,31 @@ footer {
   footer .chevron:before {
     right: -4.5px;
     border-width: 0 .5em .5em .5em;
-    border-color: transparent transparent white transparent;
+    border-color: transparent transparent #f6f6f6 transparent;
     top: 6px; }
   footer .chevron:after {
     left: 0px;
     border-width: 0 .4em .4em .4em;
     border-color: transparent transparent black transparent;
     top: 8px; }
+  footer .scroll-top:hover > .chevron:before {
+    -webkit-transition: 150ms ease;
+    -o-transition: 150ms ease;
+    transition: 150ms ease;
+    border-color: transparent transparent #e9002d transparent; }
+  @media screen and (max-width: 960px) {
+    footer .social-container {
+      margin-bottom: 30px; } }
+  footer .social-container a {
+    font-size: 2rem;
+    color: #f6f6f6;
+    padding: 8px;
+    margin: 0 5px; }
+    footer .social-container a:hover, footer .social-container a:focus {
+      -webkit-transition: 150ms ease;
+      -o-transition: 150ms ease;
+      transition: 150ms ease;
+      color: #e9002d; }
+  footer .social-container i {
+    position: relative;
+    left: 5px; }
