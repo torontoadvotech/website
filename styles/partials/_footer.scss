@@ -27,6 +27,7 @@ footer {
     right: 45px;
     bottom: 0px;
     z-index: 999;
+    transition: $default-transition;
 
     &:hover, &:focus {
         transition: $default-transition;
@@ -84,12 +85,16 @@ footer {
     a {
       font-size: 2rem;
       color: #f6f6f6;
-      padding: 8px;
+      padding: 2px;
       margin: 0 5px;
 
       &:hover, &:focus {
         transition: $default-transition;
         color: #e9002d;
+      }
+      @media screen and (max-width: 960px) {
+        padding: 8px;
+
       }
     }
 

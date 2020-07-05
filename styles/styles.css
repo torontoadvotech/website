@@ -1309,7 +1309,10 @@ footer {
     position: fixed;
     right: 45px;
     bottom: 0px;
-    z-index: 999; }
+    z-index: 999;
+    -webkit-transition: 150ms ease;
+    -o-transition: 150ms ease;
+    transition: 150ms ease; }
     footer .scroll-top:hover, footer .scroll-top:focus {
       -webkit-transition: 150ms ease;
       -o-transition: 150ms ease;
@@ -1353,13 +1356,16 @@ footer {
   footer .social-container a {
     font-size: 2rem;
     color: #f6f6f6;
-    padding: 8px;
+    padding: 2px;
     margin: 0 5px; }
     footer .social-container a:hover, footer .social-container a:focus {
       -webkit-transition: 150ms ease;
       -o-transition: 150ms ease;
       transition: 150ms ease;
       color: #e9002d; }
+    @media screen and (max-width: 960px) {
+      footer .social-container a {
+        padding: 8px; } }
   footer .social-container i {
     position: relative;
     left: 5px; }
