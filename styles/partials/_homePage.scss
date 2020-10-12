@@ -65,7 +65,7 @@
       @media screen and (max-width: 815px) {
         .caption {
           width: 60%;
-          font-size: 14px;
+          font-size: 1.6rem;
         }
       }
       @media screen and (max-width: 530px) {
@@ -78,12 +78,12 @@
       }
     }
     .caption {
-      font-size: 1.6rem;
-      color: #f6f6f6;
-      line-height: 1.5;
-      letter-spacing: -0.1px;
       margin-bottom: 40px;
       width: 520px;
+      font-size: 1.8rem;
+      color: #f6f6f6;
+      line-height: 1.5;
+      letter-spacing: 1px;
     }
     @media screen and (max-width: 530px) {
       min-height: 75vh;
@@ -137,8 +137,11 @@
       width: 100%;
       padding-top: 60px;
       margin-left: 150px;
-      h1 > span {
-        display: block;
+      h1 {
+        span {
+          font-weight: 600;
+          display: block;
+        }
       }
     }
     .section-content {
@@ -271,7 +274,7 @@
       padding-right: 10px;
     }
     &__container {
-      height: 50px;
+      height: 5.3rem;
       &__text {
         font-size: 5rem;
       }
@@ -281,7 +284,7 @@
     font-size: 4rem;
     flex-direction: column;
     &__container {
-      height: 42px;
+      height: 4.3rem;
       &__text {
         font-size: 4rem;
       }
@@ -294,7 +297,7 @@
   @media screen and (max-width: 380px) {
     font-size: 3rem;
     &__container {
-      height: 33px;
+      height: 3.2rem;
       &__text {
         font-size: 3rem;
       }
@@ -347,7 +350,7 @@
   color:#f6f6f6;
   background-color:#0f0f0f;
   font-weight:normal;
-  font-size:14px;
+  font-size:1.5rem;
   z-index:99999999;
   // border: 1.75px solid #1d1d1d;
   box-shadow:0 -8px 8px 0 rgba(0,0,0,0.4);
@@ -425,7 +428,7 @@
 .tooltip-second {
   width: 550px;
   transition: all $default-transition;
-  line-height: 24px;
+  line-height: 1.5;
   left: 450px;
   display:none;
   @media screen and (max-width: 961px) {
@@ -511,7 +514,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+  background: rgb(0,0,0);
+  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(33,33,33,.60) 100%)
 }
 
 @-webkit-keyframes mouse-scroll-animation {

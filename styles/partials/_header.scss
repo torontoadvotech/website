@@ -77,7 +77,7 @@ header {
   .bars {
     position: relative;
     width: 20px;
-    height: 2px;
+    height: 1px;
     border-radius: 2.5px;
     background: white;
     transition: all $default-transition;
@@ -88,7 +88,7 @@ header {
     content: "";
     position: absolute;
     width: 30px;
-    height: 2px;
+    height: 1px;
     border-radius: 2.5px;
     background: white;
     transition: all 250ms ease-in-out;
