@@ -2,7 +2,7 @@
 $default-transition: 150ms ease;
 $slow-transition: 1000ms ease;
 $header-font: "Barlow Semi Condensed", sans-serif;
-$body-font: "Oxygen Mono", monospace;
+$body-font: 'Inconsolata', monospace;
 
 // Animations
 
@@ -61,7 +61,7 @@ body {
   overflow: hidden;
   &:hover, &:focus {
     color: #fff;
-    background-color: #161616;
+    background-color: #000000;
     border: none;
     animation: primary-fill 1s linear;
     &::before,
@@ -146,7 +146,7 @@ body {
   }
 
   100% {
-    background: #1c1c1c;
+    background: #000000;
   }
 }
 

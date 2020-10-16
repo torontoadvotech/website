@@ -38,6 +38,7 @@
 
       .wrapper {
         width: 100%;
+        max-width: 1400px;
       }
     }
     
@@ -90,8 +91,6 @@
       .aboutus-item {
       display: -webkit-box;
       display: -ms-flexbox;
-      //display: flex;
-      height: 100%;
       max-width: 1180px;
       width:100%;
       padding: 50px 30px;
