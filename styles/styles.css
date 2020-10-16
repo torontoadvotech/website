@@ -863,7 +863,7 @@ header nav {
 .tooltip {
   position: absolute;
   min-width: 200px;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, 0);
   padding: 10px 20px;
   color: #f6f6f6;
@@ -931,7 +931,7 @@ header nav {
   width: -webkit-max-content;
   width: max-content;
   transition: all 150ms ease;
-  left: 530px;
+  left: 330px;
   display: none;
 }
 @media screen and (max-width: 961px) {
@@ -954,7 +954,7 @@ header nav {
   width: 550px;
   transition: all 150ms ease;
   line-height: 1.5;
-  left: 635px;
+  left: 450px;
   display: none;
 }
 @media screen and (max-width: 961px) {
