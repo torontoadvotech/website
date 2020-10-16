@@ -239,13 +239,13 @@ body {
 }
 
 .button-primary {
-  color: #000000;
+  color: #161616;
   background: #fff;
   overflow: hidden;
 }
 .button-primary:hover, .button-primary:focus {
   color: #fff;
-  background-color: #161616;
+  background-color: #000000;
   border: none;
   animation: primary-fill 1s linear;
 }
@@ -320,7 +320,7 @@ body {
     color: #fff;
   }
   100% {
-    background: #1c1c1c;
+    background: #000000;
   }
 }
 .hide {
@@ -1301,13 +1301,13 @@ footer .chevron:after {
 }
 footer .chevron:before {
   right: -4px;
-  border-width: 0 0.5em 0.5em 0.5em;
+  border-width: 0 10px 10px 10px;
   border-color: transparent transparent #f6f6f6 transparent;
   top: 6px;
 }
 footer .chevron:after {
   left: -2px;
-  border-width: 0 0.4em 0.4em 0.4em;
+  border-width: 0 8px 8px 8px;
   border-color: transparent transparent black transparent;
   top: 8px;
 }
