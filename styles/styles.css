@@ -239,7 +239,7 @@ body {
 }
 
 .button-primary {
-  color: #161616;
+  color: #000000;
   background: #fff;
   overflow: hidden;
 }
@@ -550,8 +550,8 @@ header nav {
 }
 .home-page h3 {
   font-size: 5rem;
-  line-height: 1;
-  font-weight: bold;
+  line-height: 2;
+  font-weight: 600;
 }
 @media (max-width: 815px) {
   .home-page h3 {
@@ -665,7 +665,7 @@ header nav {
   margin-left: 150px;
 }
 .home-page .section1 .main-header-container h1 span {
-  font-weight: 600;
+  font-weight: bold;
   display: block;
 }
 .home-page .section1 .section-content {
@@ -863,7 +863,7 @@ header nav {
 .tooltip {
   position: absolute;
   min-width: 200px;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, 0);
   padding: 10px 20px;
   color: #f6f6f6;
@@ -875,6 +875,7 @@ header nav {
   border-radius: 0.5px;
   display: none;
   outline: none;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 815px) {
   .tooltip {
@@ -930,7 +931,7 @@ header nav {
   width: -webkit-max-content;
   width: max-content;
   transition: all 150ms ease;
-  left: 330px;
+  left: 530px;
   display: none;
 }
 @media screen and (max-width: 961px) {
@@ -953,7 +954,7 @@ header nav {
   width: 550px;
   transition: all 150ms ease;
   line-height: 1.5;
-  left: 450px;
+  left: 635px;
   display: none;
 }
 @media screen and (max-width: 961px) {
@@ -1031,7 +1032,7 @@ header nav {
   top: 0;
   left: 0;
   background: black;
-  background: linear-gradient(black 0%, rgba(33, 33, 33, 0.6) 100%);
+  background: linear-gradient(black 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 @keyframes mouse-scroll-animation {
   0% {
@@ -1262,7 +1263,9 @@ footer .wrapper {
 footer .scroll-top {
   height: 56px;
   width: 52px;
+  border-style: none;
   border: solid 1px white;
+  border-bottom: none;
   background: #000;
   display: none;
   position: fixed;
@@ -1282,8 +1285,8 @@ footer .scroll-top:hover, footer .scroll-top:focus {
 }
 footer .chevron {
   display: inline-block;
-  width: 0.6em;
-  height: 0.8em;
+  width: 12px;
+  height: 16px;
   position: relative;
   bottom: 15px;
 }
@@ -1297,13 +1300,13 @@ footer .chevron:after {
   position: absolute;
 }
 footer .chevron:before {
-  right: -4.5px;
+  right: -4px;
   border-width: 0 0.5em 0.5em 0.5em;
   border-color: transparent transparent #f6f6f6 transparent;
   top: 6px;
 }
 footer .chevron:after {
-  left: 0px;
+  left: -2px;
   border-width: 0 0.4em 0.4em 0.4em;
   border-color: transparent transparent black transparent;
   top: 8px;
