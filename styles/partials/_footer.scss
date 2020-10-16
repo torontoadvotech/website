@@ -20,7 +20,9 @@ footer {
   .scroll-top {
     height: 56px;
     width: 52px;
+    border-style: none;
     border: solid 1px white;
+    border-bottom: none;
     background: #000;
     display: none;
     position: fixed;
@@ -41,8 +43,8 @@ footer {
 
   .chevron {
     display:inline-block;
-    width: .6em;
-    height: .8em;
+    width: 12px;
+    height: 16px;
     position:relative;
     bottom: 15px
   }
@@ -58,14 +60,14 @@ footer {
   }
 
   .chevron:before {
-    right: -4.5px;
+    right: -4px;
     border-width: 0 .5em .5em .5em;
     border-color: transparent transparent #f6f6f6 transparent;
     top: 6px;   
   }
   
   .chevron:after {
-    left: 0px;
+    left: -2px;
     border-width: 0 .4em .4em .4em;
     border-color: transparent transparent black transparent;
     top: 8px;  
