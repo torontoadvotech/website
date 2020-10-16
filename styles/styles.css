@@ -1188,6 +1188,7 @@ header nav {
 }
 .about-page .aboutus .wrapper {
   width: 100%;
+  max-width: 1400px;
 }
 .about-page .section-content {
   min-height: 50vh;
@@ -1227,7 +1228,6 @@ header nav {
 }
 .about-page .aboutus-item {
   display: -ms-flexbox;
-  height: 100%;
   max-width: 1180px;
   width: 100%;
   padding: 50px 30px;
