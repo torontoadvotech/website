@@ -344,7 +344,7 @@
 .tooltip {
   position:absolute;
   min-width:200px; 
-  top:40%;
+  top:50%;
   transform:translate(-50%, 0);
   padding:10px 20px;
   color:#f6f6f6;
@@ -413,7 +413,7 @@
 .tooltip-first {
   width: max-content;
   transition: all $default-transition;
-  left: 530px;
+  left: 330px;
   display: none;
   @media screen and (max-width: 961px) {
     left: 330px;
@@ -430,7 +430,7 @@
   width: 550px;
   transition: all $default-transition;
   line-height: 1.5;
-  left: 635px;
+  left: 450px;
   display:none;
   @media screen and (max-width: 961px) {
     width: 520px;
