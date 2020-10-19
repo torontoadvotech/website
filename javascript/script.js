@@ -125,6 +125,22 @@ $(function () {
     $(window).scrollTop(0);
   };
 
+  const readMore = () => {
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("more");
+    const btnText = document.getElementById("read-more");
+
+    if ($(".dots").display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  };
+
   $(document).on("scroll", shrinkNav);
   $(document).on("scroll", showScrollButton);
   $("nav").on("keypress click", ".open-menu", openNavMenu);
@@ -146,4 +162,5 @@ $(function () {
   $(document).on("scroll", closeTooltipFast);
 
   $(".scroll-top").on("click", scrollToTop);
+  $(".read-more").on("click", readMore);
 });
