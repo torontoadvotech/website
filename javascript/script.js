@@ -125,19 +125,15 @@ $(function () {
     $(window).scrollTop(0);
   };
 
-  const readMore = () => {
-    const dots = document.getElementById("dots");
-    const moreText = document.getElementById("more");
-    const btnText = document.getElementById("read-more");
-
-    if ($(".dots").display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
+  const handleMore = (e) => {
+    if ($(e.target).siblings(".dots").is(":visible") === false) {
+      $(e.target).siblings(".dots").show("fast");
+      $(e.target).html("Read more");
+      $(e.target).siblings(".more").hide("fast");
     } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
+      $(e.target).siblings(".dots").hide("fast");
+      $(e.target).html("Read less");
+      $(e.target).siblings(".more").show("fast");
     }
   };
 
@@ -162,5 +158,5 @@ $(function () {
   $(document).on("scroll", closeTooltipFast);
 
   $(".scroll-top").on("click", scrollToTop);
-  $(".read-more").on("click", readMore);
+  $(".text").on("click", ".read-more", handleMore);
 });
