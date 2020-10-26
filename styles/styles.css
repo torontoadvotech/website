@@ -1143,36 +1143,42 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: flex-start;
   flex-wrap: wrap;
   position: relative;
   z-index: 1;
   margin: 40px 0;
 }
 .events-page .webinar-item {
-  height: 550px;
-  max-width: 550px;
+  position: relative;
+  max-width: 530px;
   background-color: #161616;
   margin-bottom: 40px;
 }
 .events-page .webinar-item .title {
   color: #e9002d;
   text-transform: uppercase;
+  line-height: 1.25;
+  margin-bottom: 10px;
 }
 .events-page .webinar-item .video {
-  height: 50%;
+  height: 300px;
 }
 .events-page .webinar-item .video iframe {
   height: 100%;
   width: 100%;
 }
 .events-page .webinar-item .text {
-  padding: 10px;
-  height: 50%;
+  padding: 10px 12px;
   line-height: 1.5;
   letter-spacing: 1px;
 }
 .events-page .webinar-item .more {
   display: none;
+}
+.events-page .webinar-item .read-more {
+  color: #e9002d;
+  cursor: pointer;
 }
 
 .about-page {
