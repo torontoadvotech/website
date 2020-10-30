@@ -137,7 +137,7 @@ $(function () {
     }
   };
 
-  $('.fade-in').fadeIn('slow');
+  $('.fade-in-content').fadeIn('slow');
   $(document).on("scroll", shrinkNav);
   $(document).on("scroll", showScrollButton);
   $("nav").on("keypress click", ".open-menu", openNavMenu);
