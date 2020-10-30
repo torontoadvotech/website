@@ -23,12 +23,13 @@ h6 {
 }
 html {
   font-size: 62.5%;
-  background-color: #000000;
 }
 
 body {
   font-family: $body-font;
   font-size: 1.6rem;
+  z-index: -30;
+  background-color: #000000;
 }
 
 .button {
@@ -165,7 +166,7 @@ a {
   text-decoration: none;
 }
 
-.fade-in {
+.fade-in-content {
   display:none;
 }
 
