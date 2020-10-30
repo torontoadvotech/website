@@ -341,6 +341,7 @@ a {
 
 .fade-in-content {
   display: none;
+  z-index: -30;
 }
 
 header {

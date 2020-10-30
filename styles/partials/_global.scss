@@ -23,6 +23,8 @@ h6 {
 }
 html {
   font-size: 62.5%;
+  z-index: -30;
+  background-color: #000000;
 }
 
 body {
@@ -168,6 +170,7 @@ a {
 
 .fade-in-content {
   display:none;
+  z-index: -30;
 }
 
 // *:link:focus, *:visited:focus, *:focus-within {
