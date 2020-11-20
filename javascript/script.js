@@ -161,3 +161,19 @@ $(function () {
   $(".scroll-top").on("click", scrollToTop);
   $(".text").on("click", ".read-more", handleMore);
 });
+
+// Logic for collapsible divs
+
+$('#vision-title').on('click', () => {
+  $('#vision-description').slideToggle();
+})
+
+$('#mission-title').on('click', () => {
+  $('#mission-description').slideToggle();
+})
+
+$('#values-title').on('click', () => {
+  $('#values-description').slideToggle();
+})
+
+

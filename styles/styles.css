@@ -1612,20 +1612,16 @@ header nav {
 }
 
 .about-page .aboutus-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1180px;
-  width: 100%;
-  background-color: #161616;
-  margin-bottom: 30px;
-  padding: 50px 30px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 30px;
+  max-width: 1180px;
+  width: 100%;
 }
 
 .about-page .aboutus {
@@ -1686,16 +1682,31 @@ header nav {
 }
 
 .about-page .about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #e91a2c;
   border: 0px solid white;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #161616;
+  padding: 50px 30px 20px 30px;
 }
 
-.about-page .about-content {
-  max-width: 720px;
-  width: 100%;
-  margin: 0;
+.about-page .about-title i {
+  color: white;
+}
+
+.about-page .about-description {
+  background-color: #161616;
+  padding: 0px 30px 50px 30px;
+  display: none;
 }
 
 .about-page .aboutus-item-values {

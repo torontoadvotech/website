@@ -31,16 +31,25 @@
     }
   }
 
+  // DELETE?
+  // .aboutus-item {
+  //   display: -webkit-box;
+  //   display: -ms-flexbox;
+  //   flex-direction: column;
+  //   max-width: 1180px;
+  //   width: 100%;
+  //   background-color: #161616;
+  //   margin-bottom: 30px;
+  //   padding: 50px 30px;
+  //   justify-content: space-evenly;
+  // }
+
   .aboutus-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
     max-width: 1180px;
     width: 100%;
-    background-color: #161616;
-    margin-bottom: 30px;
-    padding: 50px 30px;
-    justify-content: space-evenly;
   }
 
   .aboutus {
@@ -97,17 +106,33 @@
 
   //updated title heading color
   .about-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #e91a2c;
     border: 0px solid white;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #161616;
+    padding: 50px 30px 20px 30px;
+
+    i {
+      color: white;
+    }
   }
 
-  .about-content {
-    max-width: 720px;
-    width: 100%;
-    margin: 0;
+  .about-description {
+    background-color: #161616;
+    padding: 0px 30px 50px 30px;
+    display: none;
   }
+
+  // DELETE?
+  // .about-content {
+  //   max-width: 720px;
+  //   width: 100%;
+  //   margin: 0;
+  // }
 
   .aboutus-item-values {
     list-style: none;
