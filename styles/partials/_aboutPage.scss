@@ -31,19 +31,6 @@
     }
   }
 
-  // DELETE?
-  // .aboutus-item {
-  //   display: -webkit-box;
-  //   display: -ms-flexbox;
-  //   flex-direction: column;
-  //   max-width: 1180px;
-  //   width: 100%;
-  //   background-color: #161616;
-  //   margin-bottom: 30px;
-  //   padding: 50px 30px;
-  //   justify-content: space-evenly;
-  // }
-
   .aboutus-item {
     flex-direction: column;
     justify-content: space-evenly;
@@ -115,10 +102,14 @@
     cursor: pointer;
     background-color: #161616;
     padding: 50px 30px 20px 30px;
+  }
 
-    i {
-      color: white;
-    }
+  i {
+    color: white;
+  }
+
+  .open {
+    transform: rotate(180deg);
   }
 
   .about-description {
@@ -126,13 +117,6 @@
     padding: 0px 30px 50px 30px;
     display: none;
   }
-
-  // DELETE?
-  // .about-content {
-  //   max-width: 720px;
-  //   width: 100%;
-  //   margin: 0;
-  // }
 
   .aboutus-item-values {
     list-style: none;

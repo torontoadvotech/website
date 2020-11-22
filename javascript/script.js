@@ -164,16 +164,17 @@ $(function () {
 
 // Logic for collapsible divs
 
-$('#vision-title').on('click', () => {
+$('#vision-title').on('click', (event) => {
   $('#vision-description').slideToggle();
+  $(event.currentTarget).find('i').toggleClass('open')
 })
 
-$('#mission-title').on('click', () => {
+$('#mission-title').on('click', (event) => {
   $('#mission-description').slideToggle();
+  $(event.currentTarget).find('i').toggleClass('open')
 })
 
-$('#values-title').on('click', () => {
+$('#values-title').on('click', (event) => {
   $('#values-description').slideToggle();
+  $(event.currentTarget).find('i').toggleClass('open')
 })
-
-

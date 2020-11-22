@@ -1699,8 +1699,13 @@ header nav {
   padding: 50px 30px 20px 30px;
 }
 
-.about-page .about-title i {
+.about-page i {
   color: white;
+}
+
+.about-page .open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .about-page .about-description {
