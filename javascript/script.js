@@ -160,21 +160,23 @@ $(function () {
 
   $(".scroll-top").on("click", scrollToTop);
   $(".text").on("click", ".read-more", handleMore);
+
+  // Logic for collapsible divs
+
+  $('#vision-title').on('click', (event) => {
+    $('#vision-description').slideToggle();
+    $(event.currentTarget).find('i').toggleClass('open')
+  })
+
+  $('#mission-title').on('click', (event) => {
+    $('#mission-description').slideToggle();
+    $(event.currentTarget).find('i').toggleClass('open')
+  })
+
+  $('#values-title').on('click', (event) => {
+    $('#values-description').slideToggle();
+    $(event.currentTarget).find('i').toggleClass('open')
+  })
 });
 
-// Logic for collapsible divs
 
-$('#vision-title').on('click', (event) => {
-  $('#vision-description').slideToggle();
-  $(event.currentTarget).find('i').toggleClass('open')
-})
-
-$('#mission-title').on('click', (event) => {
-  $('#mission-description').slideToggle();
-  $(event.currentTarget).find('i').toggleClass('open')
-})
-
-$('#values-title').on('click', (event) => {
-  $('#values-description').slideToggle();
-  $(event.currentTarget).find('i').toggleClass('open')
-})
