@@ -21,7 +21,7 @@ footer {
     height: 56px;
     width: 52px;
     border-style: none;
-    border: solid 1px white;
+    // border: solid 1px white;
     border-bottom: none;
     background: #000;
     display: none;
@@ -31,10 +31,10 @@ footer {
     z-index: 999;
     transition: $default-transition;
 
-    &:hover, &:focus {
-        transition: $default-transition;
-        border-color: #e9002d;
-      }
+    // &:hover, &:focus {
+    //     transition: $default-transition;
+    //     border-color: #e9002d;
+    //   }
 
     @media screen and (max-width: 1000px){
       right: 15px
