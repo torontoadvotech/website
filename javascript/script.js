@@ -10,7 +10,7 @@ $(function () {
       $(".scroll-direction").fadeOut();
     } else {
       $("header").removeClass("scrolled-header");
-      $(".logo").css({"height": "100px", "width": "100px"});
+      $(".logo").css({"height": "90px", "width": "90px"});
       $(".wrapper>.nav-right").css("padding-top", "9px");
       $(".scroll-direction").fadeIn();
       $(".logo a >.red").text("toronto/");
