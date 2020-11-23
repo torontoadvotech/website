@@ -207,6 +207,8 @@ h6 {
 
 html {
   font-size: 62.5%;
+  z-index: -30;
+  background-color: #000000;
 }
 
 body {
@@ -367,24 +369,10 @@ header nav {
 }
 
 .logo {
-  width: 150px;
+  width: 100px;
+  height: 100px;
   transition: all 300ms ease-in-out;
-}
-.logo a {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  color: #fff;
-  font-size: 3rem;
-  font-weight: bold;
-  height: 100%;
-  text-align: center;
-  line-height: 1;
-}
-.logo .red {
-  color: #e9002d;
-}
-.logo img {
-  width: 100%;
-  max-width: 100%;
+  z-index: 9999999;
 }
 
 .scrolled-header {

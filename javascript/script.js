@@ -5,16 +5,12 @@ $(function () {
 
     if (scrollDistance > 25) {
       $("header").addClass("scrolled-header");
-      $(".logo a").css("font-size", "2.5rem");
-      // $('.wit').css('font-size', '1.3rem');
+      $(".logo").css({"height": "65px", "width": "65px"});
       $(".wrapper>.nav-right").css("padding-top", "5px");
       $(".scroll-direction").fadeOut();
-      $(".logo a >.red").text("to/");
-      $(".logo a >.white").text("a");
     } else {
       $("header").removeClass("scrolled-header");
-      $(".logo a").css("font-size", "3rem");
-      // $('.wit').css('font-size', '1.7rem');
+      $(".logo").css({"height": "100px", "width": "100px"});
       $(".wrapper>.nav-right").css("padding-top", "9px");
       $(".scroll-direction").fadeIn();
       $(".logo a >.red").text("toronto/");
