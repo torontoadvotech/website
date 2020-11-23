@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 1188 1211">
+    <defs>
+        <filter id="onyns64c5b" width="139.6%" height="139.6%" x="-19.8%" y="-19.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="24"/>
+        </filter>
+        <filter id="7j8sgjlbdc" width="139.6%" height="139.6%" x="-19.8%" y="-19.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="24"/>
+        </filter>
+        <filter id="pbpyiwpevd" width="182.2%" height="182.2%" x="-41.1%" y="-41.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="p6h17joc6f" width="182.2%" height="182.2%" x="-41.1%" y="-41.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="6bkvvwjzmh" width="182.2%" height="182.2%" x="-41.1%" y="-41.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="bj9ippw41j" width="182.2%" height="182.2%" x="-41.1%" y="-41.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="4tmguklq1l" width="182.2%" height="182.2%" x="-41.1%" y="-41.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="jxhw1g1p8n" width="182.2%" height="182.2%" x="-41.1%" y="-41.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="ws258eazop" width="165.5%" height="165.5%" x="-32.7%" y="-32.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="ndb83hec1q" width="165.5%" height="165.5%" x="-32.7%" y="-32.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="7p1cncl9qr" width="165.5%" height="165.5%" x="-32.7%" y="-32.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="ngzvahlseu" width="165.5%" height="165.5%" x="-32.7%" y="-32.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="25.76"/>
+        </filter>
+        <filter id="k7h4cuf68w" width="161%" height="161%" x="-30.5%" y="-30.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="24"/>
+        </filter>
+        <filter id="fn3queqn2z" width="2608.9%" height="1981.7%" x="-1245.5%" y="-934.2%" filterUnits="objectBoundingBox">
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="280"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.666666667 0 0 0 0 0 0 0 0 0 0.125490196 0 0 0 1 0"/>
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="280"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0.176470588 0 0 0 0 0.91372549 0 0 0 1 0"/>
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter3"/>
+            <feGaussianBlur in="shadowOffsetOuter3" result="shadowBlurOuter3" stdDeviation="280"/>
+            <feColorMatrix in="shadowBlurOuter3" result="shadowMatrixOuter3" values="0 0 0 0 0.00392156863 0 0 0 0 0 0 0 0 0 0.337254902 0 0 0 1 0"/>
+            <feOffset dx="6" dy="6" in="SourceAlpha" result="shadowOffsetOuter4"/>
+            <feGaussianBlur in="shadowOffsetOuter4" result="shadowBlurOuter4" stdDeviation="42"/>
+            <feColorMatrix in="shadowBlurOuter4" result="shadowMatrixOuter4" values="0 0 0 0 0 0 0 0 0 0.176470588 0 0 0 0 0.91372549 0 0 0 0.4 0"/>
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter5"/>
+            <feGaussianBlur in="shadowOffsetOuter5" result="shadowBlurOuter5" stdDeviation="28"/>
+            <feColorMatrix in="shadowBlurOuter5" result="shadowMatrixOuter5" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+                <feMergeNode in="shadowMatrixOuter3"/>
+                <feMergeNode in="shadowMatrixOuter4"/>
+                <feMergeNode in="shadowMatrixOuter5"/>
+            </feMerge>
+        </filter>
+        <filter id="rrzwh9j3cE" width="109.7%" height="109.7%" x="-4.8%" y="-4.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <filter id="1fi5uoonvF" width="109.7%" height="109.7%" x="-4.8%" y="-4.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <filter id="chpsvr5uvG" width="109.7%" height="109.7%" x="-4.8%" y="-4.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <filter id="a3tg0p9oqH" width="106.8%" height="106.8%" x="-3.4%" y="-3.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <radialGradient id="9u5eadp6ua" cx="13.855%" cy="16.193%" r="99.202%" fx="13.855%" fy="16.193%">
+            <stop offset="0%" stop-color="#E9002D"/>
+            <stop offset="18.025%" stop-color="#A90020"/>
+            <stop offset="39.152%" stop-color="#500F5F"/>
+            <stop offset="77.561%" stop-color="#002DE9"/>
+            <stop offset="100%" stop-color="#000B38"/>
+        </radialGradient>
+        <radialGradient id="y4z8iu4rde" cx="16.123%" cy="14.83%" r="96.951%" fx="16.123%" fy="14.83%">
+            <stop offset="0%" stop-color="#E9002D"/>
+            <stop offset="17.159%" stop-color="#A90020"/>
+            <stop offset="39.833%" stop-color="#500F5F"/>
+            <stop offset="88.094%" stop-color="#002DE9"/>
+            <stop offset="100%" stop-color="#00082A"/>
+        </radialGradient>
+        <radialGradient id="qujyu89gjg" cx="14.251%" cy="16.117%" r="98.474%" fx="14.251%" fy="16.117%">
+            <stop offset="0%" stop-color="#E9002D"/>
+            <stop offset="11.661%" stop-color="#A90020"/>
+            <stop offset="68.973%" stop-color="#500F5F"/>
+            <stop offset="100%" stop-color="#002DE9"/>
+        </radialGradient>
+        <radialGradient id="y84jpkeaxi" cx="13.967%" cy="15.735%" r="99.632%" fx="13.967%" fy="15.735%">
+            <stop offset="0%" stop-color="#FF0031"/>
+            <stop offset="37.304%" stop-color="#A90020"/>
+            <stop offset="82.424%" stop-color="#500F5F"/>
+            <stop offset="100%" stop-color="#002DE9"/>
+        </radialGradient>
+        <radialGradient id="87lymf0n9k" cx="13.855%" cy="16.193%" r="99.404%" fx="13.855%" fy="16.193%">
+            <stop offset="0%" stop-color="#E9002D" stop-opacity="0"/>
+            <stop offset="65.179%" stop-color="#000D43" stop-opacity="0"/>
+            <stop offset="100%"/>
+        </radialGradient>
+        <radialGradient id="wxmig900gm" cx="13.855%" cy="16.193%" r="99.404%" fx="13.855%" fy="16.193%">
+            <stop offset="0%" stop-color="#E9002D" stop-opacity="0"/>
+            <stop offset="85.703%" stop-color="#000D43" stop-opacity="0"/>
+            <stop offset="100%"/>
+        </radialGradient>
+        <radialGradient id="x7f83c6cho" cx="50%" cy="50%" r="49.705%" fx="50%" fy="50%">
+            <stop offset="0%"/>
+            <stop offset="4.276%" stop-color="#DDD" stop-opacity="0"/>
+            <stop offset="52.552%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="95.938%" stop-color="#DDD" stop-opacity="0"/>
+            <stop offset="100%"/>
+        </radialGradient>
+        <radialGradient id="6pz41v1kys" cx="50%" cy="50%" r="49.705%" fx="50%" fy="50%">
+            <stop offset="0%"/>
+            <stop offset="4.276%" stop-color="#DDD" stop-opacity="0"/>
+            <stop offset="52.552%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="71.904%" stop-color="#DDD" stop-opacity="0"/>
+            <stop offset="100%"/>
+        </radialGradient>
+        <radialGradient id="5jjqqfeezt" cx="29.932%" cy="34.236%" r="74.514%" fx="29.932%" fy="34.236%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="72.403%" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#00082A"/>
+        </radialGradient>
+        <radialGradient id="rsucew9buv" cx="29.932%" cy="34.236%" r="75.208%" fx="29.932%" fy="34.236%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="84.442%" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#00082A" stop-opacity=".04"/>
+        </radialGradient>
+        <radialGradient id="sa0qz05mkx" cx="29.932%" cy="34.236%" r="75.208%" fx="29.932%" fy="34.236%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".75"/>
+            <stop offset="88.83%" stop-opacity="0"/>
+            <stop offset="100%" stop-opacity=".25"/>
+        </radialGradient>
+        <radialGradient id="3mejnvhfpC" cx="50%" cy="50%" r="57.302%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="88.822%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </radialGradient>
+        <radialGradient id="3s07fvsjzD" cx="50%" cy="50%" r="50.135%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="84.644%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </radialGradient>
+        <circle id="3cky72vpyA" cx="182.6" cy="182.6" r="117.6"/>
+        <path id="tn3vjcn83y" d="M191.686 136.68l.18.006c.82.053 1.346.478 1.58 1.274l22.628 86.656.126.512-.005.14c-.054.674-.514 1.012-1.378 1.012h-15.336l-.18-.006c-.82-.053-1.346-.478-1.58-1.274l-2.892-12.544-.032-.107c-.1-.27-.298-.405-.596-.405h-23.508l-.107.006c-.273.034-.447.203-.522.506L167.173 225l-.054.165c-.271.743-.798 1.115-1.58 1.115h-15.211l-.159-.004c-.97-.053-1.337-.606-1.098-1.66l22.628-86.656.054-.165c.277-.743.845-1.115 1.706-1.115h18.227zm-9.212 23.52c-.167 0-.293.17-.376.508l-8.416 36.81-.028.105c-.041.202.01.358.153.467.168.127.335.19.503.19h16.58c.168 0 .335-.063.503-.19.167-.127.209-.318.125-.572l-8.667-36.81-.033-.12c-.083-.258-.197-.388-.344-.388z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(378 391) translate(27 27)">
+                <g>
+                    <g>
+                        <g>
+                            <g fill="url(#9u5eadp6ua)" opacity=".5" transform="translate(.6 .6)">
+                                <circle cx="182" cy="182" r="182" filter="url(#onyns64c5b)"/>
+                                <circle cx="182" cy="182" r="182" filter="url(#7j8sgjlbdc)"/>
+                            </g>
+                            <circle cx="182.6" cy="182.6" r="94" fill="url(#9u5eadp6ua)" filter="url(#pbpyiwpevd)"/>
+                            <circle cx="182.6" cy="182.6" r="94" fill="url(#y4z8iu4rde)" filter="url(#p6h17joc6f)"/>
+                            <circle cx="182.6" cy="182.6" r="94" fill="url(#qujyu89gjg)" filter="url(#6bkvvwjzmh)"/>
+                            <circle cx="182.6" cy="182.6" r="94" fill="url(#y84jpkeaxi)" filter="url(#bj9ippw41j)"/>
+                            <circle cx="182.6" cy="182.6" r="94" fill="url(#87lymf0n9k)" filter="url(#4tmguklq1l)"/>
+                            <circle cx="182.6" cy="182.6" r="94" fill="url(#wxmig900gm)" filter="url(#jxhw1g1p8n)"/>
+                            <g>
+                                <g transform="translate(65 65)">
+                                    <g fill="url(#x7f83c6cho)">
+                                        <circle style="mix-blend-mode:multiply" cx="118" cy="118" r="118" filter="url(#ws258eazop)"/>
+                                        <circle style="mix-blend-mode:multiply" cx="118" cy="118" r="118" filter="url(#ndb83hec1q)"/>
+                                        <circle style="mix-blend-mode:multiply" cx="118" cy="118" r="118" filter="url(#7p1cncl9qr)"/>
+                                    </g>
+                                    <circle fill="url(#6pz41v1kys)" style="mix-blend-mode:multiply" cx="118" cy="118" r="118" opacity=".4"/>
+                                </g>
+                                <g transform="translate(65 65)">
+                                    <circle fill="url(#5jjqqfeezt)" style="mix-blend-mode:multiply" cx="118" cy="118" r="118" filter="url(#ngzvahlseu)"/>
+                                    <circle fill="url(#rsucew9buv)" style="mix-blend-mode:multiply" cx="118" cy="118" r="118" filter="url(#k7h4cuf68w)"/>
+                                </g>
+                            </g>
+                            <g fill="url(#sa0qz05mkx)" transform="translate(65 65)">
+                                <circle style="mix-blend-mode:overlay" cx="118" cy="118" r="118"/>
+                                <circle style="mix-blend-mode:overlay" cx="118" cy="118" r="118"/>
+                            </g>
+                        </g>
+                        <g fill-rule="nonzero">
+                            <use fill="#000" filter="url(#fn3queqn2z)" xlink:href="#tn3vjcn83y"/>
+                            <use fill="#FFF" xlink:href="#tn3vjcn83y"/>
+                        </g>
+                        <mask id="77rskpnc5B" fill="#fff">
+                            <use xlink:href="#3cky72vpyA"/>
+                        </mask>
+                        <g fill="url(#3mejnvhfpC)" mask="url(#77rskpnc5B)">
+                            <g transform="translate(65 65)">
+                                <circle style="mix-blend-mode:multiply" cx="117.6" cy="117.6" r="117.6"/>
+                                <circle style="mix-blend-mode:multiply" cx="117.6" cy="117.6" r="117.6"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g fill="url(#3s07fvsjzD)" opacity=".25" transform="translate(59 59)">
+                    <circle style="mix-blend-mode:overlay" cx="124" cy="124" r="124" filter="url(#rrzwh9j3cE)"/>
+                    <circle style="mix-blend-mode:overlay" cx="124" cy="124" r="124" filter="url(#1fi5uoonvF)"/>
+                    <circle style="mix-blend-mode:overlay" cx="124" cy="124" r="124" filter="url(#chpsvr5uvG)"/>
+                </g>
+                <circle cx="183" cy="183" r="119" stroke="#FFF" stroke-opacity=".25" stroke-width="2" opacity=".7" style="mix-blend-mode:overlay" filter="url(#a3tg0p9oqH)"/>
+                <circle cx="183" cy="183" r="118.75" stroke="#FFF" stroke-opacity=".25" stroke-width="1.5" style="mix-blend-mode:overlay"/>
+            </g>
+        </g>
+    </g>
+</svg>
