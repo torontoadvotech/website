@@ -1135,7 +1135,7 @@ header nav {
 }
 
 .about-page {
-  color: #F6F6F6;
+  color: #f6f6f6;
   background: #060607;
   line-height: 1.5;
 }
@@ -1148,11 +1148,27 @@ header nav {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+.about-page .vision-mission-group {
+  display: flex;
+  justify-content: space-between;
+}
+.about-page .vision-mission-group #vision {
+  margin-right: 30px;
+}
+@media (max-width: 961px) {
+  .about-page .vision-mission-group {
+    flex-direction: column;
+  }
+  .about-page .vision-mission-group #vision {
+    margin-right: 0;
+  }
+}
 .about-page .aboutus-item {
-  background-color: #161616;
-  margin: 20px 0px;
-  padding: 0px 50px;
-  padding-bottom: 30px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  max-width: 1180px;
+  width: 100%;
 }
 .about-page .aboutus {
   overflow: hidden;
@@ -1191,25 +1207,26 @@ header nav {
   }
 }
 .about-page .about-title {
-  color: #E91A2C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e91a2c;
   border: 0px solid white;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #161616;
+  padding: 50px 30px 20px 30px;
 }
-.about-page .about-content {
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
+.about-page i {
+  color: white;
 }
-.about-page .aboutus-item {
-  display: -ms-flexbox;
-  max-width: 1180px;
-  width: 100%;
-  padding: 50px 30px;
-  border: 0px solid blue;
-  margin: 0px 0px 30px 0px;
-  flex-direction: column;
-  justify-content: space-evenly;
+.about-page .open {
+  transform: rotate(180deg);
+}
+.about-page .about-description {
+  background-color: #161616;
+  padding: 0px 30px 50px 30px;
+  display: none;
 }
 .about-page .aboutus-item-values {
   list-style: none;
