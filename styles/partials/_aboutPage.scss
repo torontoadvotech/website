@@ -1,6 +1,6 @@
 .about-page {
   color: #f6f6f6;
-  background: #060607;
+  background: #000000;
   line-height: 1.5;
 
   .wrapper {
@@ -96,16 +96,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #e91a2c;
+    color: #ffffff;
     border: 0px solid white;
     text-transform: uppercase;
     cursor: pointer;
-    background-color: #161616;
+    background-color: #0f0f0f;
     padding: 50px 30px 20px 30px;
   }
 
   i {
-    color: white;
+    color: #ffffff;
   }
 
   .open {
@@ -113,7 +113,8 @@
   }
 
   .about-description {
-    background-color: #161616;
+    background-color: #0f0f0f;
+    color: #ffffff;
     padding: 0px 30px 50px 30px;
     display: none;
   }
