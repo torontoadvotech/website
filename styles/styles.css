@@ -264,10 +264,11 @@ body {
 
 .button-primary:hover {
   border: none;
-  background-image: linear-gradient(312deg, #0e0e0e, #9b0227, #e9002d, #9f001e, #0e0e0e);
-  background-position: 100% 50%;
-  -webkit-box-shadow: 0 4px 15px 0 rgba(233, 0, 45, 0.6);
-          box-shadow: 0 4px 15px 0 rgba(233, 0, 45, 0.6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#e9002d), color-stop(#eb3941), color-stop(#f26681), color-stop(#e2373f), to(#e9002d));
+  background-image: linear-gradient(to right, #e9002d, #eb3941, #f26681, #e2373f, #e9002d);
+  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+          box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  background-position: 100% 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -286,10 +287,11 @@ body {
 
 .button-secondary:hover {
   border: none;
-  background-image: linear-gradient(312deg, #0e0e0e, #9b0227, #e9002d, #9f001e, #0e0e0e);
-  background-position: 100% 50%;
-  -webkit-box-shadow: 0 4px 15px 0 rgba(233, 0, 45, 0.6);
-          box-shadow: 0 4px 15px 0 rgba(233, 0, 45, 0.6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#e9002d), color-stop(#eb3941), color-stop(#f26681), color-stop(#e2373f), to(#e9002d));
+  background-image: linear-gradient(to right, #e9002d, #eb3941, #f26681, #e2373f, #e9002d);
+  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+          box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  background-position: 100% 300%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -333,16 +335,6 @@ a {
 .fade-in-content {
   display: none;
   z-index: -30;
-}
-
-@-webkit-keyframes gradient-fill {
-  0% {
-  }
-}
-
-@keyframes gradient-fill {
-  0% {
-  }
 }
 
 header {
