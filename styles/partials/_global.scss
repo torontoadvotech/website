@@ -3,11 +3,13 @@ $default-transition: 150ms ease;
 $slow-transition: 1000ms ease;
 $header-font: "Barlow Semi Condensed", sans-serif;
 $body-font: "Inconsolata", monospace;
+$cherry-red: #e9002d;
+$white: #fff;
+$black: #000000;
 
 // Animations
 
 // Global Styles
-
 * {
   padding: 0;
   margin: 0;
@@ -24,14 +26,14 @@ h6 {
 html {
   font-size: 62.5%;
   z-index: -30;
-  background-color: #000000;
+  background-color: $black;
 }
 
 body {
   font-family: $body-font;
   font-size: 1.6rem;
   z-index: -30;
-  background-color: #000000;
+  background-color: $black;
 }
 
 .button {
@@ -60,8 +62,8 @@ body {
 
 // Primary CTA styles
 .button-primary {
-  color: #fff;
-  background: #e9002d;
+  color: $white;
+  background: $cherry-red;
   padding: 18px 20px;
   text-decoration: none;
   outline: none;
@@ -74,11 +76,11 @@ body {
     border: none;
     background-image: linear-gradient(
       to right,
-      #e9002d,
+      $cherry-red,
       #eb3941,
       #f26681,
       #e2373f,
-      #e9002d
+      $cherry-red
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
     background-position: 100% 0;
@@ -91,10 +93,10 @@ body {
 // Secondary CTA styles
 .button-secondary {
   background: transparent;
-  color: #fff;
+  color: $white;
   padding: 18px 20px;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid $white;
   outline: none;
   -o-transition: all 0.7s ease-in-out;
   -webkit-transition: all 0.7s ease-in-out;
@@ -105,11 +107,11 @@ body {
     border: none;
     background-image: linear-gradient(
       to right,
-      #e9002d,
+      $cherry-red,
       #eb3941,
       #f26681,
       #e2373f,
-      #e9002d
+      $cherry-red
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
     background-position: 100% 300%;
@@ -123,11 +125,11 @@ body {
   0%,
   75% {
     background: transparent;
-    color: #fff;
+    color: $white;
   }
 
   100% {
-    background: #000000;
+    background: $black;
   }
 }
 
@@ -136,7 +138,7 @@ body {
 }
 
 em {
-  color: #e9002d;
+  color: $cherry-red;
   text-transform: none;
   font-style: normal;
 }
