@@ -264,8 +264,7 @@ body {
 
 .button-primary:hover {
   border: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#e9002d), color-stop(#eb3941), color-stop(#f26681), color-stop(#e2373f), to(#e9002d));
-  background-image: linear-gradient(to right, #e9002d, #eb3941, #f26681, #e2373f, #e9002d);
+  background-image: linear-gradient(310deg, #e9002d, #eb3941 30%, #f26681 40%, #fff 45%, #e2373f 50%, #e9002d);
   -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
           box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
   background-position: 100% 0;
@@ -287,8 +286,7 @@ body {
 
 .button-secondary:hover {
   border: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#e9002d), color-stop(#eb3941), color-stop(#f26681), color-stop(#e2373f), to(#e9002d));
-  background-image: linear-gradient(to right, #e9002d, #eb3941, #f26681, #e2373f, #e9002d);
+  background-image: linear-gradient(310deg, #e9002d, #eb3941 30%, #f26681 40%, #fff 45%, #e2373f 50%, #e9002d);
   -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
           box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
   background-position: 100% 300%;
