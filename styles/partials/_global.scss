@@ -73,11 +73,12 @@ body {
   &:hover {
     border: none;
     background-image: linear-gradient(
-      to right,
+      310deg,
       #e9002d,
-      #eb3941,
-      #f26681,
-      #e2373f,
+      #eb3941 30%,
+      #f26681 40%,
+      #fff 45%,
+      #e2373f 50%,
       #e9002d
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
@@ -104,11 +105,12 @@ body {
   &:hover {
     border: none;
     background-image: linear-gradient(
-      to right,
+      310deg,
       #e9002d,
-      #eb3941,
-      #f26681,
-      #e2373f,
+      #eb3941 30%,
+      #f26681 40%,
+      #fff 45%,
+      #e2373f 50%,
       #e9002d
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);

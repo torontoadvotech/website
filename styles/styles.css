@@ -253,8 +253,9 @@ body {
 }
 .button-primary:hover {
   border: none;
-  background-image: linear-gradient(to right, #e9002d, #eb3941, #f26681, #e2373f, #e9002d);
-  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  background-image: linear-gradient(310deg, #e9002d, #eb3941 30%, #f26681 40%, #fff 45%, #e2373f 50%, #e9002d);
+  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+          box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
   background-position: 100% 0;
   transition: all 0.4s ease-in-out;
 }
@@ -271,8 +272,9 @@ body {
 }
 .button-secondary:hover {
   border: none;
-  background-image: linear-gradient(to right, #e9002d, #eb3941, #f26681, #e2373f, #e9002d);
-  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  background-image: linear-gradient(310deg, #e9002d, #eb3941 30%, #f26681 40%, #fff 45%, #e2373f 50%, #e9002d);
+  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+          box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
   background-position: 100% 300%;
   transition: all 0.4s ease-in-out;
 }
