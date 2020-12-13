@@ -3,9 +3,6 @@ $default-transition: 150ms ease;
 $slow-transition: 1000ms ease;
 $header-font: "Barlow Semi Condensed", sans-serif;
 $body-font: "Inconsolata", monospace;
-$cherry-red: #e9002d;
-$white: #fff;
-$black: #000000;
 
 // Animations
 
@@ -75,12 +72,13 @@ body {
   &:hover {
     border: none;
     background-image: linear-gradient(
-      to right,
-      $cherry-red,
-      #eb3941,
-      #f26681,
-      #e2373f,
-      $cherry-red
+      310deg,
+      #e9002d,
+      #eb3941 30%,
+      #f26681 40%,
+      #fff 45%,
+      #e2373f 50%,
+      #e9002d
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
     background-position: 100% 0;
@@ -106,12 +104,13 @@ body {
   &:hover {
     border: none;
     background-image: linear-gradient(
-      to right,
-      $cherry-red,
-      #eb3941,
-      #f26681,
-      #e2373f,
-      $cherry-red
+      310deg,
+      #e9002d,
+      #eb3941 30%,
+      #f26681 40%,
+      #fff 45%,
+      #e2373f 50%,
+      #e9002d
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
     background-position: 100% 300%;
@@ -135,6 +134,7 @@ body {
 
 .hide {
   visibility: hidden;
+  opacity: 0;
 }
 
 em {
