@@ -1,8 +1,8 @@
 // Variables
 $default-transition: 150ms ease;
 $slow-transition: 1000ms ease;
-$header-font: "Barlow Semi Condensed", sans-serif;
-$body-font: "Inconsolata", monospace;
+$header-font: 'Barlow Semi Condensed', sans-serif;
+$body-font: 'Inconsolata', monospace;
 
 // Animations
 
@@ -52,7 +52,7 @@ body {
 .button::before,
 .button::after {
   box-sizing: inherit;
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -135,6 +135,7 @@ body {
 
 .hide {
   visibility: hidden;
+  opacity: 0;
 }
 
 em {
