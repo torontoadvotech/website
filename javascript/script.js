@@ -4,13 +4,13 @@ $(function () {
     const scrollDistance = $(document).scrollTop();
 
     if (scrollDistance > 25) {
-      $("header").addClass("scrolled-header");
-      $(".logo").css({"height": "65px", "width": "65px"});
+      // $("header").addClass("scrolled-header");
+      // $(".logo").css({"height": "65px", "width": "65px"});
       $(".wrapper>.nav-right").css("padding-top", "5px");
       $(".scroll-direction").fadeOut();
     } else {
-      $("header").removeClass("scrolled-header");
-      $(".logo").css({"height": "90px", "width": "90px"});
+      // $("header").removeClass("scrolled-header");
+      // $(".logo").css({"height": "90px", "width": "90px"});
       $(".wrapper>.nav-right").css("padding-top", "9px");
       $(".scroll-direction").fadeIn();
       $(".logo a >.red").text("toronto/");

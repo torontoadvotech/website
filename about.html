@@ -5,136 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/styles.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Inconsolata&display=block"
     rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css" />
   <title>Advocacy in Technology</title>
 </head>
 <body class="about-page">
-  <div class="fade-in-content">
-    <header>
-      <div class="wrapper">
-        <nav>
-          <div class="nav-left">
-            <a href="index.html">
-              <img class="logo" src="./assets/final.png" alt="Advotech Logo">
-            </a>
-          </div>
-          <div class="nav-right open-menu" tabindex=0>
-            <span class="menu">Menu</span>
-            <div class="hamburger">
-              <div class="bars bars-inactive"></div>
-            </div>
-          </div>
-          <!-- DROP MENU STARTS-->
-          <div class="nav-menu">
-            <div class="wrapper">
-              <div class="menu-items">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a class="coming-soon" href="#" aria-label="Mentoring page is coming soon!">
-                      <span class="coming-soon-hide" aria-hidden>Mentoring</span>
-                      <span class="coming-soon-show" aria-hidden>Coming Soon</span></a>
-                  </li>
-                  <li><a href="https://medium.com/advocacyintech">Blog</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <!--
-                  <li><a class="coming-soon" href="#" aria-label="About page is coming soon!">
-                    <!--<li><a href="about.html">About</a></li>
-                      <span class="coming-soon-hide" aria-hidden>About</span>
-                      <span class="coming-soon-show" aria-hidden>Coming Soon</span></a>
-                  </li>
-                  -->
-                </ul>
-
-              </div>
-            </div>
-          </div>
-          <!-- DROP MENU ENDS-->
-        </nav>
-    
-    </header>
-
-    <section class="aboutus">
-      <div class="wrapper">
-        <div class="section-content">
-          <h1 class="">About</h1>
-          <div class="vision-mission-group">
-            
-              <div class="aboutus-item " id="vision">
-                <div class="about-title" id="vision-title">
-                  <h2>Vision</h2>
-                  <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="about-description" id="vision-description">
-                  <p>TO Advocacy in Technology is a grassroots movement focused on shifting thought paradigms, and works to create intersectionally equal and equitable workplace cultures built through social learning to raise the overall standard of learning in technology.</p>
-                </div>
-              </div>
-            
-              <div class="aboutus-item ">
-                <div class="about-title" id="mission-title">
-                  <h2>Mission</h2>
-                  <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="about-description" id="mission-description">
-                  <p >
-                    TO Advocacy in Technology motivates our youth to be receptive to change by inspiring them, further engaging disengaged individuals in technology. To raise the standard of learning and social awareness, it provides connectivity and affordability, and in turn accessibility to educational resources and career advancement opportunities. It uses an approach that ricochets to educate our youth by raising awareness towards biases that push back on diversity, equity, and inclusion, and the intersectionality of it in the workplace.</p>
-                </div> 
-              </div>       
-          </div>
-
-            <div class="aboutus-item ">
-              <div class="about-title" id="values-title">
-                <h2>Core Values</h2>
-                <i class="fas fa-chevron-down"></i>
-              </div>
-              <div class="about-description" id="values-description">
-                <ul class="aboutus-item-values" >
-                  <li>Integrity & Ethics</li>
-                  <li>Transparency</li>
-                  <li>Commitment</li>
-                  <li>Change Agency</li>
-                  <li>Service to Others</li>
-                  </ul>
-              </div>
-            </div>
-
-      </div>
-    </section>
-
-    <footer>
-      <div class="wrapper">
-        <p>&copy; Advocacy in Technology 2020 All Rights Reserved</p>
-        <div class="social-container">
-          <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's LinkedIn page"
-            href="https://www.linkedin.com/company/advocacyintech/">
-            <i class="linkedin fab fa-linkedin-in"></i>
-          </a>
-          <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Instagram profile"
-            href="https://www.instagram.com/advocacyintech/">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Facebook page"
-            href="https://www.facebook.com/advocacyintech/">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Youtube page"
-              href="">
-              <i class="fab fa-youtube"></i>
-            </a> -->
-          <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Twitter profile"
-            href="https://twitter.com/advocacyintech">
-            <i class="fab fa-twitter"></i>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <div class="nav-left">
+          <a href="index.html">
+            <img class="logo" src="./assets/final.png" alt="Advotech Logo">
           </a>
         </div>
-        <button class="scroll-top"><i class="chevron"></i></button>
+        <div class="nav-right open-menu" tabindex=0>
+          <span class="menu">Menu</span>
+          <div class="hamburger">
+            <div class="bars bars-inactive"></div>
+          </div>
+        </div>
+        <!-- DROP MENU STARTS-->
+        <div class="nav-menu">
+          <div class="wrapper">
+            <div class="menu-items">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a class="coming-soon" href="#" aria-label="Mentoring page is coming soon!">
+                    <span class="coming-soon-hide" aria-hidden>Mentoring</span>
+                    <span class="coming-soon-show" aria-hidden>Coming Soon</span></a>
+                </li>
+                <li><a href="https://medium.com/advocacyintech">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <!--
+                <li><a class="coming-soon" href="#" aria-label="About page is coming soon!">
+                  <!--<li><a href="about.html">About</a></li>
+                    <span class="coming-soon-hide" aria-hidden>About</span>
+                    <span class="coming-soon-show" aria-hidden>Coming Soon</span></a>
+                </li>
+                -->
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <!-- DROP MENU ENDS-->
+      </nav>
+  
+  </header>
+
+  <section class="aboutus" data-aos="fade-up">
+    <div class="wrapper">
+      <div class="section-content">
+        <h1 class="">About</h1>
+        <div class="vision-mission-group">
+          
+            <div class="aboutus-item " id="vision">
+              <div class="about-title" id="vision-title">
+                <h2>Vision</h2>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="about-description" id="vision-description">
+                <p>TO Advocacy in Technology is a grassroots movement focused on shifting thought paradigms, and works to create intersectionally equal and equitable workplace cultures built through social learning to raise the overall standard of learning in technology.</p>
+              </div>
+            </div>
+          
+            <div class="aboutus-item ">
+              <div class="about-title" id="mission-title">
+                <h2>Mission</h2>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="about-description" id="mission-description">
+                <p >
+                  TO Advocacy in Technology motivates our youth to be receptive to change by inspiring them, further engaging disengaged individuals in technology. To raise the standard of learning and social awareness, it provides connectivity and affordability, and in turn accessibility to educational resources and career advancement opportunities. It uses an approach that ricochets to educate our youth by raising awareness towards biases that push back on diversity, equity, and inclusion, and the intersectionality of it in the workplace.</p>
+              </div> 
+            </div>       
+        </div>
+
+          <div class="aboutus-item ">
+            <div class="about-title" id="values-title">
+              <h2>Core Values</h2>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="about-description" id="values-description">
+              <ul class="aboutus-item-values" >
+                <li>Integrity & Ethics</li>
+                <li>Transparency</li>
+                <li>Commitment</li>
+                <li>Change Agency</li>
+                <li>Service to Others</li>
+                </ul>
+            </div>
+          </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <p>&copy; Advocacy in Technology 2020 All Rights Reserved</p>
+      <div class="social-container">
+        <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's LinkedIn page"
+          href="https://www.linkedin.com/company/advocacyintech/">
+          <i class="linkedin fab fa-linkedin-in"></i>
+        </a>
+        <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Instagram profile"
+          href="https://www.instagram.com/advocacyintech/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Facebook page"
+          href="https://www.facebook.com/advocacyintech/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Youtube page"
+            href="">
+            <i class="fab fa-youtube"></i>
+          </a> -->
+        <a rel="noopener noreferrer" target="_blank" aria-label="Go to Advotech's Twitter profile"
+          href="https://twitter.com/advocacyintech">
+          <i class="fab fa-twitter"></i>
+        </a>
       </div>
-    </footer>
-  </div>
+      <button class="scroll-top"><i class="chevron"></i></button>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
   <script src="javascript/script.js"></script>
 </body>
 </html>
