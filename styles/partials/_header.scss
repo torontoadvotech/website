@@ -4,10 +4,12 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  border:1px solid orange;
   .wrapper {
     width: 80%;
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1400px;
+    border:1px solid blue;
   }
   nav {
     display: flex;
