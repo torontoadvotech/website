@@ -130,10 +130,7 @@ input {
   line-height: normal;
 }
 
-button,
-html input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -143,19 +140,19 @@ input[disabled] {
   cursor: default;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type=checkbox],
+input[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
 
-input[type='search'] {
+input[type=search] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -185,7 +182,7 @@ input::-moz-focus-inner {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: '';
+  content: "";
   clear: both;
   height: 0;
 }
@@ -205,7 +202,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 html {
@@ -215,7 +212,7 @@ html {
 }
 
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 1.6rem;
   z-index: -30;
   background-color: #000000;
@@ -239,7 +236,7 @@ body {
 .button::before,
 .button::after {
   box-sizing: inherit;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -256,16 +253,7 @@ body {
 }
 .button-primary:hover {
   border: none;
-  background-image: linear-gradient(
-    310deg,
-    #e9002d,
-    #eb3941 30%,
-    #f26681 40%,
-    #fff 45%,
-    #e2373f 50%,
-    #e9002d
-  );
-  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  background-image: linear-gradient(310deg, #e9002d, #eb3941 30%, #f26681 40%, #fff 45%, #e2373f 50%, #e9002d);
   box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
   background-position: 100% 0;
   transition: all 0.4s ease-in-out;
@@ -283,24 +271,14 @@ body {
 }
 .button-secondary:hover {
   border: none;
-  background-image: linear-gradient(
-    310deg,
-    #e9002d,
-    #eb3941 30%,
-    #f26681 40%,
-    #fff 45%,
-    #e2373f 50%,
-    #e9002d
-  );
-  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  background-image: linear-gradient(310deg, #e9002d, #eb3941 30%, #f26681 40%, #fff 45%, #e2373f 50%, #e9002d);
   box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
   background-position: 100% 300%;
   transition: all 0.4s ease-in-out;
 }
 
 @keyframes primary-fill {
-  0%,
-  75% {
+  0%, 75% {
     background: transparent;
     color: #fff;
   }
@@ -374,8 +352,7 @@ header nav {
 .nav-right span {
   margin-right: 20px;
 }
-.nav-right:hover .bars-inactive,
-.nav-right:focus .bars-inactive {
+.nav-right:hover .bars-inactive, .nav-right:focus .bars-inactive {
   width: 30px;
 }
 .nav-right .menu {
@@ -383,45 +360,48 @@ header nav {
   letter-spacing: 0.2px;
 }
 
-.hamburger {
+.menu-icon {
+  display: grid;
+  place-items: center;
+  height: 24px;
   width: 30px;
-  padding: 20px 0;
-}
-.hamburger .bars {
   position: relative;
-  width: 20px;
+  cursor: pointer;
+}
+.menu-icon > span {
+  width: 30px;
   height: 1px;
-  border-radius: 2.5px;
   background: white;
+  display: block;
   transition: all 150ms ease;
 }
-.hamburger .bars::before,
-.hamburger .bars::after {
-  content: '';
-  position: absolute;
+.menu-icon:hover span:nth-child(1) {
   width: 30px;
-  height: 1px;
-  border-radius: 2.5px;
-  background: white;
-  transition: all 250ms ease-in-out;
-  transform: translateY(0) rotate(0);
 }
-.hamburger .bars::before {
-  left: 0;
-  top: 8px;
+.menu-icon:hover span:nth-child(2) {
+  width: 30px;
 }
-.hamburger .bars::after {
-  left: 0;
-  bottom: 8px;
+.menu-icon.active span:nth-child(1) {
+  transform-origin: center center;
+  transform: rotate(-45deg) translate(-7px, 3.5px);
+  width: 30px;
 }
-.hamburger .bars-active {
-  width: 0px;
+.menu-icon.active span:nth-child(2) {
+  transform: translateX(10px);
+  opacity: 0;
 }
-.hamburger .bars-active::before {
-  transform: translateY(-8px) rotate(135deg);
+.menu-icon.active span:nth-child(3) {
+  transform-origin: center center;
+  transform: rotate(45deg) translate(-8px, -4.5px);
+  width: 30px;
 }
-.hamburger .bars-active::after {
-  transform: translateY(8px) rotate(-135deg);
+.menu-icon .line-1 {
+  width: 30px;
+  justify-self: end;
+}
+.menu-icon .line-2 {
+  width: 20px;
+  justify-self: end;
 }
 
 .nav-menu {
@@ -458,7 +438,7 @@ header nav {
   display: inline-block;
   text-transform: uppercase;
   color: white;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
   font-size: 9rem;
   line-height: 1;
@@ -466,8 +446,7 @@ header nav {
   transition: all 150ms ease;
   outline: none;
 }
-.menu-items a:hover:not(.coming-soon),
-.menu-items a:focus:not(.coming-soon) {
+.menu-items a:hover:not(.coming-soon), .menu-items a:focus:not(.coming-soon) {
   color: #002de9;
   padding-right: 26px;
 }
@@ -482,19 +461,17 @@ header nav {
   transition: all 150ms ease;
 }
 .coming-soon .coming-soon-show {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   color: #e9002d;
   display: inline-block;
   position: absolute;
   right: 18.25%;
   opacity: 0;
 }
-.coming-soon:hover .coming-soon-hide,
-.coming-soon:focus .coming-soon-hide {
+.coming-soon:hover .coming-soon-hide, .coming-soon:focus .coming-soon-hide {
   opacity: 0.05;
 }
-.coming-soon:hover .coming-soon-show,
-.coming-soon:focus .coming-soon-show {
+.coming-soon:hover .coming-soon-show, .coming-soon:focus .coming-soon-show {
   opacity: 1;
 }
 
@@ -512,20 +489,20 @@ header nav {
 }
 @media (max-width: 815px) {
   .home-page h1,
-  .home-page h2 {
+.home-page h2 {
     font-size: 5rem;
   }
 }
 @media (max-width: 530px) {
   .home-page h1,
-  .home-page h2 {
+.home-page h2 {
     font-size: 4rem;
     text-align: center;
   }
 }
 @media (max-width: 380px) {
   .home-page h1,
-  .home-page h2 {
+.home-page h2 {
     font-size: 3rem;
   }
 }
@@ -628,7 +605,7 @@ header nav {
   margin: 0 3px;
 }
 .home-page .mouse::before {
-  content: '';
+  content: "";
   position: absolute;
   background: white;
   width: 2px;
@@ -811,7 +788,7 @@ header nav {
   display: inline-block;
 }
 .focus-item::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 0;
@@ -832,8 +809,7 @@ header nav {
   cursor: pointer;
   border-bottom: 1px dotted #e9002d;
 }
-.tooltip-open:hover,
-.tooltip-open:focus {
+.tooltip-open:hover, .tooltip-open:focus {
   border-bottom: 1px solid #e9002d;
 }
 
@@ -887,7 +863,7 @@ header nav {
   right: 100%;
   top: 50%;
   border: solid transparent;
-  content: ' ';
+  content: " ";
   height: 0;
   width: 0;
   position: absolute;
@@ -959,51 +935,39 @@ header nav {
 }
 
 @keyframes expand {
-  0%,
-  40% {
+  0%, 40% {
     width: 0;
   }
-  42.5%,
-  65% {
+  42.5%, 65% {
     width: 100%;
   }
-  67%,
-  100% {
+  67%, 100% {
     width: 0;
   }
 }
 @keyframes change {
-  0%,
-  7.5%,
-  100% {
+  0%, 7.5%, 100% {
     transform: translate3d(0, 0%, 0);
   }
-  10%,
-  17.5% {
+  10%, 17.5% {
     transform: translate3d(0, -20%, 0);
   }
-  20%,
-  27.5% {
+  20%, 27.5% {
     transform: translate3d(0, -40%, 0);
   }
-  30%,
-  37.5% {
+  30%, 37.5% {
     transform: translate3d(0, -60%, 0);
   }
-  40%,
-  67.5% {
+  40%, 67.5% {
     transform: translate3d(0, -80%, 0);
   }
-  70%,
-  77.5% {
+  70%, 77.5% {
     transform: translate3d(0, -60%, 0);
   }
-  80%,
-  87.5% {
+  80%, 87.5% {
     transform: translate3d(0, -40%, 0);
   }
-  90%,
-  97.5% {
+  90%, 97.5% {
     transform: translate3d(0, -20%, 0);
   }
 }
@@ -1280,7 +1244,7 @@ footer .chevron {
 footer .chevron:before,
 footer .chevron:after {
   display: block;
-  content: '';
+  content: "";
   width: 0;
   height: 0em;
   border-style: solid;
@@ -1313,8 +1277,7 @@ footer .social-container a {
   padding: 2px;
   margin: 0 5px;
 }
-footer .social-container a:hover,
-footer .social-container a:focus {
+footer .social-container a:hover, footer .social-container a:focus {
   transition: 150ms ease;
   color: #e9002d;
 }
