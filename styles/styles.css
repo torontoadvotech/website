@@ -311,61 +311,64 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  border: 1px solid orange;
 }
 header .wrapper {
-  width: 80%;
+  /*width: 80%;*/
   margin: 0 auto;
   max-width: 1400px;
-  border: 1px solid blue;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+@media screen and (max-width: 961px) {
+  header .wrapper {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
 header nav {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
 }
-
-.nav-left {
+header .nav-left {
   padding: 8px 0;
+  /*border:1px solid white;*/
 }
-
-.logo {
+header .logo {
   width: 90px;
   height: 90px;
   transition: all 300ms ease-in-out;
   z-index: 9999999;
 }
-
-.scrolled-header {
+header .scrolled-header {
   background: #000;
 }
-.scrolled-header .logo {
+header .scrolled-header .logo {
   width: 90px;
 }
-
-.nav-right {
+header .nav-right {
+  /*border:1px solid green;*/
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   z-index: 20;
 }
-.nav-right span {
+header .nav-right span {
   margin-right: 20px;
 }
-.nav-right:hover .bars-inactive, .nav-right:focus .bars-inactive {
+header .nav-right:hover .bars-inactive, header .nav-right:focus .bars-inactive {
   width: 30px;
 }
-.nav-right .menu {
+header .nav-right .menu {
   text-transform: uppercase;
   letter-spacing: 0.2px;
 }
-
-.hamburger {
+header .hamburger {
   width: 30px;
   padding: 20px 0;
 }
-.hamburger .bars {
+header .hamburger .bars {
   position: relative;
   width: 20px;
   height: 1px;
@@ -373,8 +376,8 @@ header nav {
   background: white;
   transition: all 150ms ease;
 }
-.hamburger .bars::before,
-.hamburger .bars::after {
+header .hamburger .bars::before,
+header .hamburger .bars::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -384,25 +387,24 @@ header nav {
   transition: all 250ms ease-in-out;
   transform: translateY(0) rotate(0);
 }
-.hamburger .bars::before {
+header .hamburger .bars::before {
   left: 0;
   top: 8px;
 }
-.hamburger .bars::after {
+header .hamburger .bars::after {
   left: 0;
   bottom: 8px;
 }
-.hamburger .bars-active {
+header .hamburger .bars-active {
   width: 0px;
 }
-.hamburger .bars-active::before {
+header .hamburger .bars-active::before {
   transform: translateY(-8px) rotate(135deg);
 }
-.hamburger .bars-active::after {
+header .hamburger .bars-active::after {
   transform: translateY(8px) rotate(-135deg);
 }
-
-.nav-menu {
+header .nav-menu {
   z-index: 10;
   width: 100%;
   position: absolute;
@@ -412,27 +414,26 @@ header nav {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   padding-top: 75px;
 }
-.nav-menu .wrapper {
+header .nav-menu .wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.nav-menu .nav-right {
+header .nav-menu .nav-right {
   padding-top: 9px;
 }
-
-.menu-items {
+header .menu-items {
   width: 100%;
 }
-.menu-items ul {
+header .menu-items ul {
   opacity: 0;
   transition: all 1000ms ease;
   list-style: none;
   text-align: right;
   margin-right: 10%;
 }
-.menu-items a {
+header .menu-items a {
   display: inline-block;
   text-transform: uppercase;
   color: white;
@@ -444,21 +445,20 @@ header nav {
   transition: all 150ms ease;
   outline: none;
 }
-.menu-items a:hover:not(.coming-soon), .menu-items a:focus:not(.coming-soon) {
+header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.coming-soon) {
   color: #002de9;
   padding-right: 26px;
 }
 @media screen and (max-width: 530px) {
-  .menu-items a {
+  header .menu-items a {
     font-size: 5rem;
   }
 }
-
-.coming-soon .coming-soon-hide,
-.coming-soon .coming-soon-show {
+header .coming-soon .coming-soon-hide,
+header .coming-soon .coming-soon-show {
   transition: all 150ms ease;
 }
-.coming-soon .coming-soon-show {
+header .coming-soon .coming-soon-show {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: #e9002d;
   display: inline-block;
@@ -466,10 +466,10 @@ header nav {
   right: 18.25%;
   opacity: 0;
 }
-.coming-soon:hover .coming-soon-hide, .coming-soon:focus .coming-soon-hide {
+header .coming-soon:hover .coming-soon-hide, header .coming-soon:focus .coming-soon-hide {
   opacity: 0.05;
 }
-.coming-soon:hover .coming-soon-show, .coming-soon:focus .coming-soon-show {
+header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-soon-show {
   opacity: 1;
 }
 
@@ -536,7 +536,7 @@ header nav {
   width: 100%;
   margin: 0 auto;
   max-width: 1400px;
-  border: 1px solid red;
+  /*border:1px solid red;*/
 }
 .home-page section .section-content {
   min-height: 100vh;
@@ -545,7 +545,7 @@ header nav {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  border: 1px solid yellow;
+  /*border:1px solid yellow;*/
   z-index: 1;
 }
 @media screen and (max-width: 815px) {
@@ -584,6 +584,7 @@ header nav {
   position: absolute;
   bottom: 50px;
   right: 10%;
+  margin-right: 12%;
 }
 .home-page .scroll-direction span {
   padding-right: 20px;
@@ -634,6 +635,7 @@ header nav {
 @media screen and (max-width: 961px) {
   .home-page .section1 .main-header-container {
     margin-left: 75px;
+    /*border:1px solid orange;*/
   }
 }
 @media screen and (max-width: 530px) {
