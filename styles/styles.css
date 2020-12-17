@@ -308,8 +308,7 @@ body {
 }
 
 @keyframes primary-fill {
-  0%,
-  75% {
+  0%, 75% {
     background: transparent;
     color: #fff;
   }
@@ -399,9 +398,7 @@ header nav {
 .nav-right span {
   margin-right: 20px;
 }
-
-.nav-right:hover .bars-inactive,
-.nav-right:focus .bars-inactive {
+.nav-right:hover .bars-inactive, .nav-right:focus .bars-inactive {
   width: 30px;
 }
 
@@ -410,57 +407,48 @@ header nav {
   letter-spacing: 0.2px;
 }
 
-.hamburger {
+.menu-icon {
+  display: grid;
+  place-items: center;
+  height: 24px;
   width: 30px;
-  padding: 20px 0;
-}
-
-.hamburger .bars {
   position: relative;
-  width: 20px;
+  cursor: pointer;
+}
+.menu-icon > span {
+  width: 30px;
   height: 1px;
-  border-radius: 2.5px;
   background: white;
-  -webkit-transition: all 150ms ease;
+  display: block;
   transition: all 150ms ease;
 }
-
-.hamburger .bars::before,
-.hamburger .bars::after {
-  content: "";
-  position: absolute;
+.menu-icon:hover span:nth-child(1) {
   width: 30px;
-  height: 1px;
-  border-radius: 2.5px;
-  background: white;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-  -webkit-transform: translateY(0) rotate(0);
-          transform: translateY(0) rotate(0);
 }
-
-.hamburger .bars::before {
-  left: 0;
-  top: 8px;
+.menu-icon:hover span:nth-child(2) {
+  width: 30px;
 }
-
-.hamburger .bars::after {
-  left: 0;
-  bottom: 8px;
+.menu-icon.active span:nth-child(1) {
+  transform-origin: center center;
+  transform: rotate(-45deg) translate(-7px, 3.5px);
+  width: 30px;
 }
-
-.hamburger .bars-active {
-  width: 0px;
+.menu-icon.active span:nth-child(2) {
+  transform: translateX(10px);
+  opacity: 0;
 }
-
-.hamburger .bars-active::before {
-  -webkit-transform: translateY(-8px) rotate(135deg);
-          transform: translateY(-8px) rotate(135deg);
+.menu-icon.active span:nth-child(3) {
+  transform-origin: center center;
+  transform: rotate(45deg) translate(-8px, -4.5px);
+  width: 30px;
 }
-
-.hamburger .bars-active::after {
-  -webkit-transform: translateY(8px) rotate(-135deg);
-          transform: translateY(8px) rotate(-135deg);
+.menu-icon .line-1 {
+  width: 30px;
+  justify-self: end;
+}
+.menu-icon .line-2 {
+  width: 20px;
+  justify-self: end;
 }
 
 .nav-menu {
@@ -519,7 +507,6 @@ header nav {
   transition: all 150ms ease;
   outline: none;
 }
-
 .menu-items a:hover:not(.coming-soon), .menu-items a:focus:not(.coming-soon) {
   color: #002de9;
   padding-right: 26px;
@@ -572,14 +559,14 @@ header nav {
 
 @media (max-width: 815px) {
   .home-page h1,
-  .home-page h2 {
+.home-page h2 {
     font-size: 5rem;
   }
 }
 
 @media (max-width: 530px) {
   .home-page h1,
-  .home-page h2 {
+.home-page h2 {
     font-size: 4rem;
     text-align: center;
   }
@@ -587,7 +574,7 @@ header nav {
 
 @media (max-width: 380px) {
   .home-page h1,
-  .home-page h2 {
+.home-page h2 {
     font-size: 3rem;
   }
 }
@@ -988,7 +975,6 @@ header nav {
   cursor: pointer;
   border-bottom: 1px dotted #e9002d;
 }
-
 .tooltip-open:hover, .tooltip-open:focus {
   border-bottom: 1px solid #e9002d;
 }
@@ -1148,16 +1134,13 @@ header nav {
 }
 
 @keyframes expand {
-  0%,
-  40% {
+  0%, 40% {
     width: 0;
   }
-  42.5%,
-  65% {
+  42.5%, 65% {
     width: 100%;
   }
-  67%,
-  100% {
+  67%, 100% {
     width: 0;
   }
 }
@@ -1710,4 +1693,3 @@ footer .social-container i {
   position: relative;
   left: 5px;
 }
-/*# sourceMappingURL=styles.css.map */

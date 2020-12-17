@@ -43,14 +43,15 @@ $(function () {
     $("section > *").not("canvas").addClass("hide");
     $("nav > .nav-right").removeClass("open-menu");
     $("nav > .nav-right").addClass("close-menu");
-    $(".bars").removeClass("bars-inactive");
-    $(".bars").addClass("bars-active");
+    // $(".bars").removeClass("bars-inactive");
+    // $(".bars").addClass("bars-active");
+    $(".menu-icon").addClass("active");
     $(".menu").fadeOut(50, function () {
       $(this).text("Close").fadeIn(50);
     });
     setTimeout(showNavItems, 200);
   };
-
+  
   const closeNavMenu = () => {
     hideNavItems();
     setTimeout(function () {
@@ -58,8 +59,9 @@ $(function () {
       $("section > *").removeClass("hide");
       $("nav > .nav-right").removeClass("close-menu");
       $("nav > .nav-right").addClass("open-menu");
-      $(".bars").addClass("bars-inactive");
-      $(".bars").removeClass("bars-active");
+      // $(".bars").addClass("bars-inactive");
+      // $(".bars").removeClass("bars-active");
+      $(".menu-icon").removeClass("active");
       $(".menu").fadeOut(50, function () {
         $(this).text("Menu").fadeIn(50);
       });
