@@ -7,7 +7,6 @@ $body-font: "Inconsolata", monospace;
 // Animations
 
 // Global Styles
-
 * {
   padding: 0;
   margin: 0;
@@ -24,14 +23,14 @@ h6 {
 html {
   font-size: 62.5%;
   z-index: -30;
-  background-color: #000000;
+  background-color: $black;
 }
 
 body {
   font-family: $body-font;
   font-size: 1.6rem;
   z-index: -30;
-  background-color: #000000;
+  background-color: $black;
 }
 
 .button {
@@ -60,8 +59,8 @@ body {
 
 // Primary CTA styles
 .button-primary {
-  color: #fff;
-  background: #e9002d;
+  color: $white;
+  background: $cherry-red;
   padding: 18px 20px;
   text-decoration: none;
   outline: none;
@@ -73,11 +72,12 @@ body {
   &:hover {
     border: none;
     background-image: linear-gradient(
-      to right,
+      310deg,
       #e9002d,
-      #eb3941,
-      #f26681,
-      #e2373f,
+      #eb3941 30%,
+      #f26681 40%,
+      #fff 45%,
+      #e2373f 50%,
       #e9002d
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
@@ -91,10 +91,10 @@ body {
 // Secondary CTA styles
 .button-secondary {
   background: transparent;
-  color: #fff;
+  color: $white;
   padding: 18px 20px;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid $white;
   outline: none;
   -o-transition: all 0.7s ease-in-out;
   -webkit-transition: all 0.7s ease-in-out;
@@ -104,11 +104,12 @@ body {
   &:hover {
     border: none;
     background-image: linear-gradient(
-      to right,
+      310deg,
       #e9002d,
-      #eb3941,
-      #f26681,
-      #e2373f,
+      #eb3941 30%,
+      #f26681 40%,
+      #fff 45%,
+      #e2373f 50%,
       #e9002d
     );
     box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
@@ -123,20 +124,21 @@ body {
   0%,
   75% {
     background: transparent;
-    color: #fff;
+    color: $white;
   }
 
   100% {
-    background: #000000;
+    background: $black;
   }
 }
 
 .hide {
   visibility: hidden;
+  opacity: 0;
 }
 
 em {
-  color: #e9002d;
+  color: $cherry-red;
   text-transform: none;
   font-style: normal;
 }
