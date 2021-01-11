@@ -1,6 +1,13 @@
+$white: #ffffff;
+$off-white: #f6f6f6;
+$black: #000000;
+$gray: #0f0f0f;
+
+// starting here with creating variables
+
 .about-page {
-  color: #f6f6f6;
-  background: #000000;
+  color: $off-white;
+  background: $black;
   line-height: 1.5;
 
   .wrapper {
@@ -96,16 +103,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
+    color: $white;
     border: 0px solid white;
     text-transform: uppercase;
     cursor: pointer;
-    background-color: #0f0f0f;
+    background-color: $gray;
     padding: 50px 30px 20px 30px;
   }
 
   i {
-    color: #ffffff;
+    color: $white;
   }
 
   .open {
@@ -113,8 +120,8 @@
   }
 
   .about-description {
-    background-color: #0f0f0f;
-    color: #ffffff;
+    background-color: $gray;
+    color: $white;
     padding: 0px 30px 50px 30px;
     display: none;
   }
