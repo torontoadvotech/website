@@ -52,6 +52,7 @@
       width: 100%;
       margin: 0 auto;
       max-width: 1400px;
+      /*border:1px solid red;*/
     }
     .section-content {
       min-height: 100vh;
@@ -60,6 +61,7 @@
       flex-direction: column;
       justify-content: center;
       position: relative;
+      /*border:1px solid yellow;*/
       z-index: 1;
 
       @media screen and (max-width: 815px) {
@@ -97,6 +99,7 @@
     position: absolute;
     bottom: 50px;
     right:10%;
+    margin-right:12%;
     span {
       padding-right: 20px;
       color: #f6f6f6;
@@ -152,6 +155,7 @@
     @media screen and (max-width: 961px) {
       .main-header-container {
         margin-left: 75px;
+        /*border:1px solid orange;*/
       }
     }
 
