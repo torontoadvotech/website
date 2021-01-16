@@ -210,14 +210,14 @@ h6 {
 html {
   font-size: 62.5%;
   z-index: -30;
-  background-color: #000000;
+  background-color: #000;
 }
 
 body {
   font-family: "Inconsolata", monospace;
   font-size: 1.6rem;
   z-index: -30;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .button {
@@ -301,7 +301,7 @@ body {
     color: #fff;
   }
   100% {
-    background: #000000;
+    background: #000;
   }
 }
 
@@ -312,7 +312,7 @@ body {
     color: #fff;
   }
   100% {
-    background: #000000;
+    background: #000;
   }
 }
 
@@ -382,7 +382,7 @@ header .logo {
 }
 
 header .scrolled-header {
-  background: #000000;
+  background: #000;
 }
 
 header .scrolled-header .logo {
@@ -572,8 +572,8 @@ header .coming-soon:focus .coming-soon-show {
 }
 
 .home-page {
-  color: white;
-  background: black;
+  color: #fff;
+  background: #000;
 }
 
 .home-page h1,
@@ -650,7 +650,6 @@ header .coming-soon:focus .coming-soon-show {
   width: 100%;
   margin: 0 auto;
   max-width: 1400px;
-  /*border:1px solid red;*/
 }
 
 .home-page section .section-content {
@@ -667,7 +666,6 @@ header .coming-soon:focus .coming-soon-show {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  /*border:1px solid yellow;*/
   z-index: 1;
 }
 
@@ -735,7 +733,7 @@ header .coming-soon:focus .coming-soon-show {
   width: 23px;
   height: 38px;
   border-radius: 100px;
-  border: solid 2px white;
+  border: solid 2px #fff;
   position: relative;
   margin: 0 3px;
 }
@@ -743,7 +741,7 @@ header .coming-soon:focus .coming-soon-show {
 .home-page .mouse::before {
   content: "";
   position: absolute;
-  background: white;
+  background: #fff;
   width: 2px;
   height: 5px;
   top: 6px;
@@ -782,7 +780,6 @@ header .coming-soon:focus .coming-soon-show {
 @media screen and (max-width: 961px) {
   .home-page .section1 .main-header-container {
     margin-left: 75px;
-    /*border:1px solid orange;*/
   }
 }
 
@@ -886,7 +883,7 @@ header .coming-soon:focus .coming-soon-show {
   display: inline-block;
   font-size: 7.5rem;
   line-height: 1;
-  color: #ecf0f1;
+  color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1459,7 +1456,7 @@ header .coming-soon:focus .coming-soon-show {
 
 .about-page {
   color: #f6f6f6;
-  background: #000000;
+  background-color: #000;
   line-height: 1.5;
 }
 
@@ -1547,7 +1544,6 @@ header .coming-soon:focus .coming-soon-show {
   justify-content: center;
   position: relative;
   z-index: 1;
-  border: 0px solid blue;
   display: table;
   margin: 40px 0;
   padding: 0 150px;
@@ -1579,8 +1575,7 @@ header .coming-soon:focus .coming-soon-show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
-  border: 0px solid white;
+  color: #f6f6f6;
   text-transform: uppercase;
   cursor: pointer;
   background-color: #0f0f0f;
@@ -1588,7 +1583,7 @@ header .coming-soon:focus .coming-soon-show {
 }
 
 .about-page i {
-  color: #ffffff;
+  color: #f6f6f6;
 }
 
 .about-page .open {
@@ -1598,7 +1593,7 @@ header .coming-soon:focus .coming-soon-show {
 
 .about-page .about-description {
   background-color: #0f0f0f;
-  color: #ffffff;
+  color: #f6f6f6;
   padding: 0px 30px 50px 30px;
   display: none;
 }

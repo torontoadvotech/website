@@ -1,13 +1,10 @@
-$white: #ffffff;
 $off-white: #f6f6f6;
-$black: #000000;
 $gray: #0f0f0f;
-
-// starting here with creating variables
+$black: #000;
 
 .about-page {
   color: $off-white;
-  background: $black;
+  background-color: $black;
   line-height: 1.5;
 
   .wrapper {
@@ -82,7 +79,6 @@ $gray: #0f0f0f;
     justify-content: center;
     position: relative;
     z-index: 1;
-    border: 0px solid blue;
     display: table;
     margin: 40px 0;
     padding: 0 150px;
@@ -104,7 +100,6 @@ $gray: #0f0f0f;
     justify-content: space-between;
     align-items: center;
     color: $white;
-    border: 0px solid white;
     text-transform: uppercase;
     cursor: pointer;
     background-color: $gray;
