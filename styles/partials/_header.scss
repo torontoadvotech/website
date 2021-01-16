@@ -5,19 +5,33 @@ header {
   width: 100%;
   z-index: 1000;
   .wrapper {
-    width: 80%;
+    /*width: 80%;*/
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1400px;
+    padding-left: 150px;
+    padding-right:150px;
+
   }
+
+  @media screen and (max-width: 961px) {
+    .wrapper {
+      padding-left: 75px;
+      padding-right:75px;
+
+  }
+
+}
+
   nav {
     display: flex;
     justify-content: space-between;
     z-index: 1000;
   }
-}
+
 
 .nav-left {
   padding: 8px 0;
+  /*border:1px solid white;*/
 }
 
 .logo {
@@ -36,6 +50,7 @@ header {
 }
 
 .nav-right {
+  /*border:1px solid green;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,3 +321,4 @@ header {
 //     opacity: 1;
 //   }
 // }
+}
