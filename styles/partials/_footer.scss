@@ -1,10 +1,5 @@
-$black: #000;
-$white: #f6f6f6;
-$footer-text: #3c3c3c;
-$cherry-red: #e9002d;
-
 footer {
-  color: $footer-text;
+  color: #3c3c3c;
   background-color: $black;
   padding: 50px 0;
 
@@ -61,17 +56,20 @@ footer {
   .chevron:before {
     right: -4px;
     border-width: 0 10px 10px 10px;
+    border-color: transparent transparent $off-white transparent;
     top: 6px;
   }
 
   .chevron:after {
     left: -2px;
     border-width: 0 8px 8px 8px;
+    border-color: transparent transparent $black transparent;
     top: 8px;
   }
 
   .scroll-top:hover > .chevron:before {
     transition: $default-transition;
+    border-color: transparent transparent $cherry-red transparent;
   }
 
   .social-container {
@@ -81,7 +79,7 @@ footer {
 
     a {
       font-size: 2rem;
-      color: $white;
+      color: $off-white;
       padding: 2px;
       margin: 0 5px;
 

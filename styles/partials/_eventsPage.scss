@@ -1,7 +1,3 @@
-$cherry-red: #e9002d;
-$black: #0f0f0f;
-$white: #f6f6f6;
-
 .events-page {
   color: $white;
   background: $black;
@@ -66,7 +62,7 @@ $white: #f6f6f6;
   .webinar-item {
     position: relative;
     max-width: 530px;
-    background-color: #0F0F0F;
+    background-color: $dark-grey;
     margin-bottom: 40px;
 
     .title {

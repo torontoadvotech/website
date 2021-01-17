@@ -294,28 +294,6 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-@-webkit-keyframes primary-fill {
-  0%,
-  75% {
-    background: transparent;
-    color: #fff;
-  }
-  100% {
-    background: #000;
-  }
-}
-
-@keyframes primary-fill {
-  0%,
-  75% {
-    background: transparent;
-    color: #fff;
-  }
-  100% {
-    background: #000;
-  }
-}
-
 .hide {
   visibility: hidden;
   opacity: 0;
@@ -1323,8 +1301,8 @@ header .coming-soon:focus .coming-soon-show {
 }
 
 .events-page {
-  color: #f6f6f6;
-  background: #0f0f0f;
+  color: #fff;
+  background: #000;
 }
 
 .events-page section {
@@ -1389,7 +1367,7 @@ header .coming-soon:focus .coming-soon-show {
 }
 
 .events-page section .section-content .description {
-  color: #f6f6f6;
+  color: #fff;
   line-height: 1.5;
   letter-spacing: 1px;
   max-width: 1000px;
@@ -1419,7 +1397,7 @@ header .coming-soon:focus .coming-soon-show {
 .events-page .webinar-item {
   position: relative;
   max-width: 530px;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   margin-bottom: 40px;
 }
 
@@ -1575,7 +1553,7 @@ header .coming-soon:focus .coming-soon-show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #f6f6f6;
+  color: #fff;
   text-transform: uppercase;
   cursor: pointer;
   background-color: #0f0f0f;
@@ -1583,7 +1561,7 @@ header .coming-soon:focus .coming-soon-show {
 }
 
 .about-page i {
-  color: #f6f6f6;
+  color: #fff;
 }
 
 .about-page .open {
@@ -1593,7 +1571,7 @@ header .coming-soon:focus .coming-soon-show {
 
 .about-page .about-description {
   background-color: #0f0f0f;
-  color: #f6f6f6;
+  color: #fff;
   padding: 0px 30px 50px 30px;
   display: none;
 }
@@ -1678,18 +1656,21 @@ footer .chevron:after {
 footer .chevron:before {
   right: -4px;
   border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #f6f6f6 transparent;
   top: 6px;
 }
 
 footer .chevron:after {
   left: -2px;
   border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #000 transparent;
   top: 8px;
 }
 
 footer .scroll-top:hover > .chevron:before {
   -webkit-transition: 150ms ease;
   transition: 150ms ease;
+  border-color: transparent transparent #e9002d transparent;
 }
 
 @media screen and (max-width: 960px) {
