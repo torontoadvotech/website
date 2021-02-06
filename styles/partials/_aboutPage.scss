@@ -1,6 +1,10 @@
+$off-white: #f6f6f6;
+$gray: #0f0f0f;
+$black: #000;
+
 .about-page {
-  color: #f6f6f6;
-  background: #000000;
+  color: $off-white;
+  background-color: $black;
   line-height: 1.5;
 
   .wrapper {
@@ -75,7 +79,6 @@
     justify-content: center;
     position: relative;
     z-index: 1;
-    border: 0px solid blue;
     display: table;
     margin: 40px 0;
     padding: 0 150px;
@@ -96,16 +99,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
-    border: 0px solid white;
+    color: $white;
     text-transform: uppercase;
     cursor: pointer;
-    background-color: #0f0f0f;
+    background-color: $gray;
     padding: 50px 30px 20px 30px;
   }
 
   i {
-    color: #ffffff;
+    color: $white;
   }
 
   .open {
@@ -113,8 +115,8 @@
   }
 
   .about-description {
-    background-color: #0f0f0f;
-    color: #ffffff;
+    background-color: $gray;
+    color: $white;
     padding: 0px 30px 50px 30px;
     display: none;
   }

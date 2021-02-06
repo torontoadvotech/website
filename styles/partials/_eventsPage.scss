@@ -1,7 +1,7 @@
 .events-page {
-  color: white;
-  background: #0f0f0f;
-   
+  color: $white;
+  background: $black;
+
   section {
     overflow: hidden;
     min-height: 100vh;
@@ -12,7 +12,6 @@
       width: 100%;
       margin: 0 auto;
       max-width: 1400px;
-      
     }
     .section-content {
       display: flex;
@@ -25,7 +24,7 @@
       @media screen and (max-width: 961px) {
         padding: 0 75px;
       }
-      
+
       @media screen and (max-width: 530px) {
         padding: 100px 40px 0 40px;
         margin: 0;
@@ -39,17 +38,17 @@
         margin-bottom: 20px;
         margin-top: 60px;
       }
-      
+
       .description {
-        color: #f6f6f6;
+        color: $white;
         line-height: 1.5;
         letter-spacing: 1px;
         max-width: 1000px;
       }
     }
   }
-  
-  .gallery  {
+
+  .gallery {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -59,20 +58,20 @@
     z-index: 1;
     margin: 40px 0;
   }
-  
+
   .webinar-item {
     position: relative;
     max-width: 530px;
-    background-color: #0F0F0F;
+    background-color: $dark-grey;
     margin-bottom: 40px;
-  
+
     .title {
-      color: #e9002d;
+      color: $cherry-red;
       text-transform: uppercase;
       line-height: 1.25;
       margin-bottom: 10px;
     }
-    
+
     .video {
       height: 300px;
       iframe {
@@ -80,20 +79,19 @@
         width: 100%;
       }
     }
-    
+
     .text {
       padding: 10px 12px;
       line-height: 1.5;
       letter-spacing: 1px;
     }
-    
+
     .more {
       display: none;
     }
     .read-more {
-      color: #e9002d;
+      color: $cherry-red;
       cursor: pointer;
     }
   }
 }
-

@@ -4,8 +4,12 @@ $slow-transition: 1000ms ease;
 $header-font: "Barlow Semi Condensed", sans-serif;
 $body-font: "Inconsolata", monospace;
 $cherry-red: #e9002d;
+$vibrant-blue: #002de9;
 $white: #fff;
-$black: #000000;
+$off-white: #f6f6f6;
+$black: #000;
+$dark-grey: #0f0f0f;
+
 // Animations
 
 // Global Styles
@@ -71,6 +75,7 @@ body {
   transition: all 0.7s ease-in-out;
   background-size: 300% 100%;
 
+  // Note: changing the colours in the button gradients to their variable names makes the gradient shine not work
   &:hover {
     border: none;
     background-image: linear-gradient(
@@ -122,17 +127,18 @@ body {
   }
 }
 
-@keyframes primary-fill {
-  0%,
-  75% {
-    background: transparent;
-    color: $white;
-  }
+// This was the old button animation - keeping just in case for a bit
+// @keyframes primary-fill {
+//   0%,
+//   75% {
+//     background: transparent;
+//     color: $white;
+//   }
 
-  100% {
-    background: $black;
-  }
-}
+//   100% {
+//     background: $black;
+//   }
+// }
 
 .hide {
   visibility: hidden;
@@ -153,7 +159,3 @@ a {
   display: none;
   z-index: -30;
 }
-
-// *:link:focus, *:visited:focus, *:focus-within {
-//     outline: none;
-// }

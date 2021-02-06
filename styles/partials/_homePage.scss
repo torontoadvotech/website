@@ -1,6 +1,6 @@
 .home-page {
-  color: white;
-  background: black;
+  color: $white;
+  background: $black;
   h1,
   h2 {
     font-size: 7.5rem;
@@ -36,12 +36,6 @@
     }
   }
 
-  // .wrapper {
-  //   margin: 0 auto;
-  //   width: 100%;
-  //   max-width: 1400px
-  // }
-
   section {
     overflow: hidden;
     min-height: 100vh;
@@ -52,7 +46,6 @@
       width: 100%;
       margin: 0 auto;
       max-width: 1400px;
-      /*border:1px solid red;*/
     }
     .section-content {
       min-height: 100vh;
@@ -61,7 +54,6 @@
       flex-direction: column;
       justify-content: center;
       position: relative;
-      /*border:1px solid yellow;*/
       z-index: 1;
 
       @media screen and (max-width: 815px) {
@@ -83,7 +75,7 @@
       margin-bottom: 40px;
       width: 520px;
       font-size: 1.8rem;
-      color: #f6f6f6;
+      color: $off-white;
       line-height: 1.5;
       letter-spacing: 1px;
     }
@@ -98,11 +90,11 @@
     height: 40px;
     position: absolute;
     bottom: 50px;
-    right:10%;
-    margin-right:12%;
+    right: 10%;
+    margin-right: 12%;
     span {
       padding-right: 20px;
-      color: #f6f6f6;
+      color: $off-white;
       text-transform: uppercase;
     }
     @media screen and (max-width: 815px) {
@@ -115,13 +107,13 @@
     width: 23px;
     height: 38px;
     border-radius: 100px;
-    border: solid 2px white;
+    border: solid 2px $white;
     position: relative;
     margin: 0 3px;
     &::before {
       content: "";
       position: absolute;
-      background: white;
+      background: $white;
       width: 2px;
       height: 5px;
       top: 6px;
@@ -155,7 +147,6 @@
     @media screen and (max-width: 961px) {
       .main-header-container {
         margin-left: 75px;
-        /*border:1px solid orange;*/
       }
     }
 
@@ -234,7 +225,7 @@
   display: inline-block;
   font-size: 7.5rem;
   line-height: 1;
-  color: #ecf0f1;
+  color: $off-white;
   display: flex;
   > span {
     padding-right: 12px;
@@ -247,13 +238,11 @@
     &__text {
       display: inline-block;
       font-size: 7.5rem;
-      color: #fff;
+      color: $white;
       line-height: 1;
     }
 
     &__list {
-      // display: flex;
-      // flex-direction: column;
       margin-top: 0;
       text-align: left;
       list-style: none;
@@ -267,7 +256,6 @@
         line-height: 1;
         margin: 0;
         padding: 1px 0;
-        // display: inline-block;
         width: auto;
       }
     }
@@ -311,7 +299,7 @@
 
 .focus-item {
   position: relative;
-  color: #e9002d;
+  color: $cherry-red;
   display: inline-block;
 
   &::after {
@@ -322,7 +310,7 @@
     height: 5px;
     left: 2.5px;
     bottom: -3px;
-    background-color: #e9002d;
+    background-color: $cherry-red;
     animation: expand 15s linear infinite;
     @media screen and (max-width: 530px) {
       bottom: -3px;
@@ -333,31 +321,30 @@
 
 .tooltip-open {
   cursor: pointer;
-  border-bottom: 1px dotted #e9002d;
+  border-bottom: 1px dotted $cherry-red;
   &:hover,
   &:focus {
-    border-bottom: 1px solid #e9002d;
+    border-bottom: 1px solid $cherry-red;
   }
 }
 
-.tooltip-wrapper  {
+.tooltip-wrapper {
   position: absolute;
   visibility: hidden;
 }
 
 .tooltip {
-  position:absolute;
-  min-width:200px; 
-  top:50%;
-  transform:translate(-50%, 0);
-  padding:10px 20px;
-  color:#f6f6f6;
-  background-color:#0f0f0f;
-  font-weight:normal;
-  font-size:1.5rem;
-  z-index:99999999;
-  // border: 1.75px solid #1d1d1d;
-  box-shadow:0 -8px 8px 0 rgba(0,0,0,0.4);
+  position: absolute;
+  min-width: 200px;
+  top: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px 20px;
+  color: $off-white;
+  background-color: $dark-grey;
+  font-weight: normal;
+  font-size: 1.5rem;
+  z-index: 99999999;
+  box-shadow: 0 -8px 8px 0 rgba(0, 0, 0, 0.4);
   border-radius: 0.5px;
   display: none;
   outline: none;
@@ -378,7 +365,7 @@
     height: 23px;
     @media screen and (max-width: 530px) {
       top: -8px;
-      left: 50%
+      left: 50%;
     }
 
     &::after {
@@ -391,23 +378,16 @@
       position: absolute;
       pointer-events: none;
       border-color: rgba(15, 15, 15, 0);
-      border-top-color: #0f0f0f;
+      border-top-color: $dark-grey;
       border-width: 8px;
       margin-top: -8px;
       @media screen and (max-width: 530px) {
-        border-top-color:  rgba(15, 15, 15, 0);
-        border-bottom-color: #0f0f0f;
+        border-top-color: rgba(15, 15, 15, 0);
+        border-bottom-color: $dark-grey;
         top: 0;
         right: 0;
       }
     }
-
-    // &::before {
-    //   border-color: rgba(76, 76, 76, 0);
-    //   border-right-color: #1d1d1d;
-    //   border-width: 10px;
-    //   margin-top: -10px;
-    // }
   }
   .tooltip-expand {
     cursor: pointer;
@@ -435,7 +415,7 @@
   transition: all $default-transition;
   line-height: 1.5;
   left: 450px;
-  display:none;
+  display: none;
   @media screen and (max-width: 961px) {
     width: 520px;
     left: 435px;
@@ -519,8 +499,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgb(0,0,0);
-  background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 100%)
+  background: rgb(0, 0, 0);
+  background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 @-webkit-keyframes mouse-scroll-animation {
