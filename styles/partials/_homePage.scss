@@ -84,47 +84,11 @@
     }
   }
 
-  .scroll-direction {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    position: absolute;
-    bottom: 50px;
-    right: 10%;
-    margin-right: 12%;
-    span {
-      padding-right: 20px;
-      color: $off-white;
-      text-transform: uppercase;
-    }
-    @media screen and (max-width: 815px) {
-      display: none !important;
-    }
-  }
-
-  .mouse {
-    display: inline-block;
-    width: 23px;
-    height: 38px;
-    border-radius: 100px;
-    border: solid 2px $white;
-    position: relative;
-    margin: 0 3px;
-    &::before {
-      content: "";
-      position: absolute;
-      background: $white;
-      width: 2px;
-      height: 5px;
-      top: 6px;
-      left: 9px;
-      -webkit-animation: 1.2s ease-in-out infinite mouse-scroll-animation;
-      -moz-animation: 1.2s ease-in-out infinite mouse-scroll-animation;
-      animation: 1.2s ease-in-out infinite mouse-scroll-animation;
-    }
-  }
-
   .section1 {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
     .main-header-container {
       display: flex;
       flex-direction: column;
@@ -260,6 +224,7 @@
       }
     }
   }
+
   @media screen and (max-width: 815px) {
     font-size: 5rem;
     > span {
@@ -548,5 +513,50 @@
   100% {
     opacity: 0;
     transform: translateY(10px);
+  }
+}
+
+.scroll-direction {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  right: 150px;
+
+  span {
+    padding-right: 20px;
+    color: $off-white;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 815px) {
+    display: none !important;
+  }
+}
+
+.mouse {
+  display: inline-block;
+  width: 23px;
+  height: 38px;
+  border-radius: 100px;
+  border: solid 2px $white;
+  position: relative;
+  margin: 0 3px;
+  &::before {
+    content: "";
+    position: absolute;
+    background: $white;
+    width: 2px;
+    height: 5px;
+    top: 6px;
+    left: 9px;
+    -webkit-animation: 1.2s ease-in-out infinite mouse-scroll-animation;
+    -moz-animation: 1.2s ease-in-out infinite mouse-scroll-animation;
+    animation: 1.2s ease-in-out infinite mouse-scroll-animation;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .scroll-direction {
+    right: 75px;
   }
 }
