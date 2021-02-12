@@ -519,7 +519,7 @@
 .scroll-direction {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   bottom: 10%;
   right: 150px;
 
@@ -527,6 +527,9 @@
     padding-right: 20px;
     color: $off-white;
     text-transform: uppercase;
+  }
+  @media screen and (max-width: 961px) {
+    right: 75px;
   }
   @media screen and (max-width: 815px) {
     display: none !important;
@@ -552,11 +555,5 @@
     -webkit-animation: 1.2s ease-in-out infinite mouse-scroll-animation;
     -moz-animation: 1.2s ease-in-out infinite mouse-scroll-animation;
     animation: 1.2s ease-in-out infinite mouse-scroll-animation;
-  }
-}
-
-@media screen and (max-width: 961px) {
-  .scroll-direction {
-    right: 75px;
   }
 }
