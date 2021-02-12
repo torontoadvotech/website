@@ -1,16 +1,16 @@
 footer {
   color: #3c3c3c;
-  background-color: #000;
+  background-color: $black;
   padding: 50px 0;
-  
+
   .wrapper {
     width: 80%;
     margin: 0 auto;
     max-width: 1500px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 960px) {
       flex-direction: column-reverse;
       justify-content: space-between;
       align-items: center;
@@ -21,9 +21,8 @@ footer {
     height: 56px;
     width: 52px;
     border-style: none;
-    // border: solid 1px white;
     border-bottom: none;
-    background: #000;
+    background: $black;
     display: none;
     position: fixed;
     right: 45px;
@@ -31,72 +30,66 @@ footer {
     z-index: 999;
     transition: $default-transition;
 
-    // &:hover, &:focus {
-    //     transition: $default-transition;
-    //     border-color: #e9002d;
-    //   }
-
-    @media screen and (max-width: 1000px){
-      right: 15px
+    @media screen and (max-width: 1000px) {
+      right: 15px;
     }
   }
 
   .chevron {
-    display:inline-block;
+    display: inline-block;
     width: 12px;
     height: 16px;
-    position:relative;
-    bottom: 15px
+    position: relative;
+    bottom: 15px;
   }
 
   .chevron:before,
   .chevron:after {
-    display:block;
-    content:"";
-    width:0;
-    height:0em;
-    border-style:solid;
-    position:absolute;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0em;
+    border-style: solid;
+    position: absolute;
   }
 
   .chevron:before {
     right: -4px;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #f6f6f6 transparent;
-    top: 6px;   
+    border-color: transparent transparent $off-white transparent;
+    top: 6px;
   }
-  
+
   .chevron:after {
     left: -2px;
     border-width: 0 8px 8px 8px;
-    border-color: transparent transparent black transparent;
-    top: 8px;  
+    border-color: transparent transparent $black transparent;
+    top: 8px;
   }
-  
+
   .scroll-top:hover > .chevron:before {
     transition: $default-transition;
-    border-color: transparent transparent #e9002d transparent;
+    border-color: transparent transparent $cherry-red transparent;
   }
 
   .social-container {
-    
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 960px) {
       margin-bottom: 30px;
     }
-    
+
     a {
       font-size: 2rem;
-      color: #f6f6f6;
+      color: $off-white;
       padding: 2px;
       margin: 0 5px;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         transition: $default-transition;
-        color: #e9002d;
+        color: $cherry-red;
       }
       @media screen and (max-width: 960px) {
         padding: 8px;
-
       }
     }
 
