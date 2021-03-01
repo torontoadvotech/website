@@ -202,7 +202,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Inconsolata", sans-serif;
 }
 
 html {
@@ -429,7 +429,7 @@ header .menu-items a {
   display: inline-block;
   text-transform: uppercase;
   color: #fff;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Inconsolata", sans-serif;
   font-weight: 600;
   font-size: 9rem;
   line-height: 1;
@@ -451,7 +451,7 @@ header .coming-soon .coming-soon-show {
   transition: all 150ms ease;
 }
 header .coming-soon .coming-soon-show {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Inconsolata", sans-serif;
   color: #e9002d;
   display: inline-block;
   position: absolute;
