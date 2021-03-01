@@ -213,7 +213,7 @@ html {
 
 body {
   font-family: "Inconsolata", monospace;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   z-index: -30;
   background-color: #000;
 }
@@ -559,7 +559,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
   width: 520px;
   font-size: 1.8rem;
   color: #f6f6f6;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 530px) {
@@ -1052,7 +1052,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 }
 .events-page section .section-content .description {
   color: #fff;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 1px;
   max-width: 1000px;
 }
@@ -1087,7 +1087,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 }
 .events-page .webinar-item .text {
   padding: 10px 12px;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 1px;
 }
 .events-page .webinar-item .more {
@@ -1101,7 +1101,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 .about-page {
   color: #f6f6f6;
   background-color: #000;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .about-page .wrapper {
   margin: 0 auto;
