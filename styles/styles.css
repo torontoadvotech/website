@@ -1327,3 +1327,25 @@ footer .social-container i {
   position: relative;
   left: 5px;
 }
+
+::-webkit-scrollbar {
+  width: 31px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f6f6f6;
+  border-right: 30px #000 solid;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #343434;
+  border-right: 30px #000 solid;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 121px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  margin-top: 109px;
+}
