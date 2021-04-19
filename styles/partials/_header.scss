@@ -209,6 +209,7 @@ header {
       padding: 5px;
       transition: all $default-transition;
       outline: none;
+      letter-spacing: 10px;
 
       &:hover:not(.coming-soon),
       &:focus:not(.coming-soon) {

@@ -9,6 +9,8 @@
     font-weight: bold;
     margin-bottom: 30px;
     letter-spacing: 10px;
+    word-spacing: -15px;
+    margin-right: -10px;
     @media (max-width: 815px) {
       font-size: 5rem;
     }
@@ -25,6 +27,8 @@
     font-size: 5rem;
     line-height: 2;
     font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
     @media (max-width: 815px) {
       font-size: 4.5rem;
     }
@@ -34,6 +38,9 @@
     }
     @media (max-width: 380px) {
       font-size: 2.5rem;
+    }
+    .dot {
+      letter-spacing: 0px
     }
   }
 
@@ -48,9 +55,8 @@
       margin: 0 auto;
       max-width: 1400px;
     }
-    .section-content {
+    .section-content {   
       min-height: 100vh;
-      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -74,7 +80,7 @@
     }
     .caption {
       margin-bottom: 40px;
-      width: 520px;
+      width: 524px;
       font-size: 1.8rem;
       color: $off-white;
       line-height: 2;
@@ -101,6 +107,7 @@
         span {
           font-weight: bold;
           display: block;
+          margin-right: 30px
         }
       }
     }
@@ -136,6 +143,15 @@
       margin-right: 150px;
       align-items: flex-end;
     }
+    h2 {
+      width: 50%;
+    }
+    h3 {
+      margin-right: -10px;
+    }
+    .caption {
+      width: 524px;
+    }
     @media screen and (max-width: 961px) {
       .section-content {
         margin-right: 75px;
@@ -154,6 +170,9 @@
     .section-content {
       margin-left: 150px;
     }
+    h2 {
+      width: 50%;
+    }
     .button-secondary {
       margin-right: 20px;
       @media screen and (max-width: 530px) {
@@ -161,7 +180,7 @@
       }
     }
     p {
-      width: 500px;
+      width: 524px;
     }
 
     @media screen and (max-width: 961px) {
