@@ -1498,6 +1498,10 @@ header .coming-soon:focus .coming-soon-show {
   width: 100%;
 }
 
+.about-page .aboutus-item i {
+  color: #fff;
+}
+
 .about-page .aboutus {
   overflow: hidden;
   min-height: 100vh;
@@ -1569,10 +1573,6 @@ header .coming-soon:focus .coming-soon-show {
   cursor: pointer;
   background-color: #0f0f0f;
   padding: 50px 30px 20px 30px;
-}
-
-.about-page i {
-  color: #fff;
 }
 
 .about-page .open {
