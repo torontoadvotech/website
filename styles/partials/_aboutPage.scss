@@ -125,4 +125,17 @@ $black: #000;
     list-style: none;
     line-height: 2;
   }
+
+  .profiles-grid {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 21px;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .profile-text {
+    background-color: $gray;
+    padding: 24px 36px;
+    margin-top: 0;
+  }
 }

@@ -1592,6 +1592,21 @@ header .coming-soon:focus .coming-soon-show {
   line-height: 2;
 }
 
+.about-page .profiles-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 21px;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+}
+
+.about-page .profile-text {
+  background-color: #0f0f0f;
+  padding: 24px 36px;
+  margin-top: 0;
+}
+
 footer {
   color: #3c3c3c;
   background-color: #000;
