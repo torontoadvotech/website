@@ -1446,7 +1446,6 @@ header .coming-soon:focus .coming-soon-show {
 .about-page {
   color: #f6f6f6;
   background-color: #000;
-  line-height: 1.6;
 }
 
 .about-page .wrapper {
@@ -1573,6 +1572,7 @@ header .coming-soon:focus .coming-soon-show {
   cursor: pointer;
   background-color: #0f0f0f;
   padding: 50px 30px 20px 30px;
+  line-height: 1.6;
 }
 
 .about-page .open {
@@ -1585,6 +1585,7 @@ header .coming-soon:focus .coming-soon-show {
   color: #fff;
   padding: 0px 30px 50px 30px;
   display: none;
+  line-height: 1.6;
 }
 
 .about-page .aboutus-item-values {
@@ -1601,10 +1602,14 @@ header .coming-soon:focus .coming-soon-show {
       grid-template-columns: repeat(3, auto);
 }
 
+.about-page .profiles-grid img {
+  display: block;
+}
+
 .about-page .profile-text {
   background-color: #0f0f0f;
   padding: 24px 36px;
-  margin-top: 0;
+  line-height: 1.6;
 }
 
 footer {
