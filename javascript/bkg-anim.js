@@ -103,7 +103,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 const containerEl = document.getElementsByClassName('landscape')[0];
-console.log(containerEl)
 const renderer = Object(__WEBPACK_IMPORTED_MODULE_5__renderer__["a" /* default */])({containerEl});
 const { scene, camera } = Object(__WEBPACK_IMPORTED_MODULE_6__scene__["a" /* default */])({
   // cameraPos: [10, 0, 0],
@@ -234,7 +233,7 @@ function Sphere({fragmentShader, vertexShader}) {
   const textureAttr = {
     resolution: 64,
     radius: 32,
-    color: '#ffffff'
+    color: '#e9002d' // Sphere Colour
   };
 
   const geo = new __WEBPACK_IMPORTED_MODULE_0_three__["IcosahedronGeometry"](20, 5);
@@ -1210,16 +1209,16 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	//
 
-	scope.domElement.addEventListener( 'contextmenu', onContextMenu, false );
+	// scope.domElement.addEventListener( 'contextmenu', onContextMenu, false );
 
-	scope.domElement.addEventListener( 'mousedown', onMouseDown, false );
-	scope.domElement.addEventListener( 'wheel', onMouseWheel, false );
+	// scope.domElement.addEventListener( 'mousedown', onMouseDown, false );
+	// scope.domElement.addEventListener( 'wheel', onMouseWheel, false );
 
-	scope.domElement.addEventListener( 'touchstart', onTouchStart, false );
-	scope.domElement.addEventListener( 'touchend', onTouchEnd, false );
-	scope.domElement.addEventListener( 'touchmove', onTouchMove, false );
+	// scope.domElement.addEventListener( 'touchstart', onTouchStart, false );
+	// scope.domElement.addEventListener( 'touchend', onTouchEnd, false );
+	// scope.domElement.addEventListener( 'touchmove', onTouchMove, false );
 
-	window.addEventListener( 'keydown', onKeyDown, false );
+	// window.addEventListener( 'keydown', onKeyDown, false );
 
 	// force an update at start
 
