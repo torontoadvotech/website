@@ -58,7 +58,7 @@
       flex-direction: column;
       justify-content: center;
       position: relative;
-      z-index: 1;
+      z-index: 10;
 
       @media screen and (max-width: 815px) {
         .caption {
@@ -468,7 +468,7 @@ canvas {
 
 .landscape-overlay {
   position: fixed;
-  z-index: 0;
+  z-index: 5;
   width: 100%;
   height: 100%;
   top: 0;
