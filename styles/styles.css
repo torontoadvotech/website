@@ -968,7 +968,6 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 .landscape {
   position: fixed;
   top: 0;
-  left: 20%;
   z-index: 0;
   opacity: 0;
   transition: opacity 1000ms ease;

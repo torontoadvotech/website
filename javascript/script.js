@@ -22,7 +22,7 @@ $(function () {
     const scrollDistance = $(document).scrollTop();
     const windowHeightHalf = $('body').height() / 2
 
-    $('.landscape').css({left:`${scrollDistance / 3 + 300}px`})
+    $('.landscape').css({right:`${scrollDistance - 300}px`})
 
     console.log(scrollDistance)
     console.log(windowHeightHalf)
@@ -147,7 +147,7 @@ $(function () {
 
   $('.fade-in-content').fadeIn('slow');
   $(document).on("scroll", shrinkNav);
-  $(document).on("scroll", moveBackground);
+  // $(document).on("scroll", moveBackground);
   $(document).on("scroll", showScrollButton);
   $("nav").on("keypress click", ".open-menu", openNavMenu);
   $("nav").on("keypress click", ".close-menu", closeNavMenu);
