@@ -5,7 +5,7 @@ $black: #000;
 .about-page {
   color: $off-white;
   background-color: $black;
-  line-height: 1.5;
+  line-height: 1.6;
 
   .wrapper {
     margin: 0 auto;
@@ -41,6 +41,10 @@ $black: #000;
     margin-bottom: 30px;
     max-width: 1180px;
     width: 100%;
+
+    i {
+      color: $white;
+    }
   }
 
   .aboutus {
@@ -104,10 +108,6 @@ $black: #000;
     cursor: pointer;
     background-color: $gray;
     padding: 50px 30px 20px 30px;
-  }
-
-  i {
-    color: $white;
   }
 
   .open {
