@@ -1624,6 +1624,10 @@ header .coming-soon:focus .coming-soon-show {
   line-height: 1.6;
 }
 
+.about-page .profiles .profile-text h3 {
+  text-transform: uppercase;
+}
+
 .about-page .profiles .profile-text p {
   margin: 0;
 }
