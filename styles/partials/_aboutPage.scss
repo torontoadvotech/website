@@ -1,7 +1,6 @@
 $off-white: #f6f6f6;
 $gray: #0f0f0f;
 $black: #000;
-$cherry-red: #e9002d;
 
 .about-page {
   color: $off-white;
@@ -128,20 +127,38 @@ $cherry-red: #e9002d;
     line-height: 2;
   }
 
-  .profiles-grid {
-    display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 21px;
-    grid-template-columns: repeat(3, auto);
-
-    img {
-      display: block;
+  .profiles {
+    h2 {
+      font-size: 64px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.41;
     }
-  }
 
-  .profile-text {
-    background-color: $gray;
-    padding: 24px 36px;
-    line-height: 1.6;
+    p {
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    .profiles-grid {
+      display: grid;
+      grid-row-gap: 20px;
+      grid-column-gap: 21px;
+      grid-template-columns: repeat(3, auto);
+
+      img {
+        display: block;
+      }
+    }
+
+    .profile-text {
+      background-color: $gray;
+      padding: 24px 36px;
+      line-height: 1.6;
+
+      p {
+        margin: 0;
+      }
+    }
   }
 }

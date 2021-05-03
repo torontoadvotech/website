@@ -1593,7 +1593,19 @@ header .coming-soon:focus .coming-soon-show {
   line-height: 2;
 }
 
-.about-page .profiles-grid {
+.about-page .profiles h2 {
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.41;
+}
+
+.about-page .profiles p {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.about-page .profiles .profiles-grid {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 20px;
@@ -1602,14 +1614,18 @@ header .coming-soon:focus .coming-soon-show {
       grid-template-columns: repeat(3, auto);
 }
 
-.about-page .profiles-grid img {
+.about-page .profiles .profiles-grid img {
   display: block;
 }
 
-.about-page .profile-text {
+.about-page .profiles .profile-text {
   background-color: #0f0f0f;
   padding: 24px 36px;
   line-height: 1.6;
+}
+
+.about-page .profiles .profile-text p {
+  margin: 0;
 }
 
 footer {
