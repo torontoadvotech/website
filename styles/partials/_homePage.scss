@@ -94,6 +94,7 @@
     bottom: 50px;
     right: 10%;
     margin-right: 12%;
+    z-index: 10;
     span {
       padding-right: 20px;
       color: $off-white;
@@ -486,7 +487,7 @@
 .landscape {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 20%;
   z-index: 0;
   opacity: 0;
   transition: opacity $slow-transition;

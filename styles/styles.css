@@ -577,6 +577,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
   bottom: 50px;
   right: 10%;
   margin-right: 12%;
+  z-index: 10;
 }
 .home-page .scroll-direction span {
   padding-right: 20px;
@@ -967,7 +968,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 .landscape {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 20%;
   z-index: 0;
   opacity: 0;
   transition: opacity 1000ms ease;
@@ -1197,6 +1198,9 @@ footer {
   color: #3c3c3c;
   background-color: #000;
   padding: 50px 0;
+}
+footer p {
+  z-index: 10;
 }
 footer .wrapper {
   width: 80%;
