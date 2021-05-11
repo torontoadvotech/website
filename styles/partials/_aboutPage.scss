@@ -1,6 +1,7 @@
 $off-white: #f6f6f6;
 $gray: #0f0f0f;
 $black: #000;
+$cherry-red: #e9002d;
 
 .about-page {
   color: $off-white;
@@ -129,15 +130,11 @@ $black: #000;
 
   .profiles {
     h2 {
-      font-size: 64px;
+      font-size: 48px;
       font-weight: 600;
       text-transform: uppercase;
-      line-height: 1.41;
-    }
-
-    p {
-      line-height: 1.5;
-      margin-bottom: 40px;
+      line-height: 1.88;
+      margin: 40px 0px 10px 0px;
     }
 
     .profiles-grid {
@@ -149,19 +146,23 @@ $black: #000;
       img {
         display: block;
       }
+
+      #placeholder {
+        width: 360px;
+        height: 375px;
+        background-color: #212121;
+      }
     }
 
     .profile-text {
       background-color: $gray;
       padding: 24px 36px;
       line-height: 1.6;
+      width: 360px;
 
       h3 {
         text-transform: uppercase;
-      }
-
-      p {
-        margin: 0;
+        color: $cherry-red;
       }
     }
   }
