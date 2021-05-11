@@ -117,55 +117,6 @@ header {
     }
   }
 
-  // .hamburger {
-  //   width: 30px;
-  //   padding: 20px 0;
-  //   // Middle bar of the hamburger
-  //   .bars {
-  //     position: relative;
-  //     width: 20px;
-  //     height: 1px;
-  //     border-radius: 2.5px;
-  //     background: white;
-  //     transition: all $default-transition;
-  //   }
-  //   // Top and bottom hamburger bars
-  //   .bars::before,
-  //   .bars::after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 30px;
-  //     height: 1px;
-  //     border-radius: 2.5px;
-  //     background: white;
-  //     transition: all 250ms ease-in-out;
-  //     transform: translateY(0) rotate(0);
-  //   }
-
-  //   // Positioning the top and bottom bar
-  //   .bars::before {
-  //     left: 0;
-  //     top: 8px;
-  //   }
-
-  //   .bars::after {
-  //     left: 0;
-  //     bottom: 8px;
-  //   }
-
-  //   .bars-active {
-  //     width: 0px;
-  //   }
-
-  //   .bars-active::before {
-  //     transform: translateY(-8px) rotate(135deg);
-  //   }
-
-  //   .bars-active::after {
-  //     transform: translateY(8px) rotate(-135deg);
-  //   }
-  // }
-
   .nav-menu {
     z-index: 10;
     width: 100%;

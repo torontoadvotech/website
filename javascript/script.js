@@ -2,7 +2,7 @@
 $(function () {
   const shrinkNav = () => {
     const scrollDistance = $(document).scrollTop();
-
+    
     if (scrollDistance > 25) {
       $("header").addClass("scrolled-header");
       $(".logo").css({"height": "65px", "width": "65px"});
@@ -17,6 +17,16 @@ $(function () {
       $(".logo a >.white").text("advocacy");
     }
   };
+  
+  const moveBackground = () => {
+    const scrollDistance = $(document).scrollTop();
+    const windowHeightHalf = $('body').height() / 2
+
+    $('.landscape').css({right:`${scrollDistance - 300}px`})
+
+    console.log(scrollDistance)
+    console.log(windowHeightHalf)
+  }
 
   const showNavItems = () => {
     $(".menu-items ul").css({ opacity: "1" });
@@ -137,6 +147,7 @@ $(function () {
 
   $('.fade-in-content').fadeIn('slow');
   $(document).on("scroll", shrinkNav);
+  // $(document).on("scroll", moveBackground);
   $(document).on("scroll", showScrollButton);
   $("nav").on("keypress click", ".open-menu", openNavMenu);
   $("nav").on("keypress click", ".close-menu", closeNavMenu);
