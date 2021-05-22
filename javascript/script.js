@@ -23,7 +23,7 @@ $(function () {
     const scrollPercent = scrollDistance / windowHeight
     console.log('scrollPercent',scrollPercent)
 
-    if (0.12 < scrollPercent && scrollPercent < 0.45 ) {
+    if (0.12 < scrollPercent && scrollPercent < 0.5 ) {
       $('.landscape').css({left:'-300px'})  
       // $('.landscape').animate({left:'-300px'},300,'swing')  
     } else {
