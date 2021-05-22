@@ -472,7 +472,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 }
 .home-page h1,
 .home-page h2 {
-  font-size: 7.5rem;
+  font-size: 5.15rem;
   text-transform: uppercase;
   line-height: 1.22;
   font-weight: bold;
@@ -667,22 +667,22 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 .home-page .content {
   overflow: hidden;
   display: inline-block;
-  font-size: 7.5rem;
+  font-size: 5.15rem;
   line-height: 1;
   color: #f6f6f6;
   display: flex;
 }
 .home-page .content > span {
-  padding-right: 4.55rem;
+  padding-right: 3.55rem;
 }
 .home-page .content__container {
   font-weight: 700;
   overflow: hidden;
-  height: 8rem;
+  height: 5.5rem;
 }
 .home-page .content__container__text {
   display: inline-block;
-  font-size: 7.5rem;
+  font-size: 5.15rem;
   color: #fff;
   line-height: 1;
 }
@@ -847,7 +847,6 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 }
 
 .tooltip-first {
-  width: -webkit-max-content;
   width: max-content;
   transition: all 150ms ease;
   left: 330px;

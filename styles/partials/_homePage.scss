@@ -4,7 +4,7 @@
   z-index: 10;
   h1,
   h2 {
-    font-size: 7.5rem;
+    font-size: 5.15rem;
     text-transform: uppercase;
     line-height: 1.22;
     font-weight: bold;
@@ -191,21 +191,21 @@
 .home-page .content {
   overflow: hidden;
   display: inline-block;
-  font-size: 7.5rem;
+  font-size: 5.15rem;
   line-height: 1;
   color: $off-white;
   display: flex;
   > span {
-    padding-right: 4.55rem;
+    padding-right: 3.55rem;
   }
 
   &__container {
     font-weight: 700;
     overflow: hidden;
-    height: 8rem;
+    height: 5.5rem;
     &__text {
       display: inline-block;
-      font-size: 7.5rem;
+      font-size: 5.15rem;
       color: $white;
       line-height: 1;
     }
@@ -453,7 +453,7 @@
 .landscape {
   position: fixed;
   top: 0;
-  // left: 20%;
+  // left: 300px;
   z-index: 0;
   opacity: 0;
   transition: opacity $slow-transition;

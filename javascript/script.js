@@ -1,8 +1,21 @@
 // Shrink header nav on scroll
 $(function () {
+  let lastScrollTop = $(document).scrollTop()
+  const getScrollDirection = () => {
+    const currentScrollTop = $(document).scrollTop();
+    if (currentScrollTop > lastScrollTop) {
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop
+      return 'down'
+    } else if (currentScrollTop < lastScrollTop) {
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop
+      return 'up'
+    } else {
+      return 'stop'
+    }
+  }
+  
   const shrinkNav = () => {
-    const scrollDistance = $(document).scrollTop();
-    
+    const scrollDistance = $(document).scrollTop()
     if (scrollDistance > 25) {
       $("header").addClass("scrolled-header");
       $(".logo").css({"height": "65px", "width": "65px"});
@@ -19,13 +32,26 @@ $(function () {
   };
   
   const moveBackground = () => {
-    const scrollDistance = $(document).scrollTop();
+    const scrollDistance = $(document).scrollTop()
     const windowHeightHalf = $('body').height() / 2
+    const windowHeight = $('body').height()
+    const scrollDirection = getScrollDirection()
+    console.log('scrollDirection',scrollDirection)
 
-    $('.landscape').css({right:`${scrollDistance - 300}px`})
+    if (scrollDirection === 'down') {
+      $('.landscape').animate({left:'-=50'},10,'swing')
+      // $('.landscape').css({left:`${scrollDistance+300}px`})
+      // $('.landscape').css({left:'-=50'})
+    } else if (scrollDirection === 'up') {
+      // $('.landscape').css({left:'+=50'})
+      // $('.landscape').css({left:`${scrollDistance-300}px`})
+      $('.landscape').animate({left:'+=50'},10,'swing')
+    } 
 
-    console.log(scrollDistance)
-    console.log(windowHeightHalf)
+
+    // console.log('scrollDistance',scrollDistance)
+    // console.log('window height',windowHeight)
+    // console.log('half window height',windowHeightHalf)
   }
 
   const showNavItems = () => {
@@ -145,10 +171,17 @@ $(function () {
     }
   };
 
+  const handleScroll = () => {
+    moveBackground()
+    shrinkNav()
+    showScrollButton()
+    console.log(getScrollDirection())
+  }
+
+  $('.landscape').css({left:'300px'})
   $('.fade-in-content').fadeIn('slow');
-  $(document).on("scroll", shrinkNav);
+  $(document).on("scroll", handleScroll);
   // $(document).on("scroll", moveBackground);
-  $(document).on("scroll", showScrollButton);
   $("nav").on("keypress click", ".open-menu", openNavMenu);
   $("nav").on("keypress click", ".close-menu", closeNavMenu);
   // $('.search-bar input').focus(highlightSearch);
