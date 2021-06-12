@@ -186,6 +186,20 @@ $(function () {
     $('#values-description').slideToggle();
     $(event.currentTarget).find('i').toggleClass('open')
   })
+
+  // YOU ARE HERE
+  // Need to toggle a slide-up slide-down when the button
+  // is clicked.
+
+  $('.read-more').on('click', () => {
+    $('.profile-text').addClass('slide-up');
+    $('.extra-text').css({
+      display: 'block'
+    });
+    $('.read-more').css({
+      display: 'none'
+    })
+  })
 });
 
 

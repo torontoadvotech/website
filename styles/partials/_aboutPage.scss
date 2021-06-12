@@ -128,6 +128,9 @@ $cherry-red: #e9002d;
     line-height: 2;
   }
 
+  // YOU ARE HERE!
+  // The profile-text div is sliding up, yay!
+
   .profiles {
     h2 {
       font-size: 48px;
@@ -143,11 +146,18 @@ $cherry-red: #e9002d;
       grid-column-gap: 21px;
       grid-template-columns: repeat(3, auto);
 
+      .profile-card {
+        width: 360px;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+
       img {
         display: block;
       }
 
-      #placeholder {
+      .placeholder {
         width: 360px;
         height: 375px;
         background-color: #212121;
@@ -155,15 +165,43 @@ $cherry-red: #e9002d;
     }
 
     .profile-text {
+      position: absolute;
+      width: 360px;
+      height: 100%;
       background-color: $gray;
       padding: 24px 36px;
       line-height: 1.6;
-      width: 360px;
 
       h3 {
         text-transform: uppercase;
         color: $cherry-red;
+        padding-bottom: 3px;
       }
+
+      .read-more {
+        font-size: 14px;
+        color: $cherry-red;
+        text-align: right;
+        padding-right: 24px;
+        cursor: pointer;
+      }
+
+      .read-more:hover {
+        color: #a50021;
+      }
+
+      .read-more:active {
+        color: #80031c;
+      }
+
+      .extra-text {
+        display: none;
+      }
+    }
+
+    .slide-up {
+      transform: translateY(-375px);
+      transition: transform 0.4s;
     }
   }
 }
