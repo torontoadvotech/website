@@ -128,9 +128,6 @@ $cherry-red: #e9002d;
     line-height: 2;
   }
 
-  // YOU ARE HERE!
-  // The profile-text div is sliding up, yay!
-
   .profiles {
     h2 {
       font-size: 48px;
@@ -169,8 +166,26 @@ $cherry-red: #e9002d;
       width: 360px;
       height: 100%;
       background-color: $gray;
-      padding: 24px 36px;
+      padding: 20px 20px 24px 36px;
       line-height: 1.6;
+
+      // TO-DO:
+      // add hover and active state
+      .exit {
+        display: none;
+        cursor: pointer;
+        width: 19px;
+        height: 19px;
+        margin-left: 285px;
+      }
+
+      .exit:hover {
+        opacity: 0.8;
+      }
+
+      .exit:active {
+        opacity: 0.5;
+      }
 
       h3 {
         text-transform: uppercase;
@@ -201,6 +216,11 @@ $cherry-red: #e9002d;
 
     .slide-up {
       transform: translateY(-375px);
+      transition: transform 0.4s;
+    }
+
+    .slide-down {
+      transform: translateY(0px);
       transition: transform 0.4s;
     }
   }

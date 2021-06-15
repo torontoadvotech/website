@@ -187,17 +187,37 @@ $(function () {
     $(event.currentTarget).find('i').toggleClass('open')
   })
 
-  // YOU ARE HERE
-  // Need to toggle a slide-up slide-down when the button
-  // is clicked.
+  // Logic for profile cards
 
   $('.read-more').on('click', () => {
-    $('.profile-text').addClass('slide-up');
+    $('.profile-text').css({
+      transform: 'translateY(-375px)',
+      transition: 'transform 0.4s'
+    })
+    $('.exit').css({
+      display: 'block'
+    });
     $('.extra-text').css({
       display: 'block'
     });
     $('.read-more').css({
       display: 'none'
+    })
+  })
+
+  $('.exit').on('click', () => {
+    $('.profile-text').css({
+      transform: 'translateY(0px)',
+      transition: 'transform 0.4s'
+    })
+    $('.exit').css({
+      display: 'none'
+    });
+    $('.extra-text').css({
+      display: 'none'
+    });
+    $('.read-more').css({
+      display: 'block'
     })
   })
 });
