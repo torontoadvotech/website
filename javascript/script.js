@@ -172,51 +172,53 @@ $(function () {
 
   // Logic for collapsible divs
 
-  $('#vision-title').on('click', (event) => {
+  $('#vision-title').on('click', (e) => {
     $('#vision-description').slideToggle();
-    $(event.currentTarget).find('i').toggleClass('open')
+    $(e.currentTarget).find('i').toggleClass('open')
   })
 
-  $('#mission-title').on('click', (event) => {
+  $('#mission-title').on('click', (e) => {
     $('#mission-description').slideToggle();
-    $(event.currentTarget).find('i').toggleClass('open')
+    $(e.currentTarget).find('i').toggleClass('open')
   })
 
-  $('#values-title').on('click', (event) => {
+  $('#values-title').on('click', (e) => {
     $('#values-description').slideToggle();
-    $(event.currentTarget).find('i').toggleClass('open')
+    $(e.currentTarget).find('i').toggleClass('open')
   })
 
   // Logic for profile cards
 
-  $('.read-more').on('click', () => {
-    $('.profile-text').css({
+
+  $('.read-more').on('click', (e) => {
+    $(e.currentTarget).parent().css({
       transform: 'translateY(-375px)',
       transition: 'transform 0.4s'
+    });
+    $(e.currentTarget).siblings('.exit').css({
+      display: 'block'
+    });
+    $(e.currentTarget).siblings('.extra-text').css({
+      display: 'block'
     })
-    $('.exit').css({
-      display: 'block'
-    });
-    $('.extra-text').css({
-      display: 'block'
-    });
-    $('.read-more').css({
+    $(e.currentTarget).css({
       display: 'none'
-    })
+    });
+
   })
 
-  $('.exit').on('click', () => {
-    $('.profile-text').css({
+  $('.exit').on('click', (e) => {
+    $(e.currentTarget).parent().css({
       transform: 'translateY(0px)',
       transition: 'transform 0.4s'
     })
-    $('.exit').css({
+    $(e.currentTarget).css({
       display: 'none'
     });
-    $('.extra-text').css({
+    $(e.currentTarget).siblings('.extra-text').css({
       display: 'none'
     });
-    $('.read-more').css({
+    $(e.currentTarget).siblings('.read-more').css({
       display: 'block'
     })
   })
