@@ -199,14 +199,6 @@ $cherry-red: #e9002d;
         cursor: pointer;
       }
 
-      .read-more:hover {
-        color: #a50021;
-      }
-
-      .read-more:active {
-        color: #80031c;
-      }
-
       .extra-text {
         padding-top: 10px;
         display: none;
@@ -216,10 +208,12 @@ $cherry-red: #e9002d;
         color: $cherry-red;
       }
 
+      .read-more:hover,
       a.extra-text:hover {
         color: #a50021;
       }
 
+      .read-more:active,
       a.extra-text:active {
         color: #80031c;
       }

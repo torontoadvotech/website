@@ -1673,14 +1673,6 @@ canvas {
   cursor: pointer;
 }
 
-.about-page .profiles .profile-text .read-more:hover {
-  color: #a50021;
-}
-
-.about-page .profiles .profile-text .read-more:active {
-  color: #80031c;
-}
-
 .about-page .profiles .profile-text .extra-text {
   padding-top: 10px;
   display: none;
@@ -1690,10 +1682,12 @@ canvas {
   color: #e9002d;
 }
 
+.about-page .profiles .profile-text .read-more:hover,
 .about-page .profiles .profile-text a.extra-text:hover {
   color: #a50021;
 }
 
+.about-page .profiles .profile-text .read-more:active,
 .about-page .profiles .profile-text a.extra-text:active {
   color: #80031c;
 }
