@@ -1682,25 +1682,20 @@ canvas {
 }
 
 .about-page .profiles .profile-text .extra-text {
+  padding-top: 10px;
   display: none;
 }
 
-.about-page .profiles .slide-up {
-  -webkit-transform: translateY(-375px);
-          transform: translateY(-375px);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+.about-page .profiles .profile-text a.extra-text {
+  color: #e9002d;
 }
 
-.about-page .profiles .slide-down {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+.about-page .profiles .profile-text a.extra-text:hover {
+  color: #a50021;
+}
+
+.about-page .profiles .profile-text a.extra-text:active {
+  color: #80031c;
 }
 
 footer {

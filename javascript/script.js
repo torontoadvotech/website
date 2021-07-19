@@ -171,7 +171,6 @@ $(function () {
   $(".text").on("click", ".read-more", handleMore);
 
   // Logic for collapsible divs
-
   $('#vision-title').on('click', (e) => {
     $('#vision-description').slideToggle();
     $(e.currentTarget).find('i').toggleClass('open')
@@ -188,8 +187,6 @@ $(function () {
   })
 
   // Logic for profile cards
-
-
   $('.read-more').on('click', (e) => {
     $(e.currentTarget).parent().css({
       transform: 'translateY(-375px)',

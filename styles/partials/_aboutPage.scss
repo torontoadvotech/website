@@ -169,8 +169,6 @@ $cherry-red: #e9002d;
       padding: 20px 20px 24px 36px;
       line-height: 1.6;
 
-      // TO-DO:
-      // add hover and active state
       .exit {
         display: none;
         cursor: pointer;
@@ -210,18 +208,21 @@ $cherry-red: #e9002d;
       }
 
       .extra-text {
+        padding-top: 10px;
         display: none;
       }
-    }
 
-    .slide-up {
-      transform: translateY(-375px);
-      transition: transform 0.4s;
-    }
+      a.extra-text {
+        color: $cherry-red;
+      }
 
-    .slide-down {
-      transform: translateY(0px);
-      transition: transform 0.4s;
+      a.extra-text:hover {
+        color: #a50021;
+      }
+
+      a.extra-text:active {
+        color: #80031c;
+      }
     }
   }
 }
