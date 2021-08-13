@@ -316,6 +316,12 @@ header .wrapper {
     padding-right: 75px;
   }
 }
+@media screen and (max-width: 530px) {
+  header .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -1205,6 +1211,7 @@ canvas {
 
 footer {
   color: #3c3c3c;
+  position: relative;
   background-color: #000;
   padding: 50px 0;
   z-index: 10;

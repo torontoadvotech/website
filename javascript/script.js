@@ -150,12 +150,12 @@ $(function () {
   };
 
   const handleScroll = () => {
-    moveBackground()
+    // moveBackground()
     shrinkNav()
     showScrollButton()
   }
 
-  $('.landscape').css({left:'300px'})
+  // $('.landscape').css({left:'300px'})
   $('.fade-in-content').fadeIn('slow');
   $(document).on("scroll", handleScroll);
   $("nav").on("keypress click", ".open-menu", openNavMenu);

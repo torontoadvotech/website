@@ -9,14 +9,19 @@ header {
     max-width: 1400px;
     padding-left: 150px;
     padding-right: 150px;
-  }
 
-  @media screen and (max-width: 961px) {
-    .wrapper {
+
+    @media screen and (max-width: 961px) {
       padding-left: 75px;
       padding-right: 75px;
     }
+
+    @media screen and (max-width: 530px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
+
 
   nav {
     display: flex;
