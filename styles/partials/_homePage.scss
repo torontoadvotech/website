@@ -109,7 +109,6 @@
         span {
           font-weight: bold;
           display: block;
-          margin-right: 30px
         }
       }
     }
@@ -214,7 +213,7 @@
   color: $off-white;
   display: flex;
   > span {
-    padding-right: 3.55rem;
+    margin-right: 28px
   }
 
   &__container {
@@ -249,9 +248,6 @@
 
   @media screen and (max-width: 815px) {
     font-size: 5rem;
-    > span {
-      padding-right: 10px;
-    }
     &__container {
       height: 5.3rem;
       &__text {

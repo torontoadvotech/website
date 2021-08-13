@@ -599,7 +599,6 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 .home-page .section1 .main-header-container h1 span {
   font-weight: bold;
   display: block;
-  margin-right: 30px;
 }
 .home-page .section1 .section-content {
   min-height: auto;
@@ -699,7 +698,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
   display: flex;
 }
 .home-page .content > span {
-  padding-right: 3.55rem;
+  margin-right: 28px;
 }
 .home-page .content__container {
   font-weight: 700;
@@ -730,9 +729,6 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 @media screen and (max-width: 815px) {
   .home-page .content {
     font-size: 5rem;
-  }
-  .home-page .content > span {
-    padding-right: 10px;
   }
   .home-page .content__container {
     height: 5.3rem;
