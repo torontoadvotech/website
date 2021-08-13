@@ -442,6 +442,7 @@ header .menu-items a {
   padding: 5px;
   transition: all 150ms ease;
   outline: none;
+  letter-spacing: 10px;
 }
 header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.coming-soon) {
   color: #002de9;
@@ -485,6 +486,8 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
   margin-bottom: 30px;
   z-index: 20;
   letter-spacing: 10px;
+  word-spacing: -15px;
+  margin-right: -10px;
 }
 @media (max-width: 815px) {
   .home-page h1,
@@ -509,6 +512,8 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
   font-size: 5rem;
   line-height: 2;
   font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
 }
 @media (max-width: 815px) {
   .home-page h3 {
@@ -526,6 +531,9 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
     font-size: 2.5rem;
   }
 }
+.home-page h3 .dot {
+  letter-spacing: 0px;
+}
 .home-page section {
   overflow: hidden;
   min-height: 100vh;
@@ -540,7 +548,6 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 }
 .home-page section .section-content {
   min-height: 100vh;
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -565,7 +572,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 }
 .home-page section .caption {
   margin-bottom: 40px;
-  width: 520px;
+  width: 524px;
   font-size: 1.8rem;
   color: #f6f6f6;
   line-height: 2;
@@ -592,6 +599,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 .home-page .section1 .main-header-container h1 span {
   font-weight: bold;
   display: block;
+  margin-right: 30px;
 }
 .home-page .section1 .section-content {
   min-height: auto;
@@ -625,6 +633,15 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
   margin-right: 150px;
   align-items: flex-end;
 }
+.home-page .section2 h2 {
+  width: 50%;
+}
+.home-page .section2 h3 {
+  margin-right: -10px;
+}
+.home-page .section2 .caption {
+  width: 524px;
+}
 @media screen and (max-width: 961px) {
   .home-page .section2 .section-content {
     margin-right: 75px;
@@ -639,6 +656,9 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
 .home-page .section3 .section-content {
   margin-left: 150px;
 }
+.home-page .section3 h2 {
+  width: 50%;
+}
 .home-page .section3 .button-secondary {
   margin-right: 20px;
 }
@@ -648,7 +668,7 @@ header .coming-soon:hover .coming-soon-show, header .coming-soon:focus .coming-s
   }
 }
 .home-page .section3 p {
-  width: 500px;
+  width: 524px;
 }
 @media screen and (max-width: 961px) {
   .home-page .section3 .section-content {
@@ -1194,6 +1214,7 @@ canvas {
   cursor: pointer;
   background-color: #0f0f0f;
   padding: 50px 30px 20px 30px;
+  letter-spacing: 3px;
 }
 .about-page .open {
   transform: rotate(180deg);
@@ -1220,11 +1241,11 @@ footer p {
   z-index: 10;
 }
 footer .wrapper {
-  width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
+  padding: 0 150px;
 }
 @media screen and (max-width: 960px) {
   footer .wrapper {
