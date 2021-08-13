@@ -1248,6 +1248,7 @@ footer .wrapper {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
   }
 }
 footer .scroll-top {
