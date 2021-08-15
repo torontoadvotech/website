@@ -1,8 +1,7 @@
 // Shrink header nav on scroll
 $(function () {
   const shrinkNav = () => {
-    const scrollDistance = $(document).scrollTop();
-    
+    const scrollDistance = $(document).scrollTop()
     if (scrollDistance > 25) {
       $("header").addClass("scrolled-header");
       $(".logo").css({"height": "65px", "width": "65px"});
@@ -19,13 +18,18 @@ $(function () {
   };
   
   const moveBackground = () => {
-    const scrollDistance = $(document).scrollTop();
-    const windowHeightHalf = $('body').height() / 2
+    const scrollDistance = $(document).scrollTop()
+    const windowHeight = $('body').height()
+    const scrollPercent = scrollDistance / windowHeight
+    console.log('scrollPercent',scrollPercent)
 
-    $('.landscape').css({right:`${scrollDistance - 300}px`})
-
-    console.log(scrollDistance)
-    console.log(windowHeightHalf)
+    if (0.12 < scrollPercent && scrollPercent < 0.5 ) {
+      $('.landscape').css({left:'-300px'})  
+      // $('.landscape').animate({left:'-300px'},300,'swing')  
+    } else {
+      $('.landscape').css({left:'300px'})
+      // $('.landscape').animate({left:'300px'},300,'swing')
+    }
   }
 
   const showNavItems = () => {
@@ -145,10 +149,15 @@ $(function () {
     }
   };
 
+  const handleScroll = () => {
+    // moveBackground()
+    shrinkNav()
+    showScrollButton()
+  }
+
+  // $('.landscape').css({left:'300px'})
   $('.fade-in-content').fadeIn('slow');
-  $(document).on("scroll", shrinkNav);
-  // $(document).on("scroll", moveBackground);
-  $(document).on("scroll", showScrollButton);
+  $(document).on("scroll", handleScroll);
   $("nav").on("keypress click", ".open-menu", openNavMenu);
   $("nav").on("keypress click", ".close-menu", closeNavMenu);
   // $('.search-bar input').focus(highlightSearch);

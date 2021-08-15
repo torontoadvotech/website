@@ -1,5 +1,6 @@
 footer {
   color: #3c3c3c;
+  position: relative;
   background-color: $black;
   padding: 50px 0;
   z-index: 10;
@@ -9,16 +10,17 @@ footer {
   }
 
   .wrapper {
-    width: 80%;
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
+    padding: 0 150px;
 
     @media screen and (max-width: 960px) {
       flex-direction: column-reverse;
       justify-content: space-between;
       align-items: center;
+      padding: 20px;
     }
   }
 
