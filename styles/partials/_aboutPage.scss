@@ -140,12 +140,12 @@ $cherry-red: #e9002d;
           .profiles-grid {
             display: grid;
             grid-row-gap: 20px;
-            grid-column-gap: 21px;
             grid-template-columns: repeat(3, auto);
-            grid-auto-flow: rows;
+            justify-content: space-between;
 
             @media (max-width: 1400px) {
               grid-template-columns: repeat(2, auto);
+              grid-column-gap: 21px;
               justify-content: center;
             }
 
@@ -156,7 +156,7 @@ $cherry-red: #e9002d;
             
 
             .profile-card {
-              width: 360px;
+              width: 350px;
               height: 500px;
               position: relative;
               overflow: hidden;
@@ -176,7 +176,7 @@ $cherry-red: #e9002d;
             }
 
             .placeholder {
-              width: 360px;
+              width: 350px;
               height: 375px;
               background-color: #212121;
 
@@ -202,7 +202,7 @@ $cherry-red: #e9002d;
 
             .profile-text {
               position: absolute;
-              width: 360px;
+              width: 350px;
               height: 100%;
               background-color: $gray;
               padding: 20px 20px 24px 36px;

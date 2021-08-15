@@ -1618,16 +1618,18 @@ canvas {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 20px;
-  grid-column-gap: 21px;
   -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
-  grid-auto-flow: rows;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1400px) {
   .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
+    grid-column-gap: 21px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1642,7 +1644,7 @@ canvas {
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-card {
-  width: 360px;
+  width: 350px;
   height: 500px;
   position: relative;
   overflow: hidden;
@@ -1666,7 +1668,7 @@ canvas {
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .placeholder {
-  width: 360px;
+  width: 350px;
   height: 375px;
   background-color: #212121;
 }
@@ -1705,7 +1707,7 @@ canvas {
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text {
   position: absolute;
-  width: 360px;
+  width: 350px;
   height: 100%;
   background-color: #0f0f0f;
   padding: 20px 20px 24px 36px;
