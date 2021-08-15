@@ -186,6 +186,20 @@ $cherry-red: #e9002d;
                }
             }
 
+            .up {
+              transform: translateY(-375px);
+              transition: transform 0.4s;
+
+              @media (max-width: 500px) {
+                transform: translateY(-220px);
+              }
+            }
+
+            .down {
+              transform: translateY(0px);
+              transition: transform 0.4s;
+            }
+
             .profile-text {
               position: absolute;
               width: 360px;
@@ -197,6 +211,8 @@ $cherry-red: #e9002d;
               @media (max-width: 500px) {
                 width: 210px;
                 padding: 15px;
+                overflow-y: scroll;
+                line-height: 1.3;
 
                 p {
                   font-size: 1.3rem;
@@ -209,6 +225,10 @@ $cherry-red: #e9002d;
                 width: 19px;
                 height: 19px;
                 margin-left: 285px;
+
+                @media (max-width: 500px) {
+                  margin-left: 160px;
+                }
               }
 
               .exit:hover {
@@ -226,7 +246,6 @@ $cherry-red: #e9002d;
               }
 
               .read-more {
-                font-size: 14px;
                 color: $cherry-red;
                 text-align: right;
                 padding-right: 24px;
@@ -244,6 +263,10 @@ $cherry-red: #e9002d;
 
               a.extra-text {
                 color: $cherry-red;
+
+                @media (max-width: 500px) {
+                  font-size: 1.3rem;
+                }
               }
 
               .read-more:hover,

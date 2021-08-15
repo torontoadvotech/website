@@ -2,27 +2,27 @@
 $(function () {
   const shrinkNav = () => {
     const scrollDistance = $(document).scrollTop();
-    
+
     if (scrollDistance > 25) {
       $("header").addClass("scrolled-header");
-      $(".logo").css({"height": "65px", "width": "65px"});
+      $(".logo").css({ "height": "65px", "width": "65px" });
       $(".wrapper>.nav-right").css("padding-top", "5px");
       $(".scroll-direction").fadeOut();
     } else {
       $("header").removeClass("scrolled-header");
-      $(".logo").css({"height": "90px", "width": "90px"});
+      $(".logo").css({ "height": "90px", "width": "90px" });
       $(".wrapper>.nav-right").css("padding-top", "9px");
       $(".scroll-direction").fadeIn();
       $(".logo a >.red").text("toronto/");
       $(".logo a >.white").text("advocacy");
     }
   };
-  
+
   const moveBackground = () => {
     const scrollDistance = $(document).scrollTop();
     const windowHeightHalf = $('body').height() / 2
 
-    $('.landscape').css({right:`${scrollDistance - 300}px`})
+    $('.landscape').css({ right: `${scrollDistance - 300}px` })
 
     console.log(scrollDistance)
     console.log(windowHeightHalf)
@@ -61,7 +61,7 @@ $(function () {
     });
     setTimeout(showNavItems, 200);
   };
-  
+
   const closeNavMenu = () => {
     hideNavItems();
     setTimeout(function () {
@@ -188,10 +188,8 @@ $(function () {
 
   // Logic for profile cards
   $('.read-more').on('click', (e) => {
-    $(e.currentTarget).parent().css({
-      transform: 'translateY(-375px)',
-      transition: 'transform 0.4s'
-    });
+    $(e.currentTarget).parent().removeClass("down");
+    $(e.currentTarget).parent().addClass("up");
     $(e.currentTarget).siblings('.exit').css({
       display: 'block'
     });
@@ -205,10 +203,8 @@ $(function () {
   })
 
   $('.exit').on('click', (e) => {
-    $(e.currentTarget).parent().css({
-      transform: 'translateY(0px)',
-      transition: 'transform 0.4s'
-    })
+    $(e.currentTarget).parent().removeClass("up");
+    $(e.currentTarget).parent().addClass("down");
     $(e.currentTarget).css({
       display: 'none'
     });
