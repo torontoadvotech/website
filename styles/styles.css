@@ -429,7 +429,17 @@ header .menu-items ul {
   transition: all 1000ms ease;
   list-style: none;
   text-align: right;
-  margin-right: 10%;
+  margin-right: 50px;
+}
+@media screen and (max-width: 530px) {
+  header .menu-items ul {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 361px) {
+  header .menu-items ul {
+    margin-right: 0px;
+  }
 }
 header .menu-items a {
   display: inline-block;
@@ -437,7 +447,7 @@ header .menu-items a {
   color: #fff;
   font-family: "Inconsolata", sans-serif;
   font-weight: 600;
-  font-size: 9rem;
+  font-size: 8rem;
   line-height: 1;
   padding: 5px;
   transition: all 150ms ease;
@@ -449,9 +459,32 @@ header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.co
   padding-right: 26px;
 }
 @media screen and (max-width: 530px) {
-  header .menu-items a {
-    font-size: 5rem;
+  header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.coming-soon) {
+    padding-right: 18px;
   }
+}
+@media screen and (max-width: 361px) {
+  header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.coming-soon) {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 961px) {
+  header .menu-items a {
+    font-size: 6.5rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  header .menu-items a {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 361px) {
+  header .menu-items a {
+    font-size: 3rem;
+  }
+}
+header .coming-soon {
+  word-spacing: -25px;
 }
 header .coming-soon .coming-soon-hide,
 header .coming-soon .coming-soon-show {
@@ -462,8 +495,23 @@ header .coming-soon .coming-soon-show {
   color: #e9002d;
   display: inline-block;
   position: absolute;
-  right: 18.25%;
   opacity: 0;
+  right: 210px;
+}
+@media screen and (max-width: 961px) {
+  header .coming-soon .coming-soon-show {
+    right: 130px;
+  }
+}
+@media screen and (max-width: 530px) {
+  header .coming-soon .coming-soon-show {
+    right: 45px;
+  }
+}
+@media screen and (max-width: 361px) {
+  header .coming-soon .coming-soon-show {
+    right: 15px;
+  }
 }
 header .coming-soon:hover .coming-soon-hide, header .coming-soon:focus .coming-soon-hide {
   opacity: 0.05;
