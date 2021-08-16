@@ -153,8 +153,6 @@ $cherry-red: #e9002d;
               grid-template-columns: repeat(1, auto);
             }
 
-            
-
             .profile-card {
               width: 350px;
               height: 500px;
@@ -227,6 +225,8 @@ $cherry-red: #e9002d;
                 margin-left: 285px;
 
                 @media (max-width: 500px) {
+                  width: 15px;
+                  height: 15px;
                   margin-left: 160px;
                 }
               }
@@ -243,6 +243,14 @@ $cherry-red: #e9002d;
                 text-transform: uppercase;
                 color: $cherry-red;
                 padding-bottom: 3px;
+
+                span {
+                  text-transform: lowercase;
+                }
+
+                @media (max-width: 500px) {
+                  font-size: 1.5rem;
+                }
               }
 
               .read-more {
@@ -265,7 +273,8 @@ $cherry-red: #e9002d;
                 color: $cherry-red;
 
                 @media (max-width: 500px) {
-                  font-size: 1.3rem;
+                  font-size: 1.2rem;
+                  padding-top: 5px;
                 }
               }
 

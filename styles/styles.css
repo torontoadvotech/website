@@ -1736,6 +1736,8 @@ canvas {
 
 @media (max-width: 500px) {
   .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text .exit {
+    width: 15px;
+    height: 15px;
     margin-left: 160px;
   }
 }
@@ -1752,6 +1754,16 @@ canvas {
   text-transform: uppercase;
   color: #e9002d;
   padding-bottom: 3px;
+}
+
+.about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text h3 span {
+  text-transform: lowercase;
+}
+
+@media (max-width: 500px) {
+  .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text .read-more {
@@ -1778,7 +1790,8 @@ canvas {
 
 @media (max-width: 500px) {
   .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text a.extra-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding-top: 5px;
   }
 }
 
