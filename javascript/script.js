@@ -188,8 +188,8 @@ $(function () {
 
   // Logic for profile cards
   $('.read-more').on('click', (e) => {
-    $(e.currentTarget).parent().removeClass("down");
-    $(e.currentTarget).parent().addClass("up");
+    $(e.currentTarget).parent().removeClass("slide-down");
+    $(e.currentTarget).parent().addClass("slide-up");
     $(e.currentTarget).siblings('.exit').css({
       display: 'block'
     });
@@ -203,8 +203,8 @@ $(function () {
   })
 
   $('.exit').on('click', (e) => {
-    $(e.currentTarget).parent().removeClass("up");
-    $(e.currentTarget).parent().addClass("down");
+    $(e.currentTarget).parent().removeClass("slide-up");
+    $(e.currentTarget).parent().addClass("slide-down");
     $(e.currentTarget).css({
       display: 'none'
     });

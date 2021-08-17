@@ -1527,13 +1527,6 @@ canvas {
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin-bottom: 30px;
   max-width: 1180px;
   width: 100%;
@@ -1566,7 +1559,7 @@ canvas {
   background-color: #0f0f0f;
   color: #fff;
   padding: 0px 30px 50px 30px;
-  display: none;
+  display: block;
   line-height: 1.6;
 }
 
@@ -1680,7 +1673,7 @@ canvas {
   }
 }
 
-.about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .up {
+.about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .slide-up {
   -webkit-transform: translateY(-375px);
           transform: translateY(-375px);
   -webkit-transition: -webkit-transform 0.4s;
@@ -1690,13 +1683,13 @@ canvas {
 }
 
 @media (max-width: 500px) {
-  .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .up {
+  .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .slide-up {
     -webkit-transform: translateY(-220px);
             transform: translateY(-220px);
   }
 }
 
-.about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .down {
+.about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .slide-down {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   -webkit-transition: -webkit-transform 0.4s;
@@ -1756,10 +1749,6 @@ canvas {
   padding-bottom: 3px;
 }
 
-.about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text h3 span {
-  text-transform: lowercase;
-}
-
 @media (max-width: 500px) {
   .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text h3 {
     font-size: 1.5rem;
@@ -1776,6 +1765,7 @@ canvas {
 @media (max-width: 500px) {
   .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid .profile-text .read-more {
     padding-right: 10px;
+    padding-top: 10px;
   }
 }
 
