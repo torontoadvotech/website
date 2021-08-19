@@ -337,6 +337,13 @@ header .wrapper {
   }
 }
 
+@media screen and (max-width: 530px) {
+  header .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,7 +503,19 @@ header .menu-items ul {
   transition: all 1000ms ease;
   list-style: none;
   text-align: right;
-  margin-right: 10%;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 530px) {
+  header .menu-items ul {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  header .menu-items ul {
+    margin-right: 0px;
+  }
 }
 
 header .menu-items a {
@@ -505,12 +524,13 @@ header .menu-items a {
   color: #fff;
   font-family: "Inconsolata", sans-serif;
   font-weight: 600;
-  font-size: 9rem;
+  font-size: 8rem;
   line-height: 1;
   padding: 5px;
   -webkit-transition: all 150ms ease;
   transition: all 150ms ease;
   outline: none;
+  letter-spacing: 10px;
 }
 
 header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.coming-soon) {
@@ -519,9 +539,37 @@ header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.co
 }
 
 @media screen and (max-width: 530px) {
-  header .menu-items a {
-    font-size: 5rem;
+  header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.coming-soon) {
+    padding-right: 18px;
   }
+}
+
+@media screen and (max-width: 361px) {
+  header .menu-items a:hover:not(.coming-soon), header .menu-items a:focus:not(.coming-soon) {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  header .menu-items a {
+    font-size: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header .menu-items a {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  header .menu-items a {
+    font-size: 3rem;
+  }
+}
+
+header .coming-soon {
+  word-spacing: -25px;
 }
 
 header .coming-soon .coming-soon-hide,
@@ -535,8 +583,26 @@ header .coming-soon .coming-soon-show {
   color: #e9002d;
   display: inline-block;
   position: absolute;
-  right: 18.25%;
   opacity: 0;
+  right: 210px;
+}
+
+@media screen and (max-width: 961px) {
+  header .coming-soon .coming-soon-show {
+    right: 130px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header .coming-soon .coming-soon-show {
+    right: 45px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  header .coming-soon .coming-soon-show {
+    right: 15px;
+  }
 }
 
 header .coming-soon:hover .coming-soon-hide,
@@ -557,13 +623,15 @@ header .coming-soon:focus .coming-soon-show {
 
 .home-page h1,
 .home-page h2 {
-  font-size: 7.5rem;
+  font-size: 5.15rem;
   text-transform: uppercase;
   line-height: 1.22;
   font-weight: bold;
   margin-bottom: 30px;
   z-index: 20;
   letter-spacing: 10px;
+  word-spacing: -15px;
+  margin-right: -10px;
 }
 
 @media (max-width: 815px) {
@@ -592,6 +660,8 @@ header .coming-soon:focus .coming-soon-show {
   font-size: 5rem;
   line-height: 2;
   font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 815px) {
@@ -611,6 +681,10 @@ header .coming-soon:focus .coming-soon-show {
   .home-page h3 {
     font-size: 2.5rem;
   }
+}
+
+.home-page h3 .dot {
+  letter-spacing: 0px;
 }
 
 .home-page section {
@@ -635,7 +709,6 @@ header .coming-soon:focus .coming-soon-show {
 
 .home-page section .section-content {
   min-height: 100vh;
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +743,7 @@ header .coming-soon:focus .coming-soon-show {
 
 .home-page section .caption {
   margin-bottom: 40px;
-  width: 520px;
+  width: 524px;
   font-size: 1.8rem;
   color: #f6f6f6;
   line-height: 2;
@@ -754,6 +827,18 @@ header .coming-soon:focus .coming-soon-show {
           align-items: flex-end;
 }
 
+.home-page .section2 h2 {
+  width: 50%;
+}
+
+.home-page .section2 h3 {
+  margin-right: -10px;
+}
+
+.home-page .section2 .caption {
+  width: 524px;
+}
+
 @media screen and (max-width: 961px) {
   .home-page .section2 .section-content {
     margin-right: 75px;
@@ -773,6 +858,10 @@ header .coming-soon:focus .coming-soon-show {
   margin-left: 150px;
 }
 
+.home-page .section3 h2 {
+  width: 50%;
+}
+
 .home-page .section3 .button-secondary {
   margin-right: 20px;
 }
@@ -784,7 +873,7 @@ header .coming-soon:focus .coming-soon-show {
 }
 
 .home-page .section3 p {
-  width: 500px;
+  width: 524px;
 }
 
 @media screen and (max-width: 961px) {
@@ -820,7 +909,7 @@ header .coming-soon:focus .coming-soon-show {
 .home-page .content {
   overflow: hidden;
   display: inline-block;
-  font-size: 7.5rem;
+  font-size: 5.15rem;
   line-height: 1;
   color: #f6f6f6;
   display: -webkit-box;
@@ -829,18 +918,18 @@ header .coming-soon:focus .coming-soon-show {
 }
 
 .home-page .content > span {
-  padding-right: 12px;
+  margin-right: 28px;
 }
 
 .home-page .content__container {
   font-weight: 700;
   overflow: hidden;
-  height: 8rem;
+  height: 5.5rem;
 }
 
 .home-page .content__container__text {
   display: inline-block;
-  font-size: 7.5rem;
+  font-size: 5.15rem;
   color: #fff;
   line-height: 1;
 }
@@ -869,9 +958,6 @@ header .coming-soon:focus .coming-soon-show {
 @media screen and (max-width: 815px) {
   .home-page .content {
     font-size: 5rem;
-  }
-  .home-page .content > span {
-    padding-right: 10px;
   }
   .home-page .content__container {
     height: 5.3rem;
@@ -1229,8 +1315,8 @@ canvas {
   top: 0;
   left: 0;
   background: black;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.6)));
-  background: linear-gradient(black 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 @-webkit-keyframes mouse-scroll-animation {
@@ -1551,7 +1637,6 @@ canvas {
   cursor: pointer;
   background-color: #0f0f0f;
   padding: 50px 30px 20px 30px;
-  line-height: 1.6;
   letter-spacing: 3px;
 }
 
@@ -1793,6 +1878,7 @@ canvas {
 
 footer {
   color: #3c3c3c;
+  position: relative;
   background-color: #000;
   padding: 50px 0;
   z-index: 10;
@@ -1803,15 +1889,15 @@ footer p {
 }
 
 footer .wrapper {
-  width: 80%;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 150px;
 }
 
 @media screen and (max-width: 960px) {
@@ -1826,6 +1912,7 @@ footer .wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 20px;
   }
 }
 
