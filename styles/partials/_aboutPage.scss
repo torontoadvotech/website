@@ -107,9 +107,7 @@ $cherry-red: #e9002d;
         }
 
         .vision-mission-group {
-          // need to make .about-description's the same height
           display: flex;
-          flex-direction: row;
           justify-content: space-between;
 
           @media (max-width: 961px) {
