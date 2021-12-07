@@ -10,7 +10,6 @@ header {
     padding-left: 150px;
     padding-right: 150px;
 
-
     @media screen and (max-width: 961px) {
       padding-left: 75px;
       padding-right: 75px;
@@ -21,7 +20,6 @@ header {
       padding-right: 10px;
     }
   }
-
 
   nav {
     display: flex;
@@ -214,7 +212,7 @@ header {
       @media screen and (max-width: 961px) {
         right: 130px;
       }
-    
+
       @media screen and (max-width: 530px) {
         right: 45px;
       }
@@ -222,7 +220,6 @@ header {
       @media screen and (max-width: 361px) {
         right: 15px;
       }
-
     }
 
     &:hover .coming-soon-hide,
@@ -233,6 +230,15 @@ header {
     &:hover .coming-soon-show,
     &:focus .coming-soon-show {
       opacity: 1;
+      padding-right: 20px;
+
+      @media screen and (max-width: 530px) {
+        padding-right: 13px;
+      }
+
+      @media screen and (max-width: 361px) {
+        padding-right: 5px;
+      }
     }
   }
 
