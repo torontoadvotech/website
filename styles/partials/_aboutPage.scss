@@ -12,7 +12,7 @@ $cherry-red: #e9002d;
     max-width: 1400px;
     padding-left: 150px;
     padding-right: 150px;
-    
+
     @media (max-width: 961px) {
       padding-left: 75px;
       padding-right: 75px;
@@ -124,7 +124,6 @@ $cherry-red: #e9002d;
         }
 
         .profiles {
-
           h2 {
             font-size: 3rem;
             font-weight: 600;
@@ -158,15 +157,18 @@ $cherry-red: #e9002d;
               @media (max-width: 500px) {
                 width: 210px;
                 height: 340px;
-               }
+              }
             }
 
             img {
               display: block;
+              width: 360px;
+              height: 375px;
 
               @media (max-width: 500px) {
                 width: 210px;
-               }
+                height: auto;
+              }
             }
 
             .placeholder {
@@ -177,7 +179,7 @@ $cherry-red: #e9002d;
               @media (max-width: 500px) {
                 width: 210px;
                 height: 220px;
-               }
+              }
             }
 
             .slide-up {
@@ -211,7 +213,7 @@ $cherry-red: #e9002d;
                 p {
                   font-size: 1.3rem;
                 }
-               }
+              }
 
               .exit {
                 display: none;

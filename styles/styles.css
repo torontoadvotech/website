@@ -1733,11 +1733,14 @@ canvas {
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid img {
   display: block;
+  width: 360px;
+  height: 375px;
 }
 
 @media (max-width: 500px) {
   .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid img {
     width: 210px;
+    height: auto;
   }
 }
 
