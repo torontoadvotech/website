@@ -7,6 +7,10 @@ $cherry-red: #e9002d;
   color: $off-white;
   background-color: $black;
 
+  header.about-header {
+    position: inherit;
+  }
+
   header.wrapper {
     margin: 0 auto;
     max-width: 1400px;
@@ -64,11 +68,12 @@ $cherry-red: #e9002d;
         display: table;
         margin: 40px 0;
 
-        h1 {
+        h1.title {
           font-size: 5rem;
           margin-top: 60px;
           margin-bottom: 20px;
           text-transform: uppercase;
+          letter-spacing: 15px;
         }
 
         .aboutus-item {
@@ -124,12 +129,13 @@ $cherry-red: #e9002d;
         }
 
         .profiles {
-          h2 {
+          h2.subtitle {
             font-size: 3rem;
             font-weight: 600;
             text-transform: uppercase;
             line-height: 1.88;
             margin: 40px 0px 10px 0px;
+            letter-spacing: 15px;
           }
 
           .profiles-grid {

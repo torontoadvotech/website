@@ -1541,6 +1541,10 @@ canvas {
   background-color: #000;
 }
 
+.about-page header.about-header {
+  position: inherit;
+}
+
 .about-page header.wrapper {
   margin: 0 auto;
   max-width: 1400px;
@@ -1605,11 +1609,12 @@ canvas {
   margin: 40px 0;
 }
 
-.about-page .aboutus .about-us-wrapper .section-content h1 {
+.about-page .aboutus .about-us-wrapper .section-content h1.title {
   font-size: 5rem;
   margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 15px;
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item {
@@ -1680,12 +1685,13 @@ canvas {
   line-height: 2;
 }
 
-.about-page .aboutus .about-us-wrapper .section-content .profiles h2 {
+.about-page .aboutus .about-us-wrapper .section-content .profiles h2.subtitle {
   font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.88;
   margin: 40px 0px 10px 0px;
+  letter-spacing: 15px;
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid {
