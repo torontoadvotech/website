@@ -1424,6 +1424,10 @@ canvas {
   background: #000;
 }
 
+.events-page header.events-header {
+  position: inherit;
+}
+
 .events-page section {
   overflow: hidden;
   min-height: 100vh;
@@ -1483,6 +1487,7 @@ canvas {
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-top: 60px;
+  letter-spacing: 15px;
 }
 
 .events-page section .section-content .description {
@@ -1556,6 +1561,10 @@ canvas {
   background-color: #000;
 }
 
+.about-page header.about-header {
+  position: inherit;
+}
+
 .about-page header.wrapper {
   margin: 0 auto;
   max-width: 1400px;
@@ -1620,11 +1629,12 @@ canvas {
   margin: 40px 0;
 }
 
-.about-page .aboutus .about-us-wrapper .section-content h1 {
+.about-page .aboutus .about-us-wrapper .section-content h1.title {
   font-size: 5rem;
   margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  letter-spacing: 15px;
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item {
@@ -1695,12 +1705,13 @@ canvas {
   line-height: 2;
 }
 
-.about-page .aboutus .about-us-wrapper .section-content .profiles h2 {
+.about-page .aboutus .about-us-wrapper .section-content .profiles h2.subtitle {
   font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.88;
   margin: 40px 0px 10px 0px;
+  letter-spacing: 15px;
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid {
@@ -1748,11 +1759,14 @@ canvas {
 
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid img {
   display: block;
+  width: 360px;
+  height: 375px;
 }
 
 @media (max-width: 500px) {
   .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid img {
     width: 210px;
+    height: auto;
   }
 }
 
