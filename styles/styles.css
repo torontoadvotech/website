@@ -1409,6 +1409,10 @@ canvas {
   background: #000;
 }
 
+.events-page header.events-header {
+  position: inherit;
+}
+
 .events-page section {
   overflow: hidden;
   min-height: 100vh;
@@ -1468,6 +1472,7 @@ canvas {
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-top: 60px;
+  letter-spacing: 15px;
 }
 
 .events-page section .section-content .description {
