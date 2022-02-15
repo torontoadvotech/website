@@ -83,6 +83,7 @@ $cherry-red: #e9002d;
 
           i {
             color: $white;
+            transform: rotate(180deg);
           }
 
           .about-title {
@@ -106,8 +107,8 @@ $cherry-red: #e9002d;
           line-height: 1.6;
         }
 
-        .open {
-          transform: rotate(180deg);
+        i.open {
+          transform: rotate(0deg);
         }
 
         .vision-mission-group {

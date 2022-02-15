@@ -1630,6 +1630,8 @@ canvas {
 
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item i {
   color: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item .about-title {
@@ -1658,9 +1660,9 @@ canvas {
   line-height: 1.6;
 }
 
-.about-page .aboutus .about-us-wrapper .section-content .open {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.about-page .aboutus .about-us-wrapper .section-content i.open {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .about-page .aboutus .about-us-wrapper .section-content .vision-mission-group {
