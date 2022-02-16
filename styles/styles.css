@@ -1174,7 +1174,7 @@ canvas {
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-top: 60px;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 }
 .events-page section .section-content .description {
   color: #fff;
@@ -1280,7 +1280,7 @@ canvas {
   margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 }
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item {
   margin-bottom: 30px;
@@ -1289,6 +1289,8 @@ canvas {
 }
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item i {
   color: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .about-page .aboutus .about-us-wrapper .section-content .aboutus-item .about-title {
   display: flex;
@@ -1308,8 +1310,10 @@ canvas {
   display: block;
   line-height: 1.6;
 }
-.about-page .aboutus .about-us-wrapper .section-content .open {
-  transform: rotate(180deg);
+
+.about-page .aboutus .about-us-wrapper .section-content i.open {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 .about-page .aboutus .about-us-wrapper .section-content .vision-mission-group {
   display: flex;
@@ -1333,7 +1337,7 @@ canvas {
   text-transform: uppercase;
   line-height: 1.88;
   margin: 40px 0px 10px 0px;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 }
 .about-page .aboutus .about-us-wrapper .section-content .profiles .profiles-grid {
   display: grid;
