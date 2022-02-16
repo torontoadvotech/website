@@ -224,6 +224,8 @@ $(function () {
       display: 'block'
     })
   })
+
+  $('footer .year').text(new Date().getFullYear())
 });
 
 
