@@ -9,12 +9,15 @@ header {
     max-width: 1400px;
     padding-left: 150px;
     padding-right: 150px;
-  }
 
-  @media screen and (max-width: 961px) {
-    .wrapper {
+    @media screen and (max-width: 961px) {
       padding-left: 75px;
       padding-right: 75px;
+    }
+
+    @media screen and (max-width: 530px) {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
@@ -117,55 +120,6 @@ header {
     }
   }
 
-  // .hamburger {
-  //   width: 30px;
-  //   padding: 20px 0;
-  //   // Middle bar of the hamburger
-  //   .bars {
-  //     position: relative;
-  //     width: 20px;
-  //     height: 1px;
-  //     border-radius: 2.5px;
-  //     background: white;
-  //     transition: all $default-transition;
-  //   }
-  //   // Top and bottom hamburger bars
-  //   .bars::before,
-  //   .bars::after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 30px;
-  //     height: 1px;
-  //     border-radius: 2.5px;
-  //     background: white;
-  //     transition: all 250ms ease-in-out;
-  //     transform: translateY(0) rotate(0);
-  //   }
-
-  //   // Positioning the top and bottom bar
-  //   .bars::before {
-  //     left: 0;
-  //     top: 8px;
-  //   }
-
-  //   .bars::after {
-  //     left: 0;
-  //     bottom: 8px;
-  //   }
-
-  //   .bars-active {
-  //     width: 0px;
-  //   }
-
-  //   .bars-active::before {
-  //     transform: translateY(-8px) rotate(135deg);
-  //   }
-
-  //   .bars-active::after {
-  //     transform: translateY(8px) rotate(-135deg);
-  //   }
-  // }
-
   .nav-menu {
     z-index: 10;
     width: 100%;
@@ -195,7 +149,13 @@ header {
       transition: all $slow-transition;
       list-style: none;
       text-align: right;
-      margin-right: 10%;
+      margin-right: 50px;
+      @media screen and (max-width: 530px) {
+        margin-right: 30px;
+      }
+      @media screen and (max-width: 361px) {
+        margin-right: 0px;
+      }
     }
 
     a {
@@ -204,26 +164,38 @@ header {
       color: $white;
       font-family: $header-font;
       font-weight: 600;
-      font-size: 9rem;
+      font-size: 8rem;
       line-height: 1;
       padding: 5px;
       transition: all $default-transition;
       outline: none;
+      letter-spacing: 10px;
 
       &:hover:not(.coming-soon),
       &:focus:not(.coming-soon) {
         color: $vibrant-blue;
         padding-right: 26px;
+        @media screen and (max-width: 530px) {
+          padding-right: 18px;
+        }
+        @media screen and (max-width: 361px) {
+          padding-right: 10px;
+        }
       }
-    }
-    @media screen and (max-width: 530px) {
-      a {
-        font-size: 5rem;
+      @media screen and (max-width: 961px) {
+        font-size: 6.5rem;
+      }
+      @media screen and (max-width: 530px) {
+        font-size: 4rem;
+      }
+      @media screen and (max-width: 361px) {
+        font-size: 3rem;
       }
     }
   }
 
   .coming-soon {
+    word-spacing: -25px;
     .coming-soon-hide,
     .coming-soon-show {
       transition: all $default-transition;
@@ -234,8 +206,20 @@ header {
       color: $cherry-red;
       display: inline-block;
       position: absolute;
-      right: 18.25%;
       opacity: 0;
+      right: 210px;
+
+      @media screen and (max-width: 961px) {
+        right: 130px;
+      }
+
+      @media screen and (max-width: 530px) {
+        right: 45px;
+      }
+
+      @media screen and (max-width: 361px) {
+        right: 15px;
+      }
     }
 
     &:hover .coming-soon-hide,
@@ -246,6 +230,15 @@ header {
     &:hover .coming-soon-show,
     &:focus .coming-soon-show {
       opacity: 1;
+      padding-right: 20px;
+
+      @media screen and (max-width: 530px) {
+        padding-right: 13px;
+      }
+
+      @media screen and (max-width: 361px) {
+        padding-right: 5px;
+      }
     }
   }
 

@@ -1,22 +1,36 @@
 // Shrink header nav on scroll
 $(function () {
   const shrinkNav = () => {
-    const scrollDistance = $(document).scrollTop();
-
+    const scrollDistance = $(document).scrollTop()
     if (scrollDistance > 25) {
       $("header").addClass("scrolled-header");
-      $(".logo").css({"height": "65px", "width": "65px"});
+      $(".logo").css({ "height": "65px", "width": "65px" });
       $(".wrapper>.nav-right").css("padding-top", "5px");
       $(".scroll-direction").fadeOut();
     } else {
       $("header").removeClass("scrolled-header");
-      $(".logo").css({"height": "90px", "width": "90px"});
+      $(".logo").css({ "height": "90px", "width": "90px" });
       $(".wrapper>.nav-right").css("padding-top", "9px");
       $(".scroll-direction").fadeIn();
       $(".logo a >.red").text("toronto/");
       $(".logo a >.white").text("advocacy");
     }
   };
+
+  const moveBackground = () => {
+    const scrollDistance = $(document).scrollTop()
+    const windowHeight = $('body').height()
+    const scrollPercent = scrollDistance / windowHeight
+    console.log('scrollPercent', scrollPercent)
+
+    if (0.12 < scrollPercent && scrollPercent < 0.5) {
+      $('.landscape').css({ left: '-300px' })
+      // $('.landscape').animate({left:'-300px'},300,'swing')  
+    } else {
+      $('.landscape').css({ left: '300px' })
+      // $('.landscape').animate({left:'300px'},300,'swing')
+    }
+  }
 
   const showNavItems = () => {
     $(".menu-items ul").css({ opacity: "1" });
@@ -51,7 +65,7 @@ $(function () {
     });
     setTimeout(showNavItems, 200);
   };
-  
+
   const closeNavMenu = () => {
     hideNavItems();
     setTimeout(function () {
@@ -135,9 +149,15 @@ $(function () {
     }
   };
 
+  const handleScroll = () => {
+    // moveBackground()
+    shrinkNav()
+    showScrollButton()
+  }
+
+  // $('.landscape').css({left:'300px'})
   $('.fade-in-content').fadeIn('slow');
-  $(document).on("scroll", shrinkNav);
-  $(document).on("scroll", showScrollButton);
+  $(document).on("scroll", handleScroll);
   $("nav").on("keypress click", ".open-menu", openNavMenu);
   $("nav").on("keypress click", ".close-menu", closeNavMenu);
   // $('.search-bar input').focus(highlightSearch);
@@ -160,21 +180,52 @@ $(function () {
   $(".text").on("click", ".read-more", handleMore);
 
   // Logic for collapsible divs
-
-  $('#vision-title').on('click', (event) => {
+  $('#vision-title').on('click', (e) => {
     $('#vision-description').slideToggle();
-    $(event.currentTarget).find('i').toggleClass('open')
+    $(e.currentTarget).find('i').toggleClass('open')
   })
 
-  $('#mission-title').on('click', (event) => {
+  $('#mission-title').on('click', (e) => {
     $('#mission-description').slideToggle();
-    $(event.currentTarget).find('i').toggleClass('open')
+    $(e.currentTarget).find('i').toggleClass('open')
   })
 
-  $('#values-title').on('click', (event) => {
+  $('#values-title').on('click', (e) => {
     $('#values-description').slideToggle();
-    $(event.currentTarget).find('i').toggleClass('open')
+    $(e.currentTarget).find('i').toggleClass('open')
   })
+
+  // Logic for profile cards
+  $('.read-more').on('click', (e) => {
+    $(e.currentTarget).parent().removeClass("slide-down");
+    $(e.currentTarget).parent().addClass("slide-up");
+    $(e.currentTarget).siblings('.exit').css({
+      display: 'block'
+    });
+    $(e.currentTarget).siblings('.extra-text').css({
+      display: 'block'
+    })
+    $(e.currentTarget).css({
+      display: 'none'
+    });
+
+  })
+
+  $('.exit').on('click', (e) => {
+    $(e.currentTarget).parent().removeClass("slide-up");
+    $(e.currentTarget).parent().addClass("slide-down");
+    $(e.currentTarget).css({
+      display: 'none'
+    });
+    $(e.currentTarget).siblings('.extra-text').css({
+      display: 'none'
+    });
+    $(e.currentTarget).siblings('.read-more').css({
+      display: 'block'
+    })
+  })
+
+  $('footer .year').text(new Date().getFullYear())
 });
 
 

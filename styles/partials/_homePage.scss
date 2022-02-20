@@ -1,13 +1,18 @@
 .home-page {
   color: $white;
   background: $black;
+  z-index: 10;
   h1,
   h2 {
-    font-size: 7.5rem;
+    font-size: 5rem;
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 1.22;
     font-weight: bold;
     margin-bottom: 30px;
+    z-index: 20;
+    letter-spacing: 15px;
+    word-spacing: -15px;
+    margin-right: -10px;
     @media (max-width: 815px) {
       font-size: 5rem;
     }
@@ -20,10 +25,16 @@
     }
   }
 
+  h2 {
+    width: 50%
+  }
+
   h3 {
     font-size: 5rem;
     line-height: 2;
     font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
     @media (max-width: 815px) {
       font-size: 4.5rem;
     }
@@ -33,6 +44,9 @@
     }
     @media (max-width: 380px) {
       font-size: 2.5rem;
+    }
+    .dot {
+      letter-spacing: 0px
     }
   }
 
@@ -47,14 +61,13 @@
       margin: 0 auto;
       max-width: 1400px;
     }
-    .section-content {
+    .section-content {   
       min-height: 100vh;
-      width: 550px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
-      z-index: 1;
+      z-index: 10;
 
       @media screen and (max-width: 815px) {
         .caption {
@@ -73,10 +86,10 @@
     }
     .caption {
       margin-bottom: 40px;
-      width: 520px;
+      width: 524px;
       font-size: 1.8rem;
       color: $off-white;
-      line-height: 1.5;
+      line-height: 2;
       letter-spacing: 1px;
     }
     @media screen and (max-width: 530px) {
@@ -96,12 +109,6 @@
       width: 100%;
       padding-top: 60px;
       margin-left: 150px;
-      h1 {
-        span {
-          font-weight: bold;
-          display: block;
-        }
-      }
     }
     .section-content {
       min-height: auto;
@@ -135,6 +142,12 @@
       margin-right: 150px;
       align-items: flex-end;
     }
+    h3 {
+      margin-right: -10px;
+    }
+    .caption {
+      width: 524px;
+    }
     @media screen and (max-width: 961px) {
       .section-content {
         margin-right: 75px;
@@ -160,7 +173,7 @@
       }
     }
     p {
-      width: 500px;
+      width: 524px;
     }
 
     @media screen and (max-width: 961px) {
@@ -187,21 +200,23 @@
 .home-page .content {
   overflow: hidden;
   display: inline-block;
-  font-size: 7.5rem;
+  font-size: 5rem;
   line-height: 1;
   color: $off-white;
   display: flex;
-  > span {
-    padding-right: 12px;
+
+  span {
+    padding-right: 25px;
   }
 
   &__container {
     font-weight: 700;
     overflow: hidden;
-    height: 8rem;
+    height: 5.5rem;
+
     &__text {
       display: inline-block;
-      font-size: 7.5rem;
+      font-size: 5rem;
       color: $white;
       line-height: 1;
     }
@@ -210,8 +225,9 @@
       margin-top: 0;
       text-align: left;
       list-style: none;
+      margin-right: 36px;
       transform: translate3d(0, -100%, 0);
-
+      
       animation-name: change;
       animation-duration: 15s;
       animation-iteration-count: infinite;
@@ -221,15 +237,12 @@
         margin: 0;
         padding: 1px 0;
         width: auto;
-      }
+      }      
     }
   }
 
   @media screen and (max-width: 815px) {
     font-size: 5rem;
-    > span {
-      padding-right: 10px;
-    }
     &__container {
       height: 5.3rem;
       &__text {
@@ -402,7 +415,7 @@
   }
   42.5%,
   65% {
-    width: 100%;
+    width: 96.5%;
   }
   67%,
   100% {
@@ -446,26 +459,67 @@
   }
 }
 
+@keyframes change2 {
+  0%,
+  7.5%,
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+  10%,
+  17.5% {
+    transform: translate3d(0, 0%, 0);
+  }
+  20%,
+  27.5% {
+    transform: translate3d(0, 0%, 0);
+  }
+  30%,
+  37.5% {
+    transform: translate3d(0, 0%, 0);
+  }
+  40%,
+  67.5% {
+    transform: translate3d(0, -50%, 0);
+  }
+  70%,
+  77.5% {
+    transform: translate3d(0, 0%, 0);
+  }
+  80%,
+  87.5% {
+    transform: translate3d(0, 0%, 0);
+  }
+  90%,
+  97.5% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
 .landscape {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: -20;
+  // left: 300px;
+  z-index: 0;
   opacity: 0;
   transition: opacity $slow-transition;
   width: 100%;
   height: 100%;
 }
 
+canvas {
+  position: absolute;
+  background: #000000;
+}
+
 .landscape-overlay {
   position: fixed;
-  z-index: -10;
+  z-index: 5;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background: rgb(0, 0, 0);
-  background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 @-webkit-keyframes mouse-scroll-animation {
@@ -522,6 +576,7 @@
   position: absolute;
   bottom: 10%;
   right: 150px;
+  z-index: 10;
 
   span {
     padding-right: 20px;
